@@ -1,0 +1,9 @@
+.mapBlock {
+  width: 100%;
+  min-height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../public/map.png");
+}
+
+/*# sourceMappingURL=map.css.map */

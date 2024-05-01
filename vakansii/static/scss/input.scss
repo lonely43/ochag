@@ -1,0 +1,106 @@
+.inputBlock{
+   margin-top: 10rem;
+
+   .notice{
+      padding: 1rem;
+      border-radius: 1.4rem 1.4rem 0 0;
+      background: #61aaef;
+      position: absolute;
+      left: 3rem;
+      bottom: 100%;
+      h1{
+         text-align: center;
+         font-size: 1.68em;
+         color: #ffffff;
+         font-weight: 400;
+      }
+
+      @media screen and (max-width: 400px) {
+         left: 50%;
+         transform: translate(-50%, 0);
+      }
+   }
+   form{
+      position: relative;
+      padding: 2rem;
+
+      margin: 0 auto;
+      max-width: 80rem;
+
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 4rem;
+
+      box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.197);
+      border-radius: 2rem;
+
+      .input{
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+         h1{
+            font-size: 1.25em;
+         }
+         span{
+            display: flex;
+            justify-content: space-between;
+
+            gap: 4rem;
+            label{
+               font-size: 1em;
+            }
+            input, select{
+               width: 20rem;
+               padding: 0.6rem 1rem;
+               border-radius: 0.6rem;
+               border: 0.1rem solid #5290cc;
+               outline: none;
+            }
+
+            textarea{
+               padding: 0.6rem 1rem;
+               min-width: 20rem;
+               max-width: 20rem;
+               min-height: 10rem;
+               border: 0.1rem solid #5290cc;
+               outline: none;
+               border-radius: 1rem;
+            }
+
+            @media screen and (max-width:600px) {
+               gap: 1rem;
+               flex-direction: column;
+            }
+         }
+      }
+
+      .btns{
+         display: flex;
+         gap: 2rem;
+         .btn{
+            cursor: pointer;
+
+            padding: 0.8rem 2rem;
+
+            font-size: 0.8em;
+
+            background-color: #5290cc;
+
+            border-radius: 0.8rem;
+            border: 0.1rem solid #61aaef;
+
+            &:nth-child(1){
+               color: white;
+               background: rgb(33,198,255);
+               background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+               box-shadow: 0 0 1rem 0rem #65acf0;
+            }
+            &:nth-child(2){
+               font-weight: 500;
+               color: black;
+               background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+            }
+         }
+      }
+   }
+}

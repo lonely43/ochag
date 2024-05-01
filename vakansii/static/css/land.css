@@ -1,0 +1,119 @@
+.landBlock {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landBlock .title h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #5290cc;
+}
+.landBlock .content {
+  padding-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.landBlock .content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.landBlock .content ul h1 {
+  font-size: 1em;
+  font-weight: 400;
+}
+.landBlock .content ul li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+.landBlock .content ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 16px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../public/mark.png");
+}
+.landBlock .content .article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+.landBlock .content .article img {
+  max-width: 600px;
+  border-radius: 4rem;
+}
+.landBlock .content .article .text {
+  width: calc(100% - 6rem);
+  padding: 4rem 2rem 2rem 2rem;
+  position: absolute;
+  z-index: -1;
+  top: calc(100% - 2rem);
+  background-color: white;
+  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.214);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landBlock .content .article .text h1 {
+  text-align: start;
+  font-style: italic;
+  font-size: 1em;
+  word-spacing: 10px;
+  font-weight: 400;
+}
+.landBlock .btns {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+.landBlock .btns button {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1em;
+  color: white;
+  background-color: #5290cc;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(33, 198, 255);
+  box-shadow: 0 0 2rem 0rem #65acf0;
+}
+.landBlock .btns button:nth-child(1) {
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+}
+.landBlock .btns button:nth-child(2) {
+  font-weight: 500;
+  color: black;
+  background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+}
+@media screen and (max-width: 500px) {
+  .landBlock .btns {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) {
+  .landBlock .content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 500px) {
+  .landBlock .content img {
+    border-radius: 3rem !important;
+  }
+  .landBlock .content .text {
+    width: 100% !important;
+    border-radius: 0 0 2rem 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=land.css.map */

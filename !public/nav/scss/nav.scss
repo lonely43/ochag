@@ -1,5 +1,6 @@
 nav{
-   position: relative;
+   z-index: 6;
+   position: fixed;
    width: 100vw;
    display: flex;
    justify-content: center;
@@ -10,7 +11,7 @@ nav{
       background-color: #fcfcfc;
       border-radius: 0 0 1rem 1rem;
 
-      box-shadow: 0 0 2rem 0.68rem rgba(188, 188, 188, 0.34);
+      box-shadow: 0 0 2rem 1rem rgba(188, 188, 188, 0.367);
 
       display: flex;
       justify-content: center;

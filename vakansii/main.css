@@ -3,18 +3,45 @@
 /* navigator's styles */
 @import url('../!public/nav/css/nav.css');
 
+/* blocks */
+@import url('./static/css/land.css');
+@import url('./static/css/input.css');
+@import url('./static/css/FAQ.css');
+@import url('./static/css/map.css');
 
 
 *{
    line-height: 1.25;
    box-sizing: border-box;
+
    padding: 0;
    margin: 0;
-   font-family: "Roboto", sans-serif;
 
+   font-family: "Roboto", sans-serif;
    font-style: normal;
 }
-
+main{
+   max-width: 100vw;
+   height: auto;
+}
 body{
-   background-color: aliceblue;
+   background-color: white;
+}
+
+.titleBlock{
+   margin-top: 10rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+}
+.titleBlock h1{
+   font-weight: 400;
+   text-align: center;
+   font-size: 2em;
+}
+.titleBlock p{
+   text-align: center;
+   font-size: 1em;
 }

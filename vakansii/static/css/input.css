@@ -1,0 +1,97 @@
+.inputBlock {
+  margin-top: 10rem;
+}
+.inputBlock .notice {
+  padding: 1rem;
+  border-radius: 1.4rem 1.4rem 0 0;
+  background: #61aaef;
+  position: absolute;
+  left: 3rem;
+  bottom: 100%;
+}
+.inputBlock .notice h1 {
+  text-align: center;
+  font-size: 1.68em;
+  color: #ffffff;
+  font-weight: 400;
+}
+@media screen and (max-width: 400px) {
+  .inputBlock .notice {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.inputBlock form {
+  position: relative;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.197);
+  border-radius: 2rem;
+}
+.inputBlock form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.inputBlock form .input h1 {
+  font-size: 1.25em;
+}
+.inputBlock form .input span {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.inputBlock form .input span label {
+  font-size: 1em;
+}
+.inputBlock form .input span input, .inputBlock form .input span select {
+  width: 20rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #5290cc;
+  outline: none;
+}
+.inputBlock form .input span textarea {
+  padding: 0.6rem 1rem;
+  min-width: 20rem;
+  max-width: 20rem;
+  min-height: 10rem;
+  border: 0.1rem solid #5290cc;
+  outline: none;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .inputBlock form .input span {
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+.inputBlock form .btns {
+  display: flex;
+  gap: 2rem;
+}
+.inputBlock form .btns .btn {
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  font-size: 0.8em;
+  background-color: #5290cc;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #61aaef;
+}
+.inputBlock form .btns .btn:nth-child(1) {
+  color: white;
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+  box-shadow: 0 0 1rem 0rem #65acf0;
+}
+.inputBlock form .btns .btn:nth-child(2) {
+  font-weight: 500;
+  color: black;
+  background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+}
+
+/*# sourceMappingURL=input.css.map */

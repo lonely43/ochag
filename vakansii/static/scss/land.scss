@@ -1,0 +1,146 @@
+.landBlock{
+   padding-top: 20rem;
+   //width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   .title{
+      h1{
+         text-align: center;
+         font-size: 2em;
+         color: #5290cc;
+      }
+   }
+
+   .content{
+      padding-top: 4rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
+      ul{
+         list-style: none;
+
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+         h1{
+            font-size: 1em;
+            font-weight: 400;
+         }
+
+         li{
+            position: relative;
+            padding-left: 1.4rem;
+
+            &::before{
+               position: absolute;
+               top: 0;
+               left: 0;
+
+               content: " ";
+
+               width: 16px;
+               height: 32px;
+
+               background-repeat: no-repeat;
+               background-size: contain;
+               background-image: url('../../public/mark.png');
+            }
+         }
+      }
+
+      .article{
+         position: relative;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 15rem;
+
+         img{
+            max-width: 600px;
+            border-radius: 4rem;
+         }
+
+         .text{
+            width: calc(100% - 6rem);
+            padding: 4rem 2rem 2rem 2rem;
+
+            position: absolute;
+            z-index: -1;
+
+            top: calc(100% - 2rem);
+            background-color: white;
+            box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.214);
+            border-radius: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+               text-align: start;
+               font-style: italic;
+               font-size: 1em;
+               word-spacing: 10px;
+               font-weight: 400;
+            }
+         }
+      }
+   }
+
+   .btns{
+      margin-top: 4rem;
+      display: flex;
+      gap: 2rem;
+      button{
+         cursor: pointer;
+
+         padding: 1rem;
+
+         font-size: 1em;
+         color: white;
+
+         background-color: #5290cc;
+
+         border-radius: 1rem;
+         border: 0.1rem solid rgb(33,198,255);
+         box-shadow: 0 0 2rem 0rem #65acf0;
+
+         &:nth-child(1){
+            background: rgb(33,198,255);
+            background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+         }
+         &:nth-child(2){
+            font-weight: 500;
+            color: black;
+            background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+         }
+      }
+
+      @media screen and (max-width: 500px) {
+         flex-direction: column;
+      }
+   }
+
+   @media screen and (max-width: 900px) {
+      .content{
+         flex-direction: column;
+
+
+         @media screen and (max-width: 500px) {
+            img{
+               border-radius: 3rem !important;
+            }
+            .text{
+               width: 100% !important;
+               border-radius: 0 0 2rem 2rem !important;
+            }
+         }
+      }
+   }
+}
