@@ -1,0 +1,147 @@
+nav {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+nav span {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 0 2rem 0.68rem rgba(188, 188, 188, 0.34);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav span .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  height: auto;
+}
+@media screen and (max-width: 1068px) {
+  nav span .icon {
+    display: none;
+  }
+}
+nav span .title .head ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav span .title .head ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav span .title .head ul li img {
+  max-width: 30px;
+  height: auto;
+}
+nav span .title .head ul li h1 {
+  font-size: 0.8em;
+  font-weight: 400;
+  word-break: break-all;
+}
+nav span .title .btns {
+  margin-top: 2rem;
+}
+nav span .title .btns ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+nav span .title .btns ul li {
+  cursor: pointer;
+  word-break: normal;
+  font-size: 1em;
+  font-weight: 500;
+}
+nav span .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+nav span .contact button {
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+  box-shadow: 0 0 2rem 0rem #65acf0;
+  border: none;
+  border-radius: 0.6rem;
+}
+nav span .contact h1 {
+  font-size: 1em;
+}
+@media screen and (max-width: 1255px) {
+  nav span .contact {
+    display: none;
+  }
+}
+nav span .burgerMenu {
+  display: none;
+}
+nav span .burgerMenu .brgBtn {
+  z-index: 3;
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  cursor: pointer;
+}
+nav span .burgerMenu .brgBtn svg {
+  width: 48px;
+}
+nav span .burgerMenu .list {
+  position: absolute;
+  left: -100vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.2s;
+}
+nav span .burgerMenu .list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+nav span .burgerMenu .list ul li {
+  cursor: pointer;
+  text-align: center;
+}
+nav span .burgerMenu .show {
+  left: 0;
+}
+@media screen and (max-width: 840px) {
+  nav span {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0.6rem;
+    align-items: center;
+  }
+  nav .icon {
+    order: 1;
+    padding: 1rem;
+    display: flex !important;
+  }
+  nav .title {
+    display: none;
+  }
+  nav .burgerMenu {
+    display: flex !important;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */
