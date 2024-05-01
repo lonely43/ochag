@@ -6,7 +6,7 @@ nav {
 }
 nav span {
   padding: 2rem;
-  background-color: white;
+  background-color: #fcfcfc;
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0 0 2rem 0.68rem rgba(188, 188, 188, 0.34);
   display: flex;
@@ -25,6 +25,13 @@ nav span .icon {
     display: none;
   }
 }
+nav span .title {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+nav span .title .head {
+  width: 100%;
+}
 nav span .title .head ul {
   list-style: none;
   display: flex;
@@ -34,6 +41,7 @@ nav span .title .head ul li {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  white-space: normal;
   gap: 1rem;
 }
 nav span .title .head ul li img {
@@ -46,31 +54,75 @@ nav span .title .head ul li h1 {
   word-break: break-all;
 }
 nav span .title .btns {
+  width: 100%;
   margin-top: 2rem;
 }
 nav span .title .btns ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 0rem;
 }
 nav span .title .btns ul li {
-  cursor: pointer;
-  word-break: normal;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+nav span .title .btns ul li h1 {
+  padding: 1rem;
   font-size: 1em;
   font-weight: 500;
+  cursor: pointer;
+}
+nav span .title .btns ul .dropdown {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+nav span .title .btns ul .dropdown:hover .dropdownMenu {
+  display: grid;
+}
+nav span .title .btns ul .dropdown:hover h1 {
+  background-color: white;
+  border: none;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.282);
+}
+nav span .title .btns ul .dropdown .dropdownMenu {
+  position: absolute;
+  top: 3rem;
+  display: none;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.282);
+}
+nav span .title .btns ul .dropdown .dropdownMenu ul {
+  flex-direction: column;
+  gap: 1rem;
+}
+nav span .title .btns ul .dropdown .dropdownMenu ul li {
+  cursor: pointer;
+  white-space: nowrap;
+  color: rgb(80, 80, 80);
+  font-size: 1em;
+  font-weight: 400;
+}
+nav span .title .btns ul .dropdown .dropdownMenu ul li img {
+  width: 20px;
+  height: 20px;
 }
 nav span .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 nav span .contact button {
   cursor: pointer;
   padding: 0.4rem 1rem;
   color: white;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
   background: rgb(33, 198, 255);
   background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
@@ -81,7 +133,7 @@ nav span .contact button {
 nav span .contact h1 {
   font-size: 1em;
 }
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1260px) {
   nav span .contact {
     display: none;
   }
@@ -137,7 +189,7 @@ nav span .burgerMenu .show {
     display: flex !important;
   }
   nav .title {
-    display: none;
+    display: none !important;
   }
   nav .burgerMenu {
     display: flex !important;
