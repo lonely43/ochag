@@ -7,10 +7,14 @@
 @import url('../!public/footer/css/footer.css');
 
 /* blocks */
-@import url('./static/css/contacts.css');
-@import url('./static/css/FAQ.css');
+@import url('./static/css/component.css');
 @import url('./static/css/inputBlock.css');
+@import url('./static/css/points.css');
+@import url('./static/css/docs.css');
+@import url('./static/css/builds.css');
 @import url('./static/css/feedbacks.css');
+@import url('./static/css/FAQ.css');
+
 
 *{
    line-height: 1.25;

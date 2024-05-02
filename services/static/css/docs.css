@@ -1,0 +1,34 @@
+.docsBlock .documents {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 1020px) {
+  .docsBlock .documents {
+    flex-direction: column;
+  }
+  .docsBlock .documents .mainDoc, .docsBlock .documents .docs {
+    margin: 0 auto;
+  }
+}
+.docsBlock .documents .mainDoc {
+  max-width: 15rem;
+}
+.docsBlock .documents .docs {
+  display: grid;
+  grid-template-columns: repeat(3, 15rem);
+  gap: 0.6rem;
+}
+@media screen and (max-width: 750px) {
+  .docsBlock .documents .docs {
+    grid-template-columns: repeat(2, 15rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .docsBlock .documents .docs {
+    grid-template-columns: repeat(1, 15rem);
+  }
+}
+
+/*# sourceMappingURL=docs.css.map */

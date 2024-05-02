@@ -1,0 +1,44 @@
+.component{
+   padding-top: 15rem;
+   display: none;
+   justify-content: center;
+   gap: 2rem;
+
+   img{
+      max-width: 35rem;
+      height: auto;
+   }
+   .text{
+      h1{
+         text-align: start;
+         font-size: 2em;
+         font-weight: 500;
+      }
+      p{
+         max-width: 40rem;
+         padding-top: 1rem;
+         text-align: start;
+         font-size: 1em;
+      }
+   }
+
+   @media screen and (max-width: 1200px) {
+      padding-top: 14rem;
+      flex-direction: column;
+      .text{
+         h1{
+            text-align: center;
+         }
+         p{
+            margin: 0 auto;
+         }
+
+      }
+      img{
+         margin: 0 auto;
+      }
+   }
+}
+.showComponent{
+   display: flex !important;
+}

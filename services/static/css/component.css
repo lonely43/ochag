@@ -1,0 +1,42 @@
+.component {
+  padding-top: 15rem;
+  display: none;
+  justify-content: center;
+  gap: 2rem;
+}
+.component img {
+  max-width: 35rem;
+  height: auto;
+}
+.component .text h1 {
+  text-align: start;
+  font-size: 2em;
+  font-weight: 500;
+}
+.component .text p {
+  max-width: 40rem;
+  padding-top: 1rem;
+  text-align: start;
+  font-size: 1em;
+}
+@media screen and (max-width: 1200px) {
+  .component {
+    padding-top: 14rem;
+    flex-direction: column;
+  }
+  .component .text h1 {
+    text-align: center;
+  }
+  .component .text p {
+    margin: 0 auto;
+  }
+  .component img {
+    margin: 0 auto;
+  }
+}
+
+.showComponent {
+  display: flex !important;
+}
+
+/*# sourceMappingURL=component.css.map */

@@ -1,0 +1,33 @@
+.docsBlock{
+   .documents{
+      padding-top: 2rem;
+
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      @media screen and (max-width: 1020px) {
+         flex-direction: column;
+
+         .mainDoc, .docs{
+            margin: 0 auto;
+         }
+      }
+
+      .mainDoc{
+         max-width: 15rem;
+      }
+      .docs{
+         display: grid;
+         grid-template-columns: repeat(3, 15rem);
+         gap: .6rem;
+
+         @media screen and (max-width: 750px) {
+            grid-template-columns: repeat(2, 15rem);
+         }
+         @media screen and (max-width: 500px) {
+            grid-template-columns: repeat(1, 15rem);
+         }
+      }
+   }
+}
