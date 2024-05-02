@@ -1,0 +1,80 @@
+.contactsBlock {
+  padding-top: 15rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+@media screen and (max-width: 1780px) {
+  .contactsBlock {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+}
+.contactsBlock h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #5290cc;
+}
+.contactsBlock .cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25.6rem);
+  gap: 2rem;
+}
+@media screen and (max-width: 1780px) {
+  .contactsBlock .cards {
+    grid-template-columns: repeat(3, 25.6rem);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .contactsBlock .cards {
+    grid-template-columns: repeat(2, 25.6rem);
+  }
+}
+@media screen and (max-width: 870px) {
+  .contactsBlock .cards {
+    grid-template-columns: repeat(1, 25.6rem);
+  }
+}
+.contactsBlock .cards .card {
+  padding: 2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 0 5rem 0rem rgba(0, 0, 0, 0.162);
+  border-radius: 2rem;
+}
+.contactsBlock .cards .card h2 {
+  font-weight: 400;
+}
+.contactsBlock .cards .card button {
+  margin: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  width: 12rem;
+  padding: 0.6rem 0rem;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: white;
+  background-color: #5290cc;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 5rem 0rem #65acf0;
+  box-shadow: 0 0.2rem 0rem 0rem #427aae;
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+}
+.contactsBlock .cards .card button::after {
+  content: " ";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 10rem;
+  height: 1rem;
+  box-shadow: 0 0 2rem 0rem #65acf0;
+}
+
+/*# sourceMappingURL=contacts.css.map */

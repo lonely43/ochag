@@ -3,11 +3,13 @@
 /* navigator's styles */
 @import url('../!public/nav/css/nav.css');
 
+/* footer's styles */
+@import url('../!public/footer/css/footer.css');
+
 /* blocks */
 @import url('./static/css/land.css');
 @import url('./static/css/input.css');
 @import url('./static/css/FAQ.css');
-@import url('./static/css/map.css');
 
 
 *{

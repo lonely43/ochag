@@ -1,0 +1,50 @@
+footer {
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+footer .logo {
+  max-width: 200px;
+  height: auto;
+}
+footer .btns {
+  display: flex;
+  flex-direction: column;
+}
+footer .btns ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+footer .btns ul li {
+  cursor: pointer;
+}
+footer .btns ul li h1 {
+  font-size: 1em;
+  font-weight: 600;
+}
+footer .btns .title {
+  display: flex;
+  gap: 1rem;
+}
+footer .btns .title p {
+  cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+  footer .btns ul {
+    display: none;
+  }
+  footer .btns .title {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
