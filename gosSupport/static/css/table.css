@@ -1,0 +1,64 @@
+.table {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.table h1:first-child {
+  margin: 0 auto;
+  max-width: 80rem;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+.table .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 12rem);
+  grid-template-rows: repeat(5, 6rem);
+  justify-content: center;
+  justify-items: center;
+  overflow: scroll;
+}
+@media screen and (max-width: 1160px) {
+  .table .grid {
+    grid-template-columns: repeat(6, 16rem);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: stretch;
+    justify-items: stretch;
+  }
+}
+.table .grid .cell {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(95, 95, 95);
+}
+.table .grid .cell h1, .table .grid .cell p {
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 500;
+}
+.table .grid .cell:nth-child(-n+6) {
+  background-color: #62aaef;
+}
+.table .grid .cell:nth-child(-n+6) h1 {
+  color: white;
+}
+.table .grid .cell:nth-child(1) {
+  border-radius: 1rem 0 0 0;
+}
+.table .grid .cell:nth-child(6) {
+  border-radius: 0 1rem 0 0;
+}
+.table .grid .cell:nth-child(25) {
+  border-radius: 0 0 0 1rem;
+}
+.table .grid .cell:nth-child(30) {
+  border-radius: 0 0 1rem 0;
+}
+
+/*# sourceMappingURL=table.css.map */

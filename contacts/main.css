@@ -29,6 +29,9 @@ main{
 body{
    background-color: white;
 }
+h1, h2, h3, p, label, li{
+   color: #383838;
+}
 .headerText{
    text-align: center;
    font-size: 2em;

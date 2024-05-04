@@ -1,0 +1,38 @@
+.schema {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.schema button {
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  padding: 0.8rem 4rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  background-color: #5290cc;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0.2rem 0rem 0rem #427aae;
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+}
+.schema button::after {
+  opacity: 0.4;
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 18rem;
+  height: 1rem;
+  box-shadow: 0 0 2rem 0rem #65acf0;
+}
+.schema .imgSchema {
+  max-width: 60rem;
+}
+
+/*# sourceMappingURL=shema.css.map */

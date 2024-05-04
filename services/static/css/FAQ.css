@@ -142,6 +142,7 @@
   background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
 }
 .FAQBlock .info .socials button::after {
+  opacity: 0.4;
   content: " ";
   position: absolute;
   left: 8px;

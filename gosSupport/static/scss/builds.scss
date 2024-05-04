@@ -1,0 +1,116 @@
+.buildsBlock{
+   .cards{
+      display: grid;
+      grid-template-columns: repeat(3, 20rem);
+      justify-content: center;
+      justify-items: center;
+      gap: 2rem;
+
+
+      @media screen and (max-width: 1040px) {
+         grid-template-columns: repeat(2, 20rem);
+      }
+      @media screen and (max-width: 700px) {
+         grid-template-columns: repeat(1, 20rem);
+         .card{
+            .info{
+               min-height: 22rem !important;
+            }
+         }
+      }
+      .card{
+         position: relative;
+
+         padding: 2rem;
+         padding-top: 18rem;
+         padding-bottom: 0;
+
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         z-index: 0;
+
+         &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+
+            z-index: -1;
+
+            background: rgb(33,198,255);
+            background: linear-gradient(180deg, rgba(33,198,255,0) 36%, rgba(255,255,255,1) 81%);
+         }
+         
+         &:nth-child(1){
+            background-image: url('../../public/builds/2.png');
+         }
+         &:nth-child(2){
+            background-image: url('../../public/builds/3.png');
+         }
+         &:nth-child(3){
+            background-image: url('../../public/builds/4.png');
+         }
+         .info{
+            padding: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            gap: 1rem;
+            min-height: 23.4rem;
+
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.247);
+
+            h3{
+               text-align: center;
+               font-weight: 500;
+               strong{
+                  font-weight: 500;
+                  color: #5290cc;
+               }
+            }
+            p{
+               text-align: center;
+            }
+            button{
+               margin: 0 auto;
+               
+               cursor: pointer;
+               position: relative;
+   
+               //width: 12rem;
+               padding: 0.6rem 1rem;
+      
+               font-size: 0.8em;
+               font-weight: 500;
+               color: white;
+      
+               background-color: #5290cc;
+      
+               border-radius: .6rem;
+               border: none;
+               box-shadow: 0 0.2rem 0rem 0rem #427aae;
+      
+               background: rgb(33,198,255);
+               background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+   
+               &::after{
+                  content: " ";
+                  position: absolute;
+                  left: 8px;
+                  top: 0;
+                  width: 9rem;
+                  height: 1rem;
+                  box-shadow: 0 0 2rem 0rem #65acf0;
+               }
+            }
+         }
+      }
+   }  
+}

@@ -21,6 +21,14 @@
          grid-template-columns: repeat(1,25rem);
       }
       
+      @media screen and (max-width: 400px) {
+         grid-template-columns: repeat(1,1fr);
+         .card{
+            overflow: hidden;
+         }
+      }
+      
+      
       .card{
          position: relative;
 

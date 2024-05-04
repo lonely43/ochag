@@ -29,7 +29,9 @@ main{
 body{
    background-color: white;
 }
-
+h1, h2, h3, p, label, li{
+   color: #383838;
+}
 .titleBlock{
    margin-top: 10rem;
    display: flex;

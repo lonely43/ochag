@@ -1,0 +1,59 @@
+.landBlock{
+   padding-top: 10rem;
+   padding-bottom: 10rem;
+
+   min-height: 40rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+
+   @media screen and (max-width: 1350px) {
+      padding-top: 15rem;
+      flex-direction: column;
+      gap: 0;
+
+      .icon{
+         order: 1;
+      }
+      .text{
+         text-align: center;
+
+         h1, p{
+            max-width: 30rem !important;
+         }
+      }
+   }
+
+   background-image: url('../../public/land/background.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   .text{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      h1{
+         max-width: 28rem;
+         font-size: 2em;
+         font-weight: 600;
+      }
+
+      p{
+         font-weight: 500;
+         max-width: 20rem;
+         font-size: 1em;
+
+         &:last-child{
+            font-weight: 600;
+         }
+      }
+   }
+
+   .icon{
+      max-width: 50rem;
+      transform: translateY(8rem);
+   }
+}
