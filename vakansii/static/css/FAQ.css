@@ -41,14 +41,17 @@
   text-align: center;
   color: white;
 }
-.FAQBlock .info .faq .asks {
+.FAQBlock .info h2 {
+  color: white;
+}
+.FAQBlock .info .asks {
   padding-top: 2rem;
 }
-.FAQBlock .info .faq .asks .question {
+.FAQBlock .info .asks .question {
   position: relative;
   color: white;
 }
-.FAQBlock .info .faq .asks .question h2 {
+.FAQBlock .info .asks .question h2 {
   width: fit-content;
   padding: 1rem;
   cursor: pointer;
@@ -58,23 +61,24 @@
   display: flex;
   align-items: center;
 }
-.FAQBlock .info .faq .asks .question .answer {
+.FAQBlock .info .asks .question .answer {
   display: none;
   position: absolute;
   top: 99%;
   z-index: 2;
   padding: 1rem;
 }
-.FAQBlock .info .faq .asks .showAnswer h2 {
+.FAQBlock .info .asks .showAnswer h2 {
   backdrop-filter: blur(3rem);
   border-radius: 1.4rem 1.4rem 0 0;
 }
-.FAQBlock .info .faq .asks .showAnswer .answer {
+.FAQBlock .info .asks .showAnswer .answer {
   display: block;
   backdrop-filter: blur(3rem);
   border-radius: 0 1rem 1rem 1rem;
+  color: white;
 }
-.FAQBlock .info .socials {
+.FAQBlock .socials {
   position: relative;
   min-height: 43rem;
   padding: 2rem;
@@ -85,7 +89,7 @@
   background-color: white;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.466);
 }
-.FAQBlock .info .socials::after {
+.FAQBlock .socials::after {
   bottom: 99%;
   left: 0;
   position: absolute;
@@ -96,7 +100,7 @@
   box-shadow: 0 -2rem 2rem 0 rgba(0, 0, 0, 0.097);
   border-radius: 1rem 1rem 0 0;
 }
-.FAQBlock .info .socials::before {
+.FAQBlock .socials::before {
   top: 99%;
   left: 0;
   position: absolute;
@@ -107,26 +111,26 @@
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.097);
   border-radius: 0 0 1rem 1rem;
 }
-.FAQBlock .info .socials h1 {
+.FAQBlock .socials h1 {
   text-align: center;
 }
-.FAQBlock .info .socials .address {
+.FAQBlock .socials .address {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.FAQBlock .info .socials .address strong {
+.FAQBlock .socials .address strong {
   font-weight: 800;
   letter-spacing: 0.23px;
 }
-.FAQBlock .info .socials .media {
+.FAQBlock .socials .media {
   display: flex;
   gap: 1.25rem;
 }
-.FAQBlock .info .socials .media img {
+.FAQBlock .socials .media img {
   max-width: 36px;
 }
-.FAQBlock .info .socials button {
+.FAQBlock .socials button {
   margin: 0 auto 0 0;
   cursor: pointer;
   position: relative;
@@ -141,7 +145,7 @@
   background: rgb(33, 198, 255);
   background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
 }
-.FAQBlock .info .socials button::after {
+.FAQBlock .socials button::after {
   content: " ";
   position: absolute;
   left: 8px;

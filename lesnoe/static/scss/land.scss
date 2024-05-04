@@ -22,7 +22,9 @@
       align-items: center;
 
       .arrow{
-         max-width: 3rem;
+         box-sizing: content-box;
+         padding: 1rem;
+         max-width: 2rem;
 
          &:nth-child(1){
             transform: rotate(180deg);
