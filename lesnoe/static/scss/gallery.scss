@@ -157,7 +157,6 @@
                display: flex;
                justify-content: start;
 
-               //width: 2rem;
                height: 100%;
                background-image: url('../../public/gallery/svg.png');
                background-size: cover;
@@ -184,9 +183,14 @@
             .photo{
                order: 2 !important; 
                padding: 0 !important;
+               background-color: #5ea3e7;
 
                img{
                   border-radius: 0 !important;
+
+                  @media screen and (max-width:600px) {
+                     max-height: 40vh;
+                  }
                }
                .backline{
                   display: none;

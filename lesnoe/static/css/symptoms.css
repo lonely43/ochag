@@ -1,5 +1,5 @@
 .symptoms {
-  padding-top: 2rem;
+  padding-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,6 +44,7 @@
   align-items: center;
 }
 .symptoms .call .photo {
+  z-index: 1;
   max-width: 40rem;
 }
 .symptoms .call .photo img {
@@ -56,7 +57,6 @@
   }
 }
 .symptoms .call .text {
-  z-index: -1;
   transform: translateY(-10px);
   margin: 0 2rem;
   padding: 1rem 2rem 2rem 2rem;

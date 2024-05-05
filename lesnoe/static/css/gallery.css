@@ -139,10 +139,18 @@
   .gallery .cards .card .photo {
     order: 2 !important;
     padding: 0 !important;
+    background-color: #5ea3e7;
   }
   .gallery .cards .card .photo img {
     border-radius: 0 !important;
   }
+}
+@media screen and (max-width: 1300px) and (max-width: 600px) {
+  .gallery .cards .card .photo img {
+    max-height: 40vh;
+  }
+}
+@media screen and (max-width: 1300px) {
   .gallery .cards .card .photo .backline {
     display: none;
   }

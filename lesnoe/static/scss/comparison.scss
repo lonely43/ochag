@@ -1,4 +1,7 @@
 .comparison{
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
    .cards{
       margin-top: 0rem;
       display: grid;
@@ -8,18 +11,28 @@
       gap: 2rem;
 
 
-      @media screen and (max-width: 1390px) {
-         grid-template-columns: repeat(2, 20rem);
+      @media screen and (max-width: 1300px) {
+         grid-template-columns: repeat(1, 1fr);
       }
-      
+
       .card{
          position: relative;
 
-         padding: 2rem;
-         padding-top: 18rem;
-         padding-bottom: 0;
+         padding-top: 18rem !important;
+         padding: 0 2rem;
 
-         background-position: center;
+         max-width: 70rem;
+
+         @media screen and (max-width: 500px){
+            padding: 0;
+            padding-top: 14rem !important;
+         }
+         @media screen and (max-width: 400px){
+            padding: 0;
+            padding-top: 12rem !important;
+         }
+
+         background-position: top;
          background-repeat: no-repeat;
          background-size: contain;
          z-index: 0;
@@ -34,15 +47,51 @@
 
             z-index: -1;
 
-            background: rgb(33,198,255);
-            background: linear-gradient(180deg, rgba(33,198,255,0) 36%, rgba(255,255,255,1) 81%);
+            background: linear-gradient(180deg, rgba(0,189,255,0) 10%, rgba(255,255,255,1) 38%);
+
+            @media screen and (max-width: 550px) {
+               background: linear-gradient(180deg, rgba(0,189,255,0) 10%, rgba(255,255,255,1) 38%);
+            }
          }
-         
+         border-radius: 2rem 2rem 0 0;
          &:nth-child(1){
-            background-image: url('../../public/builds/1.png');
+            background-image: url('../../public/comparison/1.png');
+
+            .info{
+               p{
+                  &::before{
+                     content: " ";
+                     position: absolute;
+                     left: -0.2rem;
+                     top: 0;
+                     width: 1rem;
+                     height: 1rem;
+                     background-position: center;
+                     background-size: contain;
+                     background-image: url('../../public/comparison/close.png');
+                  }
+               }
+            }
          }
+
          &:nth-child(2){
-            background-image: url('../../public/builds/2.png');
+            background-image: url('../../public/comparison/2.png');
+
+            .info{
+               p{
+                  &::before{
+                     content: " ";
+                     position: absolute;
+                     left: -0.2rem;
+                     top: 0;
+                     width: 1rem;
+                     height: 1rem;
+                     background-position: center;
+                     background-size: contain;
+                     background-image: url('../../public/comparison/check.png');
+                  }
+               }
+            }
          }
 
          .info{
@@ -56,8 +105,8 @@
             min-height: 23.4rem;
 
             background-color: white;
-            border-radius: 1rem;
-            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.247);
+            border-radius: 3rem;
+            box-shadow: 0 0 3rem .3rem rgba(0, 0, 0, 0.247);
 
             h3{
                text-align: center;
@@ -68,41 +117,10 @@
                }
             }
             p{
-               text-align: center;
-            }
-            button{
-               margin: 0 auto;
-               
-               cursor: pointer;
+               padding-left: 1.8rem;
                position: relative;
-   
-               //width: 12rem;
-               padding: 0.6rem 1rem;
-      
-               font-size: 0.8em;
-               font-weight: 500;
-               color: white;
-      
-               background-color: #5290cc;
-      
-               border-radius: .6rem;
-               border: none;
-               box-shadow: 0 0.2rem 0rem 0rem #427aae;
-      
-               background: rgb(33,198,255);
-               background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-   
-               &::after{
-                  content: " ";
-                  position: absolute;
-                  left: 8px;
-                  top: 0;
-                  width: 9rem;
-                  height: 1rem;
-                  box-shadow: 0 0 2rem 0rem #65acf0;
-               }
             }
          }
       }
-   }  
+   } 
 }
