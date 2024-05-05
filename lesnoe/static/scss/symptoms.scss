@@ -1,0 +1,105 @@
+.symptoms{
+   padding-top: 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 4rem;
+
+   .cards{
+      display: grid;
+      grid-template-columns: repeat(2, 22rem);
+      gap: 2rem;
+
+      @media screen and (max-width: 750px) {
+         grid-template-columns: repeat(1, 22rem);
+      }
+
+      .card{
+         padding: 0rem 1rem;
+
+         height: 6rem;
+
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+
+         background-color: white;
+         box-shadow: 0 0 30rem -1.6rem rgba(0, 0, 0, 0.788);
+         border-radius: 1rem;
+
+         .photo{
+            img{
+               width: 50px !important;
+            }
+         }
+         &:nth-child(4){
+            .photo{
+               img{
+                  transform: scale(0.6);
+               }
+            }
+         }
+         &:nth-child(8){
+            .photo{
+               img{
+                  transform: scale(0.8);
+               }
+            }
+         }
+
+         h2{
+            font-size: 1em;
+            font-weight: 400;
+         }
+      }
+   }
+
+   .call{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .photo{
+         max-width: 40rem;
+         img{
+            border-radius: 3rem;
+            height: 100%;
+
+            @media screen and (max-width: 500px) {
+               border-radius: 1rem;
+            }
+         }
+      }
+      .text{
+         z-index: -1;
+         transform: translateY(-10px);
+         margin: 0 2rem;
+         @media screen and (max-width: 500) {
+            margin: 0;
+         }
+         
+         padding: 1rem 2rem 2rem 2rem;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1rem;
+
+         background-color: white;
+         border-radius: 0 0 3rem 3rem;
+         box-shadow:  0 0 1rem -0.4rem black;
+         p{
+            text-align: center;
+            max-width: 32rem;
+         }
+
+         button{
+            padding: 0.8rem 1rem;
+
+            &::after{
+               box-shadow: 0 0.8rem 2rem 0rem #6eb2f1;
+            }
+         }
+      }
+   }
+}

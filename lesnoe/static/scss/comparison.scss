@@ -1,8 +1,8 @@
 .comparison{
    .cards{
-      margin-top: 4rem;
+      margin-top: 0rem;
       display: grid;
-      grid-template-columns: repeat(4, 20rem);
+      grid-template-columns: repeat(2, 40rem);
       justify-content: center;
       justify-items: center;
       gap: 2rem;
@@ -11,14 +11,7 @@
       @media screen and (max-width: 1390px) {
          grid-template-columns: repeat(2, 20rem);
       }
-      @media screen and (max-width: 800px) {
-         grid-template-columns: repeat(1, 20rem);
-         .card{
-            .info{
-               min-height: 22rem !important;
-            }
-         }
-      }
+      
       .card{
          position: relative;
 
@@ -51,12 +44,7 @@
          &:nth-child(2){
             background-image: url('../../public/builds/2.png');
          }
-         &:nth-child(3){
-            background-image: url('../../public/builds/3.png');
-         }
-         &:nth-child(4){
-            background-image: url('../../public/builds/4.png');
-         }
+
          .info{
             padding: 2rem;
 

@@ -11,10 +11,42 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /*
-  background: rgb(121, 167, 236);
-  background: linear-gradient(202deg, rgba(121,167,236,1) 25%, rgba(97,134,191,1) 78%);
-  */
+}
+.gallery .cards .card:nth-child(1) .info {
+  background-image: url("../../public/gallery/11.png");
+}
+.gallery .cards .card:nth-child(2) .info {
+  background-image: url("../../public/gallery/22.png");
+}
+.gallery .cards .card:nth-child(3) .info {
+  background-image: url("../../public/gallery/33.png");
+}
+.gallery .cards .card:nth-child(4) .info {
+  background-image: url("../../public/gallery/44.png");
+}
+.gallery .cards .card:nth-child(5) .info {
+  background-image: url("../../public/gallery/55.png");
+}
+.gallery .cards .card:nth-child(6) .info {
+  background-image: url("../../public/gallery/66.png");
+}
+.gallery .cards .card:nth-child(7) .info {
+  background-image: url("../../public/gallery/77.png");
+}
+.gallery .cards .card:nth-child(8) .info {
+  background-image: url("../../public/gallery/88.png");
+}
+.gallery .cards .card:nth-child(9) .info {
+  background-image: url("../../public/gallery/99.png");
+}
+.gallery .cards .card:nth-child(10) .info {
+  background-image: url("../../public/gallery/100.png");
+}
+.gallery .cards .card:nth-child(11) .info {
+  background-image: url("../../public/gallery/111.png");
+}
+.gallery .cards .card:nth-child(12) .info {
+  background-image: url("../../public/gallery/122.png");
 }
 .gallery .cards .card:nth-child(even) .info {
   order: 2;
@@ -48,7 +80,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../../public/gallery/Group 39.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +100,12 @@
 .gallery .cards .card .info .text p {
   font-size: 1em;
 }
+@media screen and (max-width: 415px) {
+  .gallery .cards .card .info {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
 .gallery .cards .card .photo {
   position: relative;
   padding-right: 1rem;
@@ -80,7 +117,6 @@
   left: -2px;
   display: flex;
   justify-content: start;
-  width: 2rem;
   height: 100%;
   background-image: url("../../public/gallery/svg.png");
   background-size: cover;
@@ -96,12 +132,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .gallery .cards .card .info {
-    order: 1;
-    justify-content: center;
-    background-position: bottom;
+    order: 1 !important;
+    justify-content: center !important;
+    background-position: bottom !important;
   }
   .gallery .cards .card .photo {
-    order: 2;
+    order: 2 !important;
     padding: 0 !important;
   }
   .gallery .cards .card .photo img {
@@ -110,6 +146,21 @@
   .gallery .cards .card .photo .backline {
     display: none;
   }
+}
+.gallery .title {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.gallery .title h2 {
+  max-width: 70rem;
+  text-align: center;
+  font-weight: 400;
+}
+.gallery .title button {
+  padding: 1rem 4rem;
 }
 
 /*# sourceMappingURL=gallery.css.map */
