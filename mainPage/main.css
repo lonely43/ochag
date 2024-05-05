@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* navigator's styles */
+@import url('../!public/nav/css/nav.css');
+
+/* footer's styles */
+@import url('../!public/footer/css/footer.css');
+
+/* blocks */
+@import url('./static/css/land.css');
+@import url('./static/css/points.css');
+@import url('./static/css/docs.css');
+@import url('./static/css/builds.css');
+@import url('./static/css/inputBlock.css');
+@import url('./static/css/symptoms.css');
+@import url('./static/css/cases.css');
+@import url('./static/css/list.css');
+@import url('./static/css/sendForm.css');
+@import url('./static/css/gallery.css');
+@import url('./static/css/secondInput.css');
+@import url('./static/css/telegram.css');
+@import url('./static/css/feedbacks.css');
+@import url('./static/css/FAQ.css');
+
+
+*{
+   line-height: 1.25;
+   box-sizing: border-box;
+
+   padding: 0;
+   margin: 0;
+
+   font-family: "Roboto", sans-serif;
+   font-style: normal;
+}
+main{
+   display: flex;
+   flex-direction: column;
+   max-width: 100vw;
+   height: auto;
+}
+body{
+   background-color: white;
+}
+
+.headerText{
+   padding: 0 1rem;
+   text-transform: uppercase;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 2em;
+   color: #5290cc;
+}
+.blueBtn{
+   z-index: 1;
+   cursor: pointer;
+   position: relative;
+
+   padding: 0.8rem 4rem;
+
+   font-size: 1em;
+   font-weight: 500;
+   color: white;
+
+   border-radius: 1rem;
+   border: none;
+   box-shadow: 0 0.2rem 0rem 0rem #427aae;
+   background: linear-gradient(4deg, #558fe5 44%, #77a7f0 55%);
+}
+.blueBtn::after{
+   z-index: -1;
+   content: " ";
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: 1rem;
+   box-shadow: 0 0 2rem -0.2rem #65adf0;
+}

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.list {
+  padding-top: 4rem;
+}
+.list .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.list .cards .card {
+  padding: 0 1rem;
+  flex-grow: 1;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.list .cards .card:nth-child(even) .info {
+  order: 1;
+}
+@media screen and (max-width: 1300px) {
+  .list .cards .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .list .cards .card .info {
+    order: -1 !important;
+    max-width: 40rem;
+  }
+}
+.list .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list .cards .card .info h2:first-child {
+  font-size: 2em;
+  font-weight: 500;
+}
+.list .cards .card .info .text {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.list .cards .card .info .text .location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.list .cards .card .info .text .location .icon {
+  max-width: 2rem;
+}
+.list .cards .card .info .text .location h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+.list .cards .card .info .text .price {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.list .cards .card .info .text .price h2 {
+  color: #f46d6d;
+  position: relative;
+}
+.list .cards .card .info .text .price h2::after {
+  position: absolute;
+  right: -2.1em;
+  bottom: 0rem;
+  content: "/сут";
+  font-size: 0.8em;
+  font-weight: 400;
+  color: black;
+}
+.list .cards .card .info .btns {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .list .cards .card .info .btns {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .list .cards .card .info .btns button {
+    padding: 0.8rem 2rem;
+  }
+}
+.list .cards .card .photo {
+  max-width: 45rem;
+}
+
+/*# sourceMappingURL=list.css.map */

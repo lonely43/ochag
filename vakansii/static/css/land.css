@@ -78,14 +78,7 @@
   gap: 2rem;
 }
 .landBlock .btns button {
-  cursor: pointer;
   padding: 1rem;
-  font-size: 1em;
-  color: white;
-  background-color: #5290cc;
-  border-radius: 1rem;
-  border: 0.1rem solid rgb(33, 198, 255);
-  box-shadow: 0 0 2rem 0rem #65acf0;
 }
 .landBlock .btns button:nth-child(1) {
   background: rgb(33, 198, 255);
@@ -94,6 +87,7 @@
 .landBlock .btns button:nth-child(2) {
   font-weight: 500;
   color: black;
+  border: 0.1rem solid #65acf0;
   background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
 }
 @media screen and (max-width: 500px) {

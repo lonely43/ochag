@@ -135,21 +135,7 @@
 
          button{
             margin: 0 auto;
-            cursor: pointer;
-            width: auto;
-            padding: 0.8rem 2rem; 
-            font-size: 0.8em;
-            text-align: center;
-            color: white;
-   
-            background-color: #5290cc;
-   
-            border-radius: 0.4rem;
-            border: none;
-            box-shadow: 0 0 2rem 0rem #65acf0;
-   
-            background: rgb(33,198,255);
-            background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+            padding: 1rem 3rem;
          }
 
          .media{
@@ -162,7 +148,6 @@
             }
          }
       }
-   }
 
    .mapBlock{
       width: 100%;

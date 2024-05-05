@@ -76,27 +76,10 @@
 }
 .buildsBlock .cards .card .info button {
   margin: 0 auto;
-  cursor: pointer;
-  position: relative;
   padding: 0.6rem 1rem;
   font-size: 0.8em;
   font-weight: 500;
-  color: white;
-  background-color: #5290cc;
   border-radius: 0.6rem;
-  border: none;
-  box-shadow: 0 0.2rem 0rem 0rem #427aae;
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-}
-.buildsBlock .cards .card .info button::after {
-  content: " ";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  width: 9rem;
-  height: 1rem;
-  box-shadow: 0 0 2rem 0rem #65acf0;
 }
 
 /*# sourceMappingURL=builds.css.map */

@@ -33,17 +33,24 @@
   gap: 2rem;
 }
 .landBlock .text h1 {
-  max-width: 28rem;
+  max-width: 40rem;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 500;
+  color: #3b3b3b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.landBlock .text h1 strong {
+  color: #658cc9;
 }
 .landBlock .text p {
   font-weight: 500;
-  max-width: 20rem;
-  font-size: 1em;
+  max-width: 27rem;
+  font-size: 1.2em;
+  font-weight: 400;
 }
-.landBlock .text p:last-child {
-  font-weight: 600;
+.landBlock .text p strong {
+  font-weight: 500;
 }
 .landBlock .icon {
   max-width: 50rem;

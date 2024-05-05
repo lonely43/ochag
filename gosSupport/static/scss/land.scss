@@ -36,18 +36,26 @@
       flex-direction: column;
       gap: 2rem;
       h1{
-         max-width: 28rem;
+         max-width: 40rem;
          font-size: 2em;
-         font-weight: 600;
+         font-weight: 500;
+         color: #3b3b3b;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+
+         strong{
+            color: #658cc9;
+         }
       }
 
       p{
          font-weight: 500;
-         max-width: 20rem;
-         font-size: 1em;
+         max-width: 27rem;
+         font-size: 1.2em;
+         font-weight: 400;
 
-         &:last-child{
-            font-weight: 600;
+         strong{
+            font-weight: 500;
          }
       }
    }

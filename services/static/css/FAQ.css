@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  min-height: 35rem;
+  max-height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../public/faqPeoples.png");
@@ -13,7 +13,8 @@
 @media screen and (max-width: 1025px) {
   .FAQBlock .info {
     flex-direction: column;
-    gap: 2rem;
+    gap: 8rem;
+    max-height: fit-content;
   }
   .FAQBlock .info .faq {
     width: 100%;
@@ -41,51 +42,54 @@
   text-align: center;
   color: white;
 }
-.FAQBlock .info .faq .asks {
+.FAQBlock .info h2 {
+  color: white;
+}
+.FAQBlock .info .asks {
   padding-top: 2rem;
 }
-.FAQBlock .info .faq .asks .question {
+.FAQBlock .info .asks .question {
   position: relative;
   color: white;
 }
-.FAQBlock .info .faq .asks .question h2 {
+.FAQBlock .info .asks .question h2 {
   width: fit-content;
   padding: 1rem;
   cursor: pointer;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.4em;
   text-transform: none;
   display: flex;
   align-items: center;
 }
-.FAQBlock .info .faq .asks .question .answer {
+.FAQBlock .info .asks .question .answer {
   display: none;
   position: absolute;
   top: 99%;
   z-index: 2;
   padding: 1rem;
 }
-.FAQBlock .info .faq .asks .showAnswer h2 {
+.FAQBlock .info .asks .showAnswer h2 {
   backdrop-filter: blur(3rem);
   border-radius: 1.4rem 1.4rem 0 0;
 }
-.FAQBlock .info .faq .asks .showAnswer .answer {
+.FAQBlock .info .asks .showAnswer .answer {
   display: block;
   backdrop-filter: blur(3rem);
   border-radius: 0 1rem 1rem 1rem;
+  color: white;
 }
-.FAQBlock .info .socials {
+.FAQBlock .socials {
   position: relative;
-  min-height: 43rem;
+  height: fit-content;
   padding: 2rem;
-  padding-top: 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background-color: white;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.466);
 }
-.FAQBlock .info .socials::after {
+.FAQBlock .socials::after {
   bottom: 99%;
   left: 0;
   position: absolute;
@@ -96,7 +100,7 @@
   box-shadow: 0 -2rem 2rem 0 rgba(0, 0, 0, 0.097);
   border-radius: 1rem 1rem 0 0;
 }
-.FAQBlock .info .socials::before {
+.FAQBlock .socials::before {
   top: 99%;
   left: 0;
   position: absolute;
@@ -107,49 +111,33 @@
   box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, 0.097);
   border-radius: 0 0 1rem 1rem;
 }
-.FAQBlock .info .socials h1 {
+.FAQBlock .socials h1 {
+  padding-top: 2rem;
   text-align: center;
+  font-weight: 500;
 }
-.FAQBlock .info .socials .address {
+.FAQBlock .socials .text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.FAQBlock .info .socials .address strong {
-  font-weight: 800;
+.FAQBlock .socials .text strong {
+  font-weight: 600;
   letter-spacing: 0.23px;
 }
-.FAQBlock .info .socials .media {
+.FAQBlock .socials .media {
   display: flex;
   gap: 1.25rem;
 }
-.FAQBlock .info .socials .media img {
-  max-width: 36px;
+.FAQBlock .socials .media img {
+  max-width: 42px;
 }
-.FAQBlock .info .socials button {
+.FAQBlock .socials button {
   margin: 0 auto 0 0;
-  cursor: pointer;
   position: relative;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
   font-size: 0.8em;
-  font-weight: 500;
-  color: white;
-  background-color: #5290cc;
-  border-radius: 0.6rem;
-  border: none;
-  box-shadow: 0 0.2rem 0rem 0rem #427aae;
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-}
-.FAQBlock .info .socials button::after {
-  opacity: 0.4;
-  content: " ";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  width: 9rem;
-  height: 1rem;
-  box-shadow: 0 0 2rem 0rem #65acf0;
 }
 .FAQBlock .mapBlock {
   width: 100%;

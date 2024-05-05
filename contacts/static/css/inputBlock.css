@@ -2,7 +2,7 @@
   padding-top: 4rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 6rem;
 }
 @media screen and (max-width: 660px) {
   .inputBlock {
@@ -59,17 +59,8 @@
   padding-top: 1rem;
 }
 .inputBlock form input[type=submit] {
-  margin: 1rem auto 0 0;
-  cursor: pointer;
-  padding: 0.8rem 4rem;
-  font-size: 0.8em;
-  background-color: #5290cc;
-  border-radius: 0.8rem;
-  border: 0.1rem solid #61aaef;
-  color: white;
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-  box-shadow: 0 0 1rem 0rem #65acf0;
+  margin: 0 auto 0 0;
+  padding: 0.8rem 6rem;
 }
 @media screen and (max-width: 600px) {
   .inputBlock form input[type=submit] {

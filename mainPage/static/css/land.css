@@ -1,0 +1,128 @@
+.landBlock {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  background-image: url("../../public/land/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1350px) {
+  .landBlock {
+    padding-top: 15rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .landBlock .iconLand {
+    order: 1;
+  }
+  .landBlock .text {
+    text-align: center;
+  }
+  .landBlock .text h1 {
+    max-width: 30rem !important;
+  }
+}
+.landBlock .arrows {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .landBlock .arrows {
+    top: 90%;
+    transform: translateY(-90%);
+  }
+}
+.landBlock .arrows .arrow {
+  z-index: 4;
+  box-sizing: content-box;
+  padding: 1rem;
+  max-width: 2rem;
+}
+.landBlock .arrows .arrow:nth-child(1) {
+  transform: rotate(180deg);
+}
+.landBlock .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.landBlock .text h1 {
+  max-width: 30rem;
+  font-size: 2em;
+  font-weight: 500;
+  color: #3b3b3b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.landBlock .text h1 strong {
+  color: #658cc9;
+}
+.landBlock .text .btns {
+  display: grid;
+  grid-template-columns: repeat(1, 24rem);
+  gap: 2rem;
+}
+@media screen and (max-width: 1350px) {
+  .landBlock .text .btns {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  .landBlock .text .btns {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .landBlock .text .btns .btn .photo {
+    display: none;
+  }
+}
+.landBlock .text .btns .btn {
+  width: 100%;
+  position: relative;
+}
+.landBlock .text .btns .btn button {
+  padding: 2rem 0rem;
+  width: 100%;
+  font-size: 1.4em;
+}
+.landBlock .text .btns .btn:nth-child(1) button {
+  box-shadow: 0 0.4rem 0rem 0rem #376591;
+}
+.landBlock .text .btns .btn:nth-child(2) button {
+  color: black;
+  border: 0.1rem solid #558fe5;
+  background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+}
+.landBlock .text .btns .btn .photo {
+  z-index: 2;
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 6rem;
+}
+.landBlock .text .btns .btn:nth-child(2) .photo {
+  transform: translateY(-50%) scale(0.8);
+}
+.landBlock .iconLand {
+  display: none;
+  max-width: 50rem;
+  transform: translateY(8rem);
+}
+.landBlock .showIconLand {
+  display: block;
+}
+
+/*# sourceMappingURL=land.css.map */

@@ -1,0 +1,72 @@
+.points {
+  transform: translateY(-10rem);
+}
+@media screen and (max-width: 1200px) {
+  .points {
+    transform: translateY(-8rem);
+  }
+}
+@media screen and (max-width: 440px) {
+  .points {
+    transform: translateY(-4rem);
+  }
+}
+.points .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .points .cards {
+    grid-template-columns: repeat(2, 25rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .points .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.points .cards .card {
+  max-width: 25rem;
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  background-color: white;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.158);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.points .cards .card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #5290cc;
+}
+.points .cards .card .text {
+  padding-top: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.points .cards .card .text img {
+  max-width: 40px;
+  height: auto;
+}
+.points .cards .card .text h3 {
+  font-size: 1.28em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.points .cards .card p {
+  padding-top: 2rem;
+  font-size: 1em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=points.css.map */
