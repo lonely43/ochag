@@ -98,9 +98,9 @@
       }
    
       .socials{
+         
          position: relative;
 
-         min-height: 43rem;
          padding: 2rem;
          padding-top: 0;
 
@@ -138,16 +138,18 @@
          }
 
          h1{
+            padding-top: 2rem;
             text-align: center;
+            font-weight: 500;
          }
    
-         .address{
+         .text{
             display: flex;
             flex-direction: column;
             gap: 2rem;
 
             strong{
-               font-weight: 800;
+               font-weight: 600;
                letter-spacing: 0.23px;
             }
          }

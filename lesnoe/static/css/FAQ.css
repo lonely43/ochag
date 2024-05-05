@@ -80,7 +80,6 @@
 }
 .FAQBlock .socials {
   position: relative;
-  min-height: 43rem;
   padding: 2rem;
   padding-top: 0;
   display: flex;
@@ -112,15 +111,17 @@
   border-radius: 0 0 1rem 1rem;
 }
 .FAQBlock .socials h1 {
+  padding-top: 2rem;
   text-align: center;
+  font-weight: 500;
 }
-.FAQBlock .socials .address {
+.FAQBlock .socials .text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.FAQBlock .socials .address strong {
-  font-weight: 800;
+.FAQBlock .socials .text strong {
+  font-weight: 600;
   letter-spacing: 0.23px;
 }
 .FAQBlock .socials .media {
