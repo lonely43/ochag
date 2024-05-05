@@ -1,0 +1,47 @@
+.add {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.add h1 {
+  max-width: 50rem;
+  font-weight: 400;
+  text-align: center;
+}
+.add .btns {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 720px) {
+  .add .btns {
+    flex-direction: column;
+  }
+}
+.add .btns button:nth-child(1) {
+  z-index: 1;
+}
+.add .btns button:nth-child(1)::after {
+  z-index: -1;
+  opacity: 1;
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 80%;
+  height: 3rem;
+  box-shadow: 0 0 4rem 0rem rgba(101, 173, 240, 0.7294117647);
+}
+.add .btns button:nth-child(2) {
+  color: black;
+  background: linear-gradient(2deg, #ecf1f8 55%, #f9f9f9 55%);
+  border: 0.1rem solid #65acf0;
+  box-shadow: 0 0 3rem 0 rgba(101, 173, 240, 0.7294117647);
+}
+.add .btns button:nth-child(2)::after {
+  display: none;
+}
+
+/*# sourceMappingURL=add.css.map */
