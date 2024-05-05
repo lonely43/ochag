@@ -1,0 +1,177 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.gallery .cards {
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
+}
+.gallery .cards .card {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gallery .cards .card:nth-child(1) .info {
+  background-image: url("../../public/gallery/11.png");
+}
+.gallery .cards .card:nth-child(2) .info {
+  background-image: url("../../public/gallery/22.png");
+}
+.gallery .cards .card:nth-child(3) .info {
+  background-image: url("../../public/gallery/33.png");
+}
+.gallery .cards .card:nth-child(4) .info {
+  background-image: url("../../public/gallery/44.png");
+}
+.gallery .cards .card:nth-child(5) .info {
+  background-image: url("../../public/gallery/55.png");
+}
+.gallery .cards .card:nth-child(6) .info {
+  background-image: url("../../public/gallery/66.png");
+}
+.gallery .cards .card:nth-child(7) .info {
+  background-image: url("../../public/gallery/77.png");
+}
+.gallery .cards .card:nth-child(8) .info {
+  background-image: url("../../public/gallery/88.png");
+}
+.gallery .cards .card:nth-child(9) .info {
+  background-image: url("../../public/gallery/99.png");
+}
+.gallery .cards .card:nth-child(10) .info {
+  background-image: url("../../public/gallery/100.png");
+}
+.gallery .cards .card:nth-child(11) .info {
+  background-image: url("../../public/gallery/111.png");
+}
+.gallery .cards .card:nth-child(12) .info {
+  background-image: url("../../public/gallery/122.png");
+}
+.gallery .cards .card:nth-child(13) .info {
+  background-image: url("../../public/gallery/111.png");
+}
+.gallery .cards .card:nth-child(even) .info {
+  order: 2;
+  justify-content: flex-start;
+}
+.gallery .cards .card:nth-child(even) .photo {
+  order: 1;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+.gallery .cards .card:nth-child(even) .photo img {
+  border-radius: 3rem 0 0 3rem;
+}
+.gallery .cards .card:nth-child(even) .photo .backline {
+  transform: rotate(180deg) translateX(-1px);
+  left: auto;
+  right: 0;
+}
+.gallery .cards .card:nth-child(even) .photo .backline img {
+  border-radius: 0;
+}
+.gallery .cards .card .backPhoto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
+}
+.gallery .cards .card .info {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .cards .card .info .text {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+.gallery .cards .card .info .text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  padding-bottom: 2rem;
+}
+.gallery .cards .card .info .text p {
+  font-size: 1em;
+}
+@media screen and (max-width: 415px) {
+  .gallery .cards .card .info {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+.gallery .cards .card .photo {
+  position: relative;
+  padding-right: 1rem;
+}
+.gallery .cards .card .photo .backline {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  background-image: url("../../public/gallery/svg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .cards .card .photo img {
+  border-radius: 0 3rem 3rem 0;
+  height: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .gallery .cards .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery .cards .card .info {
+    order: 1 !important;
+    justify-content: center !important;
+    background-position: bottom !important;
+  }
+  .gallery .cards .card .photo {
+    order: 2 !important;
+    padding: 0 !important;
+    background-color: #5ea3e7;
+  }
+  .gallery .cards .card .photo img {
+    border-radius: 0 !important;
+  }
+}
+@media screen and (max-width: 1300px) and (max-width: 600px) {
+  .gallery .cards .card .photo img {
+    max-height: 40vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .gallery .cards .card .photo .backline {
+    display: none;
+  }
+}
+.gallery .title {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.gallery .title h2 {
+  max-width: 70rem;
+  text-align: center;
+  font-weight: 400;
+}
+.gallery .title button {
+  padding: 1rem 4rem;
+}
+
+/*# sourceMappingURL=gallery.css.map */

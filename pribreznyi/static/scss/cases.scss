@@ -1,0 +1,113 @@
+.cases{
+   padding-top: 2rem;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   
+   .backline{
+      content: "";
+      width: 100%;
+      height: 70%;
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      background-image: url('../../public/price/background2.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   
+   .block{
+      position: relative;
+
+      margin: 0 1rem !important;
+
+      max-width: 90rem;
+
+      box-shadow: 0 0 4rem -0.4rem rgba(0, 0, 0, 0.688);
+
+      @media screen and (max-width: 350px) {
+         margin: 0 !important;
+      }
+
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      background-image: url('../../public/price/background2.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      border-radius: 2rem;
+
+      .title{
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+
+         h1,p{
+            color: white
+         }
+         h1{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600
+         }
+         p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 300
+         }
+      }
+      .cards{
+         max-width: 1400px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 2rem;
+
+         .card{
+            padding: 1rem 3rem;
+
+            max-width: 22rem;
+            height: 6rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            background-color: white;
+            box-shadow: 0 0 30rem -2rem rgba(0, 0, 0, 0.788);
+            border-radius: 1rem;
+
+            .photo{
+               img{
+                  width: 50px !important;
+               }
+            }
+            &:nth-child(9){
+               .photo{
+                  img{
+                     width: 36px !important;
+                  }
+               }
+            }
+
+            h2{
+               font-size: 1em;
+               font-weight: 400;
+            }
+
+         }
+      }
+   }
+}

@@ -1,0 +1,26 @@
+.warning{
+   padding-top: 2rem !important;
+   padding: 0 1rem;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+
+   h2{
+      text-transform: uppercase;
+      max-width: 65rem;
+      text-align: center;
+      color: #fa6262;
+   }
+   p{
+      max-width: 52rem;
+      text-align: center;
+   }
+
+   button{
+      margin: 0 auto;
+      padding: 1rem 3rem;
+   }
+}

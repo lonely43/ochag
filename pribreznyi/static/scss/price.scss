@@ -1,0 +1,182 @@
+.price{
+   padding-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+
+   .services{
+      margin: 2rem auto;
+      .blocks{
+         max-width: 1400px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 2rem;
+
+         .card{
+            padding: 1rem 3rem;
+
+            width: 18rem;
+            height: 6rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            background-color: white;
+            box-shadow: 0 0 30rem -2rem rgba(0, 0, 0, 0.788);
+            border-radius: 1rem;
+
+            .photo{
+               max-width: 4rem;
+            }
+            h2{
+               font-size: 1em;
+               font-weight: 400;
+            }
+
+            &:nth-child(5){
+               .photo{
+                  transform: scale(0.8);
+               }
+            }
+         }
+      }
+   }
+
+   .text{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h2, p{
+         padding: 0 1rem;
+         text-align: center;
+         font-size: 1.2em;
+      }
+      h2{
+         font-weight: 500;
+      }
+      p{
+         max-width: 68rem;
+         font-weight: 400;
+      }
+   }
+
+   .offers{
+      padding: 1rem;
+      position: relative;
+      width: 100%;
+
+      @media screen and (max-width: 900px) {
+         padding: 0;
+
+         .backline{
+            display: none !important;
+         }
+      }
+      
+      .backline{
+         content: "";
+         width: 100%;
+         height: 70%;
+         z-index: -1;
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+
+         background-image: url('../../public/price/background2.png');
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+      }
+      
+      .block{
+         position: relative;
+         max-width: 90rem;
+         margin: 0 auto;
+
+         padding: 4rem 2rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 2rem;
+
+         background-image: url('../../public/price/background2.png');
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+
+         border-radius: 2rem;
+
+         .title{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1,p{
+               color: white
+            }
+            h1{
+               text-transform: uppercase;
+               text-align: center;
+               font-size: 2em;
+               font-weight: 600
+            }
+            p{
+               text-align: center;
+               font-size: 1em;
+               font-weight: 300
+            }
+         }
+         .cards{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+
+            .card{
+               flex-grow: 0.2;
+
+               @media screen and (max-width: 1020px) {
+                  flex-grow: 1;
+               }
+               padding: 2rem 3rem;
+
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               gap: 2rem;
+
+               background-color: white;
+               border-radius: 1rem;
+               
+               h2{
+                  font-size: 1.8em;
+                  font-weight: 500;
+               }
+
+               .cost{
+                  p{
+                     text-decoration: line-through;
+                     font-size: 1em;
+                  }
+                  h3{
+                     font-size: 1.6em;
+                     font-weight: 400;
+                  }
+               }
+
+               button{
+                  padding: 0.6rem 0rem;
+                  border-radius: 0.6rem;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,23 @@
+.telegram {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.telegram .photo {
+  max-width: 15rem;
+}
+.telegram .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.telegram .info h1 {
+  max-width: 50rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+}
+
+/*# sourceMappingURL=telegram.css.map */
