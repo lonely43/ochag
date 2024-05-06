@@ -1,0 +1,84 @@
+.directors .cards {
+  padding-top: 2rem;
+  margin: 0 auto;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 1300px) {
+  .directors .cards {
+    max-width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .directors .cards {
+    max-width: 900px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.directors .cards .card {
+  position: relative;
+  padding: 0 1rem;
+  padding-top: 30rem;
+  padding-bottom: 0;
+  border-radius: 1rem 1rem 0 0;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.directors .cards .card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  background: rgb(33, 198, 255);
+  background: linear-gradient(180deg, rgba(33, 198, 255, 0) 50%, rgb(255, 255, 255) 81%);
+}
+.directors .cards .card:nth-child(1) {
+  background-image: url("../../public/directors/1.png");
+}
+.directors .cards .card:nth-child(2) {
+  background-image: url("../../public/directors/2.png");
+}
+.directors .cards .card:nth-child(3) {
+  background-image: url("../../public/directors/3.png");
+}
+.directors .cards .card:nth-child(4) {
+  background-image: url("../../public/directors/4.png");
+}
+.directors .cards .card .info {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 4rem 1rem rgba(0, 0, 0, 0.247);
+}
+.directors .cards .card .info h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.directors .cards .card .info h3 strong {
+  font-weight: 500;
+  color: #5290cc;
+}
+.directors .cards .card .info p {
+  text-align: center;
+}
+.directors .cards .card .info p:nth-child(2) {
+  max-width: 12rem;
+}
+.directors .cards .card .info p:nth-child(3) {
+  height: 5rem;
+}
+
+/*# sourceMappingURL=directors.css.map */

@@ -1,0 +1,26 @@
+.landText{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+
+   .text{
+      padding: 0 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      max-width: 60rem;
+      p{
+         color: #212121;
+         text-align: center;
+         font-size: 1.4em;
+         font-weight: 500;
+         strong{
+            color: #5290cc;
+            font-weight: 500;
+         }
+      }
+   }
+}
