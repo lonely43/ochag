@@ -6,10 +6,15 @@
   align-items: center;
   overflow: visible;
 }
+@media screen and (max-width: 840px) {
+  .contactsBlock {
+    padding-top: 8rem !important;
+  }
+}
 @media screen and (max-width: 1780px) {
   .contactsBlock {
     height: auto;
-    padding-bottom: 4rem;
+    transform: translateY(2rem);
   }
 }
 .contactsBlock h1 {
@@ -35,7 +40,8 @@
 }
 @media screen and (max-width: 870px) {
   .contactsBlock .cards {
-    grid-template-columns: repeat(1, 25.6rem);
+    display: flex;
+    flex-direction: column;
   }
 }
 .contactsBlock .cards .card {
@@ -49,6 +55,17 @@
 }
 .contactsBlock .cards .card h2 {
   font-weight: 400;
+}
+.contactsBlock .cards .card span {
+  display: flex;
+  flex-direction: column;
+}
+.contactsBlock .cards .card span h2 {
+  font-weight: 600;
+  font-size: 1em;
+}
+.contactsBlock .cards .card span p {
+  padding-left: 1rem;
 }
 .contactsBlock .cards .card button {
   margin: 1rem auto 0 0;

@@ -5,12 +5,18 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 840px) {
+  .landBlock {
+    padding-top: 10rem;
+  }
+}
 .landBlock .title h1 {
   text-align: center;
   font-size: 2em;
   color: #5290cc;
 }
 .landBlock .content {
+  padding: 0 1rem;
   padding-top: 4rem;
   display: flex;
   align-items: flex-start;

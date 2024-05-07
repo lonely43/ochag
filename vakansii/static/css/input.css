@@ -23,14 +23,19 @@
 }
 .inputBlock form {
   position: relative;
-  padding: 2rem;
+  padding: 4rem;
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 4rem;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.197);
   border-radius: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .inputBlock form {
+    padding: 2rem;
+  }
 }
 .inputBlock form .input {
   display: flex;
@@ -38,9 +43,11 @@
   gap: 2rem;
 }
 .inputBlock form .input h1 {
+  font-weight: 500;
   font-size: 1.25em;
 }
 .inputBlock form .input span {
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
@@ -50,16 +57,34 @@
 }
 .inputBlock form .input span input, .inputBlock form .input span select {
   width: 20rem;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 0.6rem;
-  border: 0.1rem solid #5290cc;
+  border: 0.1rem solid #4187cc;
   outline: none;
+}
+.inputBlock form .input span .select {
+  width: fit-content;
+  position: relative;
+}
+.inputBlock form .input span .select select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  font-weight: 400;
+  position: relative;
+}
+.inputBlock form .input span .select .arrow {
+  position: absolute;
+  right: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1rem;
 }
 .inputBlock form .input span textarea {
   padding: 0.6rem 1rem;
   min-width: 20rem;
-  max-width: 20rem;
-  min-height: 10rem;
+  max-width: 10rem;
+  height: 6rem;
   border: 0.1rem solid #5290cc;
   outline: none;
   border-radius: 1rem;
@@ -68,27 +93,24 @@
   .inputBlock form .input span {
     gap: 1rem;
     flex-direction: column;
+    align-items: center;
   }
 }
 .inputBlock form .btns {
   display: flex;
   gap: 2rem;
 }
-.inputBlock form .btns .btn {
+.inputBlock form .btns .btn1 {
+  padding: 0.8rem 2rem;
+  font-size: 0.8em;
+  border-radius: 0.8rem;
+}
+.inputBlock form .btns .btn2 {
   cursor: pointer;
   padding: 0.8rem 2rem;
   font-size: 0.8em;
-  background-color: #5290cc;
   border-radius: 0.8rem;
-  border: 0.1rem solid #61aaef;
-}
-.inputBlock form .btns .btn:nth-child(1) {
-  color: white;
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-  box-shadow: 0 0 1rem 0rem #65acf0;
-}
-.inputBlock form .btns .btn:nth-child(2) {
+  border: 0.1rem solid #1c72c2;
   font-weight: 500;
   color: black;
   background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);

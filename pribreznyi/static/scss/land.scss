@@ -12,9 +12,10 @@
    .arrows{
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       
-      width: 100%;
+      width: 90%;
       height: 100%;
 
       display: flex;
@@ -22,6 +23,7 @@
       align-items: center;
 
       .arrow{
+         z-index: 3;
          box-sizing: content-box;
          padding: 1rem;
          max-width: 2rem;

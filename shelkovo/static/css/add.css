@@ -19,10 +19,10 @@
     flex-direction: column;
   }
 }
-.add .btns button:nth-child(1) {
+.add .btns button {
   z-index: 1;
 }
-.add .btns button:nth-child(1)::after {
+.add .btns button::after {
   z-index: -1;
   opacity: 1;
   content: " ";
@@ -34,13 +34,13 @@
   height: 3rem;
   box-shadow: 0 0 4rem 0rem rgba(101, 173, 240, 0.7294117647);
 }
-.add .btns button:nth-child(2) {
+.add .btns .active {
   color: black;
   background: linear-gradient(2deg, #ecf1f8 55%, #f9f9f9 55%);
   border: 0.1rem solid #65acf0;
   box-shadow: 0 0 3rem 0 rgba(101, 173, 240, 0.7294117647);
 }
-.add .btns button:nth-child(2)::after {
+.add .btns .active::after {
   display: none;
 }
 

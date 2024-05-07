@@ -202,19 +202,30 @@
                <h1>В каком пансионе вы бы хотели работать: </h1>
                <span>
                   <label for=""> Выберите регион:</label>
-                  <select name="languages" id="lang">
-                     <option value="Piter">Санкт-Петербур</option>
-                     <option value="Moscow">Москва</option>
-                  </select>
+                  <div class="select">
+                     <select name="languages" id="lang">
+                        <option value="Piter">Санкт-Петербур</option>
+                        <option value="Moscow">Москва</option>
+                        <div class="arrow">
+                     </select>
+                     <div class="arrow">
+                        <img src="public/Triangle.png" width="100%" alt="">
+                     </div>
+                  </div>
                </span>
                <span>
                   <label for=""> Выберите пансионат:</label>
-                  <select name="languages" id="lang">
-                     <option value="">Щелково</option>
-                     <option value="">Лесное</option>
-                     <option value="">Прибрежный</option>
-                     <option value="">Озерный</option>
-                  </select>
+                  <div class="select">
+                     <select name="languages" id="lang">
+                        <option value="">Щелково</option>
+                        <option value="">Лесное</option>
+                        <option value="">Прибрежный</option>
+                        <option value="">Озерный</option>
+                     </select>
+                     <div class="arrow">
+                        <img src="public/Triangle.png" width="100%" alt="">
+                     </div>
+                  </div>
                </span>
             </div>
 
@@ -231,8 +242,8 @@
             </div>
 
             <div class="btns">
-               <input type="submit" value="ОТПРАВИТЬ" class="btn">
-               <button class="btn"> СБРОС </button>
+               <input class="blueBtn btn1" type="submit" value="ОТПРАВИТЬ">
+               <button class="btn2"> СБРОС </button>
             </div>
          </form>
       </div>

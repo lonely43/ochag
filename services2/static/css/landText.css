@@ -1,0 +1,27 @@
+.landText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.landText h1 {
+  padding: 0 1rem;
+  padding-top: 20rem;
+}
+@media screen and (max-width: 840px) {
+  .landText h1 {
+    padding-top: 10rem;
+  }
+}
+.landText .text {
+  padding: 0 2rem;
+  max-width: 60rem;
+}
+.landText .text p {
+  color: #212121;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=landText.css.map */

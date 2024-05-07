@@ -17,32 +17,31 @@
          flex-direction: column;
       }
 
+
       button{
-         &:nth-child(1){
-            z-index: 1;
-            &::after{
-               z-index: -1;
-               opacity: 1;
-               content: " ";
-               position: absolute;
-               left: 50%;
-               transform: translateX(-50%);
-               top: 0;
-               width: 80%;
-               height: 3rem;
-               box-shadow: 0 0 4rem 0rem #65adf0ba;
-            }
+         z-index: 1;
+         
+         &::after{
+            z-index: -1;
+            opacity: 1;
+            content: " ";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 80%;
+            height: 3rem;
+            box-shadow: 0 0 4rem 0rem #65adf0ba;
          }
-
-         &:nth-child(2){
-            color: black;
-            background: linear-gradient(2deg, #ecf1f8 55%, #f9f9f9 55%);
-            border: 0.1rem solid #65acf0;
-            box-shadow: 0 0 3rem 0 #65adf0ba;
-
-            &::after{
-               display: none;
-            }
+      }
+      .active{
+         color: black;
+         background: linear-gradient(2deg, #ecf1f8 55%, #f9f9f9 55%);
+         border: 0.1rem solid #65acf0;
+         box-shadow: 0 0 3rem 0 #65adf0ba;
+   
+         &::after{
+            display: none;
          }
       }
    }

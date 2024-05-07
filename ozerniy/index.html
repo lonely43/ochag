@@ -120,6 +120,16 @@
    <main>
 
       <div class="landBlock">
+         <div class="arrows">
+            <div class="arrow">
+               <img src="./public/land/arrow.png" width="100%" alt="">
+            </div>
+
+            <div class="arrow">
+               <img src="./public/land/arrow.png" width="100%" alt="">
+            </div>
+         </div>
+         
          <div class="text">
             <h1> Пансионат <strong>«Озерный»</strong> в Ленинградской области, приозерский район пос. Мичуринское</h1>
             <p>
@@ -193,8 +203,8 @@
          <h1>Оставьте заявку прямо сейчас и получите скидку 10% на каждые сутки размещения у нас</h1>
 
          <div class="btns">
-            <button class="blueBtn"> УЗНАТЬ НАЛИЧИЕ МЕСТ </button>
-            <button class="blueBtn"> БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ </button>
+            <button class="blueBtn addBtn"> УЗНАТЬ НАЛИЧИЕ МЕСТ </button>
+            <button class="blueBtn addBtn active"> БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ </button>
          </div>
       </div>
 
@@ -1311,6 +1321,27 @@
    </footer>
 
    <script>
+      //ADD
+      let [btn1, btn2] = document.querySelectorAll('.addBtn')
+      btn1.addEventListener('click', ()=>{
+         if(btn1.classList[2] == 'active'){
+            return 0
+         }
+         else{
+            btn1.classList.toggle('active')
+            btn2.classList.toggle('active')
+         }
+      })
+      btn2.addEventListener('click', ()=>{
+         if(btn2.classList[2] == 'active'){
+            return 0
+         }
+         else{
+            btn1.classList.toggle('active')
+            btn2.classList.toggle('active')
+         }
+      })
+
       //FAQ
       let questions = document.getElementsByClassName('question')
       Array.from(questions).forEach(el => {

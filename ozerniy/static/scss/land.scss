@@ -9,6 +9,30 @@
 
    position: relative;
 
+   .arrows{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      width: 90%;
+      height: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .arrow{
+         z-index: 3;
+         box-sizing: content-box;
+         padding: 1rem;
+         max-width: 2rem;
+
+         &:nth-child(1){
+            transform: rotate(180deg);
+         }
+      }
+   }
 
    @media screen and (max-width: 1350px) {
       padding-top: 15rem;

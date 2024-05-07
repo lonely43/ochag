@@ -4,8 +4,17 @@
    align-items: center;
    gap: 4rem;
 
+   h1{
+      padding: 0 1rem;
+      padding-top: 20rem;
+      
+      @media screen and (max-width: 840px) {
+         padding-top: 10rem;
+      }
+   }
+
    .text{
-      padding: 0 0.8rem;
+      padding: 0 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
