@@ -170,10 +170,15 @@ nav{
                box-shadow: 0 0 2rem -0.2rem #65adf0;
             }
          }
-         h1{
-            font-size: 1em;
+         .number{
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            h1{
+               font-size: 1em;
+            }
+   
          }
-
          @media screen and (max-width: 1260px) {
             display: none;
          }

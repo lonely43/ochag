@@ -144,7 +144,12 @@ nav span .contact button::after {
   border-radius: 1rem;
   box-shadow: 0 0 2rem -0.2rem #65adf0;
 }
-nav span .contact h1 {
+nav span .contact .number {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+nav span .contact .number h1 {
   font-size: 1em;
 }
 @media screen and (max-width: 1260px) {

@@ -31,7 +31,7 @@
 .points .cards .card {
   max-width: 25rem;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 1.4rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -51,7 +51,17 @@
 }
 .points .cards .card .icon {
   margin: 0 auto;
-  max-width: 3rem;
+  width: 3rem;
+  height: 3.4rem;
+}
+.points .cards .card:nth-child(3) .icon {
+  transform: scale(0.9);
+}
+.points .cards .card:nth-child(4) .icon {
+  transform: scale(1.2);
+}
+.points .cards .card:nth-child(5) .icon {
+  transform: scale(0.9);
 }
 .points .cards .card p {
   text-align: center;

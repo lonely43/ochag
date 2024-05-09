@@ -1,6 +1,9 @@
 .feedback{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
    .cards{
-      padding-top: 8rem;
+      padding-top: 6rem;
 
       display: grid;
       grid-template-columns: repeat(3,25rem);

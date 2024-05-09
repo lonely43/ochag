@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 0rem;
+  position: relative;
   background-image: url("../../public/land/background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -14,28 +15,30 @@
 .landBlock .arrows {
   z-index: 1;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   width: 90%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1350px) {
   .landBlock .arrows {
-    align-items: end;
-    padding-bottom: 0rem;
+    top: 55%;
+    left: 10%;
+    transform: translateX(-10%) translateY(-55%);
   }
 }
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 500px) {
   .landBlock .arrows {
-    padding-top: 8rem;
-    align-items: start;
+    top: 70%;
+    left: 0%;
+    transform: translateX(0%) translateY(-70%);
   }
 }
 .landBlock .arrows .arrow {
+  cursor: pointer;
   z-index: 3;
   box-sizing: content-box;
   padding: 1rem;
@@ -61,6 +64,7 @@
   }
 }
 .landBlock .text {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -122,6 +126,29 @@
 }
 .landBlock .text .btns .btn:nth-child(2) .photo {
   transform: translateY(-50%) scale(0.8);
+}
+.landBlock .price {
+  z-index: 0;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  transform: translateX(-42%) translateY(-30%);
+  max-width: 14rem;
+}
+@media screen and (max-width: 1350px) {
+  .landBlock .price {
+    top: 55%;
+    left: 10%;
+    transform: translateX(-10%) translateY(-55%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .landBlock .price {
+    max-width: 10rem;
+    top: 70%;
+    left: 0%;
+    transform: translateX(0%) translateY(-70%);
+  }
 }
 .landBlock .iconLand {
   display: none;
