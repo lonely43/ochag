@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* navigator's styles */
-@import url('../!public/nav/css/nav.css');
+@import url('../nav/css/nav.css');
 
 /* footer's styles */
-@import url('../!public/footer/css/footer.css');
+@import url('../footer/css/footer.css');
 
 /* blocks */
 @import url('./static/css/land.css');
