@@ -16,7 +16,12 @@
   }
 }
 .sendForm .doc {
-  max-width: 320px;
+  max-width: 280px;
+}
+@media screen and (max-width: 500px) {
+  .sendForm .doc {
+    max-width: 220px;
+  }
 }
 .sendForm .info {
   padding: 0 1rem;
@@ -39,10 +44,10 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0rem;
-  max-width: 25rem;
+  max-width: 20rem;
   width: 100%;
-  padding: 1.2rem 0rem;
-  font-size: 1.4em;
+  padding: 1rem 0rem;
+  font-size: 1.2em;
   font-weight: 400;
   color: black;
   border: 0.1rem solid #558fe5;

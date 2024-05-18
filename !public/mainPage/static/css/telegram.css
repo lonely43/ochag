@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 3rem;
 }
 .telegram .photo {
-  max-width: 15rem;
+  max-width: 10rem;
 }
 .telegram .info {
   display: flex;

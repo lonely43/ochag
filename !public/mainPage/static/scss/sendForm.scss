@@ -15,7 +15,11 @@
    }
 
    .doc{
-      max-width: 320px;
+      max-width: 280px;
+
+      @media screen and (max-width: 500px) {
+         max-width: 220px;
+      }
    }
 
    .info{
@@ -43,11 +47,11 @@
          transform: translateX(-50%);
          bottom: 0rem;
 
-         max-width: 25rem;
+         max-width: 20rem;
          width: 100%;
-         padding: 1.2rem 0rem;
+         padding: 1rem 0rem;
 
-         font-size: 1.4em;
+         font-size: 1.2em;
          font-weight: 400;
          color: black;
 

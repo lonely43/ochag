@@ -3,10 +3,10 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   gap: 4rem;
+   gap: 3rem;
 
    .photo{
-      max-width: 15rem;
+      max-width: 10rem;
    }
 
    .info{
@@ -19,6 +19,10 @@
          font-weight: 400;
          letter-spacing: 1px;
          font-size: 1.6em;
+
+         @media screen and (max-width: 800px) {
+            text-align: center;
+         }
       }
    }
 }

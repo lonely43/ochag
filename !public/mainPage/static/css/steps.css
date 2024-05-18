@@ -1,5 +1,5 @@
 .steps {
-  padding-top: 4rem;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -32,7 +32,7 @@
 .steps .cards .card .photo::before {
   position: absolute;
   right: -3rem;
-  top: -4rem;
+  bottom: 95%;
   font-size: 5em;
   color: #5fa8ee;
   font-weight: 600;
