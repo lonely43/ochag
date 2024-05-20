@@ -48,23 +48,12 @@
       border-radius: 2rem;
 
       .title{
-         display: flex;
-         flex-direction: column;
-         gap: 1rem;
-
-         h1,p{
-            color: white
-         }
          h1{
+            color: white;
             text-transform: uppercase;
             text-align: center;
-            font-size: 2em;
+            font-size: 1.8em;
             font-weight: 600
-         }
-         p{
-            text-align: center;
-            font-size: 1em;
-            font-weight: 300
          }
       }
       .cards{

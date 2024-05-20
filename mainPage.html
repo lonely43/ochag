@@ -152,7 +152,7 @@
 
          <div class="price">
             <div class="block">
-               <div class="text">
+               <div id="prices" class="text">
                   <h2><strike>1800р</strike></h2>
                   <h2>990Р</h2>
                   <h2>ЗА СУТКИ</h2>
@@ -1461,6 +1461,16 @@
 
    <script>
       //LAND
+      let pricesCount = 0
+      let prices = [["1300Р","1800Р"],["2690Р",""],["1800Р",""],["2090Р",""]]
+
+      function changeText(second, first=""){
+         let prices = document.querySelectorAll('#prices h2')
+         prices[0].innerHTML = `<strike> ${first} </strike>`
+         prices[1].innerHTML = `${second}`
+      }
+
+
       let arrows = document.querySelectorAll('.arrow')
 
       let icons = document.querySelectorAll('.iconLand')
@@ -1469,6 +1479,16 @@
       icons[0].classList.toggle('showIconLand')
 
       function nextIcon(){
+         pricesCount++
+         if(pricesCount >= prices.length){
+            pricesCount = 0
+            changeText(prices[pricesCount][0], prices[pricesCount][1])
+         }
+         else{
+            changeText(prices[pricesCount][0], prices[pricesCount][1])
+         }
+
+
          if(count >= 4){
             icons[4].classList.toggle('showIconLand')
             icons[0].classList.toggle('showIconLand')
@@ -1481,6 +1501,16 @@
          count++  
       }
       function previousIcon(){
+         pricesCount--
+         if(pricesCount < 0){
+            pricesCount = prices.length-1
+            changeText(prices[pricesCount][0], prices[pricesCount][1])
+         }
+         else{
+            changeText(prices[pricesCount][0], prices[pricesCount][1])
+         }
+
+
          if(count <= 0){
             icons[0].classList.toggle('showIconLand')
             icons[4].classList.toggle('showIconLand')
