@@ -11,7 +11,8 @@ nav span {
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0 0 2rem 1rem rgba(188, 188, 188, 0.367);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 nav span .icon {
@@ -21,7 +22,7 @@ nav span .icon {
   max-width: 200px;
   height: auto;
 }
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1130px) {
   nav span .icon {
     display: none;
   }
@@ -152,19 +153,51 @@ nav span .contact .number {
 nav span .contact .number h1 {
   font-size: 1em;
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1262px) {
   nav span .contact {
     display: none;
   }
+}
+nav span .iconPhone {
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 1262px) {
+  nav span .iconPhone {
+    display: block;
+  }
+}
+nav span .iconPhone .picture {
+  max-width: 3rem;
+  min-width: 2rem;
+  cursor: pointer;
+}
+nav span .iconPhone:hover .numbers {
+  display: flex !important;
+}
+nav span .iconPhone .numbers {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -1rem;
+  width: 9.9rem;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 0rem 0.4rem 1rem 0rem rgba(0, 0, 0, 0.282);
+  padding: 0.8rem;
+}
+nav span .iconPhone .numbers h1 {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 400;
 }
 nav span .burgerMenu {
   display: none;
 }
 nav span .burgerMenu .brgBtn {
   z-index: 3;
-  position: absolute;
-  left: 1rem;
-  top: 1.25rem;
   cursor: pointer;
 }
 nav span .burgerMenu .brgBtn svg {
@@ -195,11 +228,11 @@ nav span .burgerMenu .list ul li {
 nav span .burgerMenu .show {
   left: 0;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 892px) {
   nav span {
     width: 100%;
     background-color: rgb(255, 255, 255);
-    padding: 0 0.6rem;
+    padding: 0 2rem;
     align-items: center;
   }
   nav .icon {
@@ -207,10 +240,14 @@ nav span .burgerMenu .show {
     padding: 1rem;
     display: flex !important;
   }
+  nav .iconPhone {
+    order: 2;
+  }
   nav .title {
     display: none !important;
   }
   nav .burgerMenu {
+    order: 0;
     display: flex !important;
   }
 }

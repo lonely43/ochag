@@ -1,7 +1,6 @@
 .feedback{
    .cards{
       padding-top: 8rem;
-      padding-bottom: 4cqw;
 
       display: grid;
       grid-template-columns: repeat(3,25rem);
@@ -20,6 +19,13 @@
 
       @media screen and (max-width: 950px) {
          grid-template-columns: repeat(1,25rem);
+      }
+
+      @media screen and (max-width: 400px) {
+         grid-template-columns: repeat(1,1fr);
+         .card{
+            overflow: hidden;
+         }
       }
       
       .card{

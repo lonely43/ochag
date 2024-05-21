@@ -11,9 +11,15 @@
   }
 }
 .inputBlock .doc {
-  max-width: 320px;
+  max-width: 280px;
+}
+@media screen and (max-width: 660px) {
+  .inputBlock .doc {
+    max-width: 210px;
+  }
 }
 .inputBlock form {
+  padding: 0 2rem;
   max-width: 30rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
