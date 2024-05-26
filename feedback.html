@@ -290,8 +290,7 @@
 
          </div>
 
-         <div class="pages">
-            <ul>
+         <!--               
                <li class="page selected">1</li>
                <li class="page" >2</li>
                <li class="page">3</li>
@@ -301,7 +300,12 @@
                <li class="page">7</li>
                <li class="page">8</li>
                <li class="page">9</li>
-               <li class="page">10</li>
+               <li class="page">10</li> 
+         -->
+         
+         <div class="pages">
+            <ul>
+
             </ul>
          </div>
       </div>
@@ -468,12 +472,28 @@
          let feedbacks = data
 
          let blocks = document.querySelectorAll('.overview')
+
+         //create number of pages
+         {
+            let len = Math.ceil(feedbacks.length/5)
+            let numbers = document.querySelector('.pages ul')
+            for(let i = 1; i <= len;i++){
+               let el = document.createElement("li")
+               el.classList.add("page")
+               if(i == 1)
+                  el.classList.add("selected")
+               el.innerText = i
+
+               numbers.appendChild(el)
+            }
+         }
+
+
          let pages = document.querySelectorAll('.page')
          let currentPage = 1
 
-      
-         // change page
 
+      
          pages.forEach((el, index) =>{
             el.addEventListener('click', ()=>{
                el.classList.add('selected')
@@ -484,76 +504,45 @@
                      e.classList.remove('selected')
                   }
                })
-               showPage(currentPage);
+               showPage(Number(currentPage));
             },false)
          })
 
-         function showPage(x){
-            switch(x){
-               case "1":
-               {
-                  let content = feedbacks.slice(0, 5)
-                  for(let i=0; i < content.length; i++){
-                     let stars = ""
-                     for(let x=0;x < content[i].rate;x++){
-                        stars += `
-                           <div class="star">
-                              <img src="!public/feedback/public/stars.png" width="100%" alt="">
-                           </div>` 
-                     }
-                     blocks[i].innerHTML = 
-                     `
-                        <div class="title">
-                           <div class="data">
-                              <h2>${content[i].name}</h2>
-                              <h3>${content[i].date}</h3>
-                           </div>
-                           <div class="rate">
-                              ${stars}
-                           </div>
-                        </div>
-                        <p> ${content[i].text} </p>
-                     `
+         function showPage(currentPage){
+            let end = currentPage*5
+            let start = end-5
+            let content = feedbacks.slice(start, end)
+
+            
+            blocks.forEach(e =>{
+               e.innerHTML = null
+            })
+
+            for(let i=0; i < content.length; i++){
+               let stars = ""
+               for(let x=0;x < content[i].rate;x++){
+                  stars += `
+                     <div class="star">
+                        <img src="!public/feedback/public/stars.png" width="100%" alt="">
+                     </div>` 
                   }
 
-                  break;
-               }
-               
-               case "2":
-               {
-                  let content = feedbacks.slice(0, 5)
-                  for(let i=0; i < content.length; i++){
-                     let stars = ""
-                     for(let x=0;x < content[i].rate;x++){
-                        stars += `
-                           <div class="star">
-                              <img src="!public/feedback/public/stars.png" width="100%" alt="">
-                           </div>` 
-                     }
-                     blocks[i].innerHTML = 
-                     `
-                        <div class="title">
-                           <div class="data">
-                              <h2>${content[i].name}</h2>
-                              <h3>${content[i].date}</h3>
-                           </div>
-                           <div class="rate">
-                              ${stars}
-                           </div>
-                        </div>
-                        <p> ${content[i].text} </p>
-                     `
-                  }
-
-                  break;
-               }
-               
-               default:
-                  console.log('X IS NOT FOUND')
-                  break
+               blocks[i].innerHTML = 
+               `
+                 <div class="title">
+                     <div class="data">
+                        <h2>${content[i].name}</h2>
+                        <h3>${content[i].date}</h3>
+                     </div>
+                     <div class="rate">
+                        ${stars}
+                     </div>
+                  </div>
+                  <p> ${content[i].text} </p>
+               `
             }
          }
-         showPage("1")
+         showPage(currentPage)
       } 
 
       //FAQ
