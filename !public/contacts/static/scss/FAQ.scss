@@ -1,6 +1,6 @@
 .FAQBlock{
    .info{
-      padding-top: 4rem;
+      padding-top: 6rem;
       padding-bottom: 4rem;
       display: flex;
       justify-content: center;
@@ -91,6 +91,7 @@
             .showAnswer{
                h2{
                   backdrop-filter: blur(3rem);
+                  -webkit-backdrop-filter: blur(3rem);
    
                   border-radius: 1.4rem 1.4rem 0 0;
                }
@@ -99,6 +100,7 @@
                   display: block;
    
                   backdrop-filter: blur(3rem);
+                  -webkit-backdrop-filter: blur(3rem);
                   border-radius: 0 1rem 1rem 1rem ;
                   color: white;
                }

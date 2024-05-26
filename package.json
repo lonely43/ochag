@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "scssContacts": "cd !public/contacts/static && sass --watch scss:css",
+    "scssFeedback": "cd !public/feedback/static && sass --watch scss:css",
+    "scssGosSupport": "cd !public/gosSupport/static && sass --watch scss:css",
+    "scssLesnoe": "cd !public/lesnoe/static && sass --watch scss:css",
+    "scssMainPage": "cd !public/mainPage/static && sass --watch scss:css",
+    "scssOzerniy": "cd !public/ozerniy/static && sass --watch scss:css",
+    "scssPribreznyi": "cd !public/pribreznyi/static && sass --watch scss:css",
+    "scssServices": "cd !public/services/static && sass --watch scss:css",
+    "scssServices2": "cd !public/services2/static && sass --watch scss:css",
+    "scssShelkovo": "cd !public/shelkovo/static && sass --watch scss:css",
+    "scssVakansii": "cd !public/vakansii/static && sass --watch scss:css"
   },
   "author": "",
   "license": "ISC"

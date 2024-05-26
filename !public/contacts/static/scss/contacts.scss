@@ -64,6 +64,15 @@
             p{
                padding-left: 1rem;
             }
+
+            a{
+               padding-left: 1rem;
+               min-height: 2.8rem;
+            }
+
+            &:nth-child(3){
+               min-height: 5rem;
+            }
          }
 
          button{
