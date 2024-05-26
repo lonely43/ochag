@@ -1,64 +1,48 @@
 .feedback {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
+}
+.feedback .swiper {
+  padding: 4rem;
+  width: 1200px;
+  height: auto;
+  display: flex;
+}
+.feedback .swiper .swiper-wrapper {
+  display: flex;
   gap: 2rem;
 }
-.feedback .cards {
-  padding-top: 6rem;
-  display: grid;
-  grid-template-columns: repeat(3, 25rem);
-  justify-content: center;
-  justify-items: center;
-  gap: 6rem;
+.feedback .swiper .swiper-slide {
+  max-width: 100rem;
 }
-@media screen and (max-width: 1400px) {
-  .feedback .cards {
-    grid-template-columns: repeat(2, 25rem);
-  }
-  .feedback .cards .card:nth-child(2) {
-    transform: translateY(0) !important;
-  }
-}
-@media screen and (max-width: 950px) {
-  .feedback .cards {
-    grid-template-columns: repeat(1, 25rem);
-  }
-}
-@media screen and (max-width: 400px) {
-  .feedback .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .feedback .cards .card {
-    overflow: hidden;
-  }
-}
-.feedback .cards .card {
+.feedback .swiper .card {
   position: relative;
   padding: 2rem;
   background-color: white;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
   border-radius: 1rem;
 }
-.feedback .cards .card:nth-child(2) {
+.feedback .swiper .card:nth-child(2) {
   transform: translateY(-4rem);
 }
-.feedback .cards .card .title {
+.feedback .swiper .card .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.feedback .cards .card .title h1 {
+.feedback .swiper .card .title h1 {
   font-size: 1.8em;
   font-weight: 500;
 }
-.feedback .cards .card .title img {
+.feedback .swiper .card .title img {
   max-width: 90px;
 }
-.feedback .cards .card p {
+.feedback .swiper .card p {
   padding-top: 2rem;
   text-align: start;
 }
-.feedback .cards .card .ochag {
+.feedback .swiper .card .ochag {
   position: absolute;
   bottom: -2rem;
   left: -1.6rem;

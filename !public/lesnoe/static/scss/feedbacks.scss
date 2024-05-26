@@ -1,36 +1,23 @@
 .feedback{
    display: flex;
    flex-direction: column;
-   gap: 2rem;
-   .cards{
-      padding-top: 6rem;
+   gap: 4rem;
 
-      display: grid;
-      grid-template-columns: repeat(3,25rem);
-      justify-content: center;
-      justify-items: center;
-      gap: 6rem;
+   .swiper{
+      padding: 4rem;
+      width: 1200px;
+      height: auto;
+      display: flex;
 
-      @media screen and (max-width: 1400px) {
-         grid-template-columns: repeat(2,25rem);
-         .card{
-            &:nth-child(2){
-               transform: translateY(0) !important;
-            }
-         }
+      .swiper-wrapper{
+         display: flex;
+         gap: 2rem;
       }
 
-      @media screen and (max-width: 950px) {
-         grid-template-columns: repeat(1,25rem);
+      .swiper-slide{
+         max-width: 100rem;
       }
 
-      @media screen and (max-width: 400px) {
-         grid-template-columns: repeat(1,1fr);
-         .card{
-            overflow: hidden;
-         }
-      }
-      
       .card{
          position: relative;
 
