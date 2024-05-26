@@ -14,7 +14,7 @@
       max-width: 1400px;
 
       display: grid;
-      grid-template-rows: repeat(5,1fr);
+      //grid-template-rows: repeat(5,1fr);
       gap: 4rem;
 
       background-color: white;
@@ -82,8 +82,12 @@
                   color: #747474;
                }
             }
-            .photo{
-               max-width: 6rem;
+            .rate{
+               display: flex;
+               gap: 0.2rem;
+               .star{
+                  max-width: 1.8rem;
+               }
             }
          }
          p{
