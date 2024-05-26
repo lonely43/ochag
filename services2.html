@@ -414,9 +414,15 @@
 
    <script>
       let questions = document.getElementsByClassName('question')
-      Array.from(questions).forEach(el => {
+      Array.from(questions).forEach((el, index) => {
          el.firstElementChild.addEventListener("click", () => {
             el.classList.toggle("showAnswer")
+            
+            Array.from(questions).forEach((e,i) => {
+               if(i !== index){
+                  e.classList.remove("showAnswer")
+               }
+            })
          }, false)
       })
    </script>   
