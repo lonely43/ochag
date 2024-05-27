@@ -244,30 +244,42 @@
       <div class="docsBlock">
          <h1 style="padding-top: 6rem;" class="headerText">ИМЕЕМ ВСЕ НЕОБХОДИМЫЕ ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</h1>
          <div class="documents">
-            <img class="mainDoc" src="!public/mainPage/public/docs/mainDoc.png" width="100%" alt="">
+
+            <div class="popupContainer">
+               <img src="!public/mainPage/public/docs/mainDoc.png" alt="photo">
+
+               <div class="closeBtn"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></div>
+               <div class="prevBtn"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16"><path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/></svg></div>
+               <div class="nextBtn"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/></svg></div>
+            </div>
+
+            <div class="mainDoc seeDoc" onclick="showPopup(0)">
+               <img src="!public/mainPage/public/docs/mainDoc.png" width="100%" alt="">
+            </div>
 
             <div class="docs">
-               <div class="doc">
+
+               <div class="doc seeDoc" onclick="showPopup(1)">
                   <img src="!public/mainPage/public/docs/Layer 893.png" width="100%" alt="">
                </div>
 
-               <div class="doc">
+               <div class="doc seeDoc" onclick="showPopup(2)">
                   <img src="!public/mainPage/public/docs/Layer 895.png" width="100%" alt="">
                </div>
 
-               <div class="doc">
+               <div class="doc seeDoc" onclick="showPopup(3)">
                   <img src="!public/mainPage/public/docs/Layer 897.png" width="100%" alt="">
                </div>
 
-               <div class="doc">
+               <div class="doc seeDoc" onclick="showPopup(4)">
                   <img src="!public/mainPage/public/docs/Layer 894.png" width="100%" alt="">
                </div>
 
-               <div class="doc">
+               <div class="doc seeDoc" onclick="showPopup(5)">
                   <img src="!public/mainPage/public/docs/Layer 896.png" width="100%" alt="">
                </div>
 
-               <div class="doc">
+               <div class="doc seeDoc" onclick="showPopup(6)">
                   <img src="!public/mainPage/public/docs/Layer 898.png" width="100%" alt="">
                </div>
 
@@ -1482,89 +1494,134 @@
 
    <script>
       //LAND
-      let arrows = document.querySelectorAll('.arrow')
-      let icons = document.querySelectorAll('.iconLand')
-      let offerText = document.querySelector('#offerText')
-      let offers = [
-      'Медицинский уход с реабилитацией в пансионатах "Комфорт+"',
-      'Для пожилых людей, инвалидов и людей с заболеваниями',
-      'Полная программа реабилитации и восстановления после инсульта, травмы, операции или лечения',
-      'Фиксированная цена, которая включает в себя полный перечень ухода за постояльцем',
-      'Обширная программа мероприятий, досуга и занятий, а также ежедневные прогулки на свежем воздухе'
-      ]
-      let count = 0
-
-      //start
-      icons[0].classList.toggle('showIconLand')
-      offerText.innerText = offers[0]
-
-      // for mobile version
       {
-         function condition(x) {
-            if (x.matches) { // If media query matches
-               offerText.innerHTML = 'Медицинский уход с реабилитацией в пансионатах "Комфорт+" за <strike>2000</strike> 1500 руб/сутки'
+         let arrows = document.querySelectorAll('.arrow')
+         let icons = document.querySelectorAll('.iconLand')
+         let offerText = document.querySelector('#offerText')
+         let offers = [
+         'Медицинский уход с реабилитацией в пансионатах "Комфорт+"',
+         'Для пожилых людей, инвалидов и людей с заболеваниями',
+         'Полная программа реабилитации и восстановления после инсульта, травмы, операции или лечения',
+         'Фиксированная цена, которая включает в себя полный перечень ухода за постояльцем',
+         'Обширная программа мероприятий, досуга и занятий, а также ежедневные прогулки на свежем воздухе'
+         ]
+         let count = 0
+
+         //start
+         icons[0].classList.toggle('showIconLand')
+         offerText.innerText = offers[0]
+
+         // for mobile version
+         {
+            function condition(x) {
+               if (x.matches) { // If media query matches
+                  offerText.innerHTML = 'Медицинский уход с реабилитацией в пансионатах "Комфорт+" за <strike>2000</strike> 1500 руб/сутки'
+               }
+               else{
+                  offerText.innerText = offers[count]
+               }
             }
-            else{
-               offerText.innerText = offers[count]
+            // Create a MediaQueryList object
+            let x = window.matchMedia("(max-width: 800px)")
+            // Call listener function at run time
+            condition(x);
+            // Attach listener function on state changes
+            x.addEventListener("change", ()=>{condition(x)}, false)
+         }
+
+         function nextIcon(){
+            if(count >= 4){
+               icons[4].classList.toggle('showIconLand')
+               icons[0].classList.toggle('showIconLand')
+               offerText.innerText = offers[0]
+               return count = 0
             }
+
+            icons[count].classList.toggle('showIconLand')
+            icons[count+1].classList.toggle('showIconLand')
+            offerText.innerText = offers[count+1]
+
+            count++  
          }
-         // Create a MediaQueryList object
-         let x = window.matchMedia("(max-width: 800px)")
-         // Call listener function at run time
-         condition(x);
-         // Attach listener function on state changes
-         x.addEventListener("change", ()=>{condition(x)}, false)
-      }
+         function previousIcon(){
+            if(count <= 0){
+               icons[0].classList.toggle('showIconLand')
+               icons[4].classList.toggle('showIconLand')
+               offerText.innerText = offers[4]
+               return count = 4
+            }
 
-      function nextIcon(){
-         if(count >= 4){
-            icons[4].classList.toggle('showIconLand')
-            icons[0].classList.toggle('showIconLand')
-            offerText.innerText = offers[0]
-            return count = 0
-         }
+            icons[count].classList.toggle('showIconLand')
+            icons[count-1].classList.toggle('showIconLand')
+            offerText.innerText = offers[count-1]
 
-         icons[count].classList.toggle('showIconLand')
-         icons[count+1].classList.toggle('showIconLand')
-         offerText.innerText = offers[count+1]
-
-         count++  
-      }
-      function previousIcon(){
-         if(count <= 0){
-            icons[0].classList.toggle('showIconLand')
-            icons[4].classList.toggle('showIconLand')
-            offerText.innerText = offers[4]
-            return count = 4
+            count--
          }
 
-         icons[count].classList.toggle('showIconLand')
-         icons[count-1].classList.toggle('showIconLand')
-         offerText.innerText = offers[count-1]
+         arrows[0].addEventListener('click',previousIcon,false)
+         arrows[1].addEventListener('click',nextIcon,false)
 
-         count--
+         setInterval(()=>{
+            nextIcon()
+         }, 2000)
       }
 
-      arrows[0].addEventListener('click',previousIcon,false)
-      arrows[1].addEventListener('click',nextIcon,false)
+      //docs
+      {
+         let srcList = [
+            "!public/mainPage/public/docs/mainDoc.png",
+            "!public/mainPage/public/docs/Layer 893.png",
+            "!public/mainPage/public/docs/Layer 895.png",
+            "!public/mainPage/public/docs/Layer 897.png",
+            "!public/mainPage/public/docs/Layer 894.png",
+            "!public/mainPage/public/docs/Layer 896.png",
+            "!public/mainPage/public/docs/Layer 898.png"
+         ]
+         let count = 0
 
-      setInterval(()=>{
-         nextIcon()
-      }, 2000)
+         function showPopup(number){
+            document.querySelector('.popupContainer').style.display = 'block'
+            document.querySelector('.popupContainer img').src = srcList[number]
+            count = number
+         }
+         function nextImg(){
+            if(count >= 6){
+               document.querySelector('.popupContainer img').src = srcList[0]
+               return count = 0
+            }
+            document.querySelector('.popupContainer img').src = srcList[count+1]
+            return count++
+         }
+         function prevImg(){
+            console.log(count)
+            if(count <= 0){
+               document.querySelector('.popupContainer img').src = srcList[6]
+               return count = 6
+            }
+            document.querySelector('.popupContainer img').src = srcList[count-1]
+            return count--
+         }
+         
+         document.querySelector('.closeBtn').addEventListener('click', ()=>{document.querySelector('.popupContainer').style.display = 'none'},false)
+         document.querySelector('.nextBtn').addEventListener('click', ()=>{nextImg()},false)
+         document.querySelector('.prevBtn').addEventListener('click', ()=>{prevImg()},false)
+      }
 
       //FAQ
-      let questions = document.getElementsByClassName('question')
-      Array.from(questions).forEach((el, index) => {
-         el.firstElementChild.addEventListener("click", () => {
-            el.classList.toggle("showAnswer")
-            
-            Array.from(questions).forEach((e,i) => {
-               if(i !== index){
-                  e.classList.remove("showAnswer")
-               }
-            })
-         }, false)
-      })
+      {
+         let questions = document.getElementsByClassName('question')
+         Array.from(questions).forEach((el, index) => {
+            el.firstElementChild.addEventListener("click", () => {
+               el.classList.toggle("showAnswer")
+               
+               Array.from(questions).forEach((e,i) => {
+                  if(i !== index){
+                     e.classList.remove("showAnswer")
+                  }
+               })
+            }, false)
+         })
+      }
    </script>   
    <script src="!public/nav/nav.js"></script>
 </body>
