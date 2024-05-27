@@ -1,41 +1,27 @@
 .points {
-  transform: translateY(-10rem);
-}
-@media screen and (max-width: 1200px) {
-  .points {
-    transform: translateY(-8rem);
-  }
-}
-@media screen and (max-width: 440px) {
-  .points {
-    transform: translateY(-4rem);
-  }
+  transform: translateY(-6rem);
 }
 .points .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 25rem);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
 }
-@media screen and (max-width: 1200px) {
-  .points .cards {
-    grid-template-columns: repeat(2, 25rem);
-  }
-}
-@media screen and (max-width: 800px) {
-  .points .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .points .cards .card {
-  max-width: 25rem;
   position: relative;
   padding: 1rem;
   padding-bottom: 4rem;
+  width: 100%;
+  max-width: 22rem;
   background-color: white;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.158);
   border-radius: 1rem;
   overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  .points .cards .card {
+    max-width: none;
+  }
 }
 .points .cards .card::after {
   content: "";

@@ -26,6 +26,7 @@
   position: relative;
 }
 .symptoms .cards .card::before {
+  z-index: -1;
   content: "";
   position: absolute;
   left: 0;

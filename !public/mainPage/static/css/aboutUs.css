@@ -1,0 +1,48 @@
+.aboutUs .cards {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.aboutUs .cards .card {
+  padding: 1rem;
+  max-width: 28rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+}
+.aboutUs .cards .card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 6rem -2rem rgba(0, 0, 0, 0.39);
+  border-radius: 1rem;
+}
+.aboutUs .cards .card .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.aboutUs .cards .card .title .photo {
+  max-width: 10rem;
+}
+.aboutUs .cards .card .title h1 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.aboutUs .cards .card p {
+  font-size: 1em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

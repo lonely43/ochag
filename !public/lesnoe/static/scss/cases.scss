@@ -77,12 +77,14 @@
          .card{
             padding: 1rem 3rem;
 
-            max-width: 22rem;
+            max-width: 20rem;
+            width: 100%;
             height: 6rem;
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            flex-grow: 1;
             gap: 1rem;
 
             background-color: white;

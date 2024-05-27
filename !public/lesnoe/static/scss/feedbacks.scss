@@ -4,56 +4,65 @@
    gap: 4rem;
 
    .swiper{
-      padding: 4rem;
-      width: 1200px;
+      padding: 8rem;
+      
+      max-width: 1700px;
+      width: 100%;
       height: auto;
-      display: flex;
 
       .swiper-wrapper{
-         display: flex;
-         gap: 2rem;
-      }
-
-      .swiper-slide{
-         max-width: 100rem;
-      }
-
-      .card{
-         position: relative;
-
-         padding: 2rem;
-
-         background-color: white;
-         box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
-         border-radius: 1rem;
-
-         &:nth-child(2){
-            transform: translateY(-4rem);
+         padding-top: 4rem;
+         .activeSlide{
+            transform: translateY(-6rem);
          }
-
-         .title{
+         .swiper-slide{
+            width: auto;
+            transition: 0.4s transform;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h1{
-               font-size: 1.8em;
-               font-weight: 500;
-            }
-            img{
-               max-width:90px;
-            }
-         }
-         p{
-            padding-top: 2rem;
-            text-align: start;
-         }
+            justify-content: center;
+            //padding: 0 2rem;
 
-         .ochag{
-            position: absolute;
-            bottom: -2rem;
-            left: -1.6rem;
+            .card{
+               position: relative;
 
-            width: 200px;
+               padding: 2rem;
+
+               max-width: 25rem;
+               width: 100%;
+      
+               background-color: white;
+               box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
+               border-radius: 1rem;
+      
+               &:nth-child(2){
+                  transform: translateY(-4rem);
+               }
+      
+               .title{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  h1{
+                     font-size: 1.8em;
+                     font-weight: 500;
+                  }
+                  img{
+                     max-width:90px;
+                  }
+               }
+               p{
+                  padding-top: 2rem;
+                  text-align: start;
+               }
+      
+               .ochag{
+                  position: absolute;
+                  bottom: -2rem;
+                  left: -1.6rem;
+      
+                  width: 200px;
+               }
+            }
          }
       }
    }

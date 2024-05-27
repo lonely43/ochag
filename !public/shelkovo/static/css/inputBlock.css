@@ -14,11 +14,10 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  padding: 0 1rem;
 }
-.inputBlock form h2 {
-  font-size: 1.25em;
-  font-weight: 500;
+.inputBlock form h1 {
+  font-size: 1.6em;
+  font-weight: 600;
 }
 .inputBlock form .input {
   display: flex;
@@ -68,16 +67,9 @@
 }
 .inputBlock form input[type=submit] {
   margin: 1rem auto 0 0;
-  cursor: pointer;
   padding: 0.8rem 4rem;
-  font-size: 0.8em;
-  background-color: #5290cc;
+  font-size: 1em;
   border-radius: 0.8rem;
-  border: 0.1rem solid #61aaef;
-  color: white;
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-  box-shadow: 0 0 1rem 0rem #65acf0;
 }
 @media screen and (max-width: 600px) {
   .inputBlock form input[type=submit] {

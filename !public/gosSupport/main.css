@@ -35,6 +35,11 @@ main{
 body{
    background-color: white;
 }
+a{
+   text-decoration: none;
+   cursor: pointer;
+   color: black;
+}
 .headerText{
    padding: 0 1rem;
    text-transform: uppercase;

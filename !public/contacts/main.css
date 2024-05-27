@@ -29,6 +29,11 @@ main{
 body{
    background-color: white;
 }
+a{
+   text-decoration: none;
+   cursor: pointer;
+   color: black;
+}
 .headerText{
    text-align: center;
    font-size: 1.8em;

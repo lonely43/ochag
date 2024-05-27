@@ -4,45 +4,52 @@
   gap: 4rem;
 }
 .feedback .swiper {
-  padding: 4rem;
-  width: 1200px;
+  padding: 8rem;
+  max-width: 1700px;
+  width: 100%;
   height: auto;
-  display: flex;
 }
 .feedback .swiper .swiper-wrapper {
+  padding-top: 4rem;
+}
+.feedback .swiper .swiper-wrapper .activeSlide {
+  transform: translateY(-6rem);
+}
+.feedback .swiper .swiper-wrapper .swiper-slide {
+  width: auto;
+  transition: 0.4s transform;
   display: flex;
-  gap: 2rem;
+  justify-content: center;
 }
-.feedback .swiper .swiper-slide {
-  max-width: 100rem;
-}
-.feedback .swiper .card {
+.feedback .swiper .swiper-wrapper .swiper-slide .card {
   position: relative;
   padding: 2rem;
+  max-width: 25rem;
+  width: 100%;
   background-color: white;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
   border-radius: 1rem;
 }
-.feedback .swiper .card:nth-child(2) {
+.feedback .swiper .swiper-wrapper .swiper-slide .card:nth-child(2) {
   transform: translateY(-4rem);
 }
-.feedback .swiper .card .title {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.feedback .swiper .card .title h1 {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title h1 {
   font-size: 1.8em;
   font-weight: 500;
 }
-.feedback .swiper .card .title img {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title img {
   max-width: 90px;
 }
-.feedback .swiper .card p {
+.feedback .swiper .swiper-wrapper .swiper-slide .card p {
   padding-top: 2rem;
   text-align: start;
 }
-.feedback .swiper .card .ochag {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .ochag {
   position: absolute;
   bottom: -2rem;
   left: -1.6rem;
