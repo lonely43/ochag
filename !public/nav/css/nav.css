@@ -12,16 +12,11 @@ nav span {
   padding: 2rem;
   background-color: #fcfcfc;
   border-radius: 0 0 1rem 1rem;
-  box-shadow: 0 0 10rem -4rem rgba(0, 0, 0, 0.788);
+  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.788);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-}
-@media screen and (max-width: 1000px) {
-  nav span {
-    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.788);
-  }
 }
 nav span .icon {
   display: flex;
