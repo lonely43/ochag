@@ -100,20 +100,24 @@
   display: flex;
   gap: 2rem;
 }
-.inputBlock form .btns .btn1 {
-  padding: 0.8rem 2rem;
-  font-size: 0.8em;
-  border-radius: 0.8rem;
+.inputBlock form .btns button {
+  padding: 1rem;
 }
-.inputBlock form .btns .btn2 {
-  cursor: pointer;
-  padding: 0.8rem 2rem;
-  font-size: 0.8em;
-  border-radius: 0.8rem;
-  border: 0.1rem solid #1c72c2;
+.inputBlock form .btns button:nth-child(1) {
+  background: rgb(33, 198, 255);
+  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+}
+.inputBlock form .btns button:nth-child(2) {
+  padding: 1rem 2rem;
   font-weight: 500;
   color: black;
+  border: 0.1rem solid #65acf0;
   background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+}
+@media screen and (max-width: 500px) {
+  .inputBlock form .btns {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=input.css.map */

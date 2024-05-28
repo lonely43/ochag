@@ -5,11 +5,10 @@ nav {
   left: 50%;
   width: 100dvw;
   transform: translateX(-50%);
+  display: flex;
 }
 nav span {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1400px;
   padding: 2rem;
   background-color: #fcfcfc;
   border-radius: 0 0 1rem 1rem;
@@ -19,6 +18,11 @@ nav span {
   align-items: center;
   gap: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  nav span {
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.788);
+  }
+}
 nav span .icon {
   display: flex;
   align-items: center;
@@ -26,10 +30,12 @@ nav span .icon {
   max-width: 200px;
   height: auto;
 }
-@media screen and (max-width: 1130px) {
-  nav span .icon {
-    display: none;
-  }
+nav span .miniIcon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-width: 70px;
+  height: auto;
 }
 nav span .title {
   display: grid;
@@ -156,7 +162,7 @@ nav span .contact .number {
 nav span .contact .number h1 {
   font-size: 1em;
 }
-@media screen and (max-width: 1262px) {
+@media screen and (max-width: 1300px) {
   nav span .contact {
     display: none;
   }
@@ -165,7 +171,7 @@ nav span .iconPhone {
   display: none;
   position: relative;
 }
-@media screen and (max-width: 1262px) {
+@media screen and (max-width: 1300px) {
   nav span .iconPhone {
     display: block;
   }
@@ -231,7 +237,21 @@ nav span .burgerMenu .list ul li {
 nav span .burgerMenu .show {
   left: 0;
 }
-@media screen and (max-width: 892px) {
+nav .miniVersion .icon {
+  display: none !important;
+}
+nav .miniVersion .miniIcon {
+  display: flex !important;
+}
+@media screen and (max-width: 1200px) {
+  nav .icon {
+    display: none !important;
+  }
+  nav .miniIcon {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 1000px) {
   nav span {
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -241,7 +261,12 @@ nav span .burgerMenu .show {
   nav .icon {
     order: 1;
     padding: 1rem;
-    display: flex !important;
+    display: flex;
+  }
+  nav .miniIcon {
+    order: 1;
+    padding: 1rem;
+    display: flex;
   }
   nav .iconPhone {
     order: 2;

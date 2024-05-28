@@ -6,7 +6,7 @@
   align-items: center;
   overflow: visible;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1000px) {
   .contactsBlock {
     padding-top: 8rem !important;
   }

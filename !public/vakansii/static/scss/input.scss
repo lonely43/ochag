@@ -109,24 +109,24 @@
          display: flex;
          gap: 2rem;
 
-         .btn1{
-            padding: 0.8rem 2rem;
-            font-size: 0.8em;
-            border-radius: 0.8rem;
+         button{
+            padding: 1rem;
+   
+            &:nth-child(1){
+               background: rgb(33,198,255);
+               background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
+            }
+            &:nth-child(2){
+               padding: 1rem 2rem;
+               font-weight: 500;
+               color: black;
+               border: 0.1rem solid #65acf0;
+               background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+            }
          }
-         .btn2{
-            cursor: pointer;
 
-            padding: 0.8rem 2rem;
-
-            font-size: 0.8em;
-
-            border-radius: 0.8rem;
-            border: 0.1rem solid #1c72c2;
-
-            font-weight: 500;
-            color: black;
-            background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
+         @media screen and (max-width: 500px) {
+            flex-direction: column;
          }
       }
    }

@@ -12,6 +12,9 @@
 				<div class="icon">
 					<img src="!public/nav/logo.svg" width="100%" alt="logo" />
 				</div>
+				<div class="miniIcon">
+					<img src="!public/nav/logoMini.png" width="100%" alt="logo" />
+				</div>
 				<div class="title">
 					<div class="head">
 						<ul>
@@ -1423,6 +1426,18 @@
 		</footer>
 
 		<script>
+			//Nav
+			{
+				let nav = document.querySelector("nav span");
+
+				window.onscroll = () => {
+					if (window.scrollY >= 100) {
+						nav.classList.add("miniVersion");
+					} else {
+						nav.classList.remove("miniVersion");
+					}
+				};
+			}
 			//LAND
 			{
 				let arrows = document.querySelectorAll(".arrow");

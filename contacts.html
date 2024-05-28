@@ -12,6 +12,9 @@
          <div class="icon">
             <img src="!public/nav/logo.svg" width="100%" alt="logo">
          </div>
+         <div class="miniIcon">
+            <img src="!public/nav/logoMini.png" width="100%" alt="logo">
+         </div>
          <div class="title">
             <div class="head">
                <ul>
@@ -493,18 +496,36 @@
    </footer>
 
    <script>
-      let questions = document.getElementsByClassName('question')
-      Array.from(questions).forEach((el, index) => {
-         el.firstElementChild.addEventListener("click", () => {
-            el.classList.toggle("showAnswer")
-            
-            Array.from(questions).forEach((e,i) => {
-               if(i !== index){
-                  e.classList.remove("showAnswer")
-               }
-            })
-         }, false)
-      })
+      //Nav
+      {
+         let nav = document.querySelector('nav span')
+
+         window.onscroll = () => {
+            if(window.scrollY>=100){
+               nav.classList.add("miniVersion")
+            }
+            else{
+               nav.classList.remove("miniVersion")
+            }
+         }
+      }
+
+      //FAQ
+      {
+         let questions = document.getElementsByClassName('question')
+         Array.from(questions).forEach((el, index) => {
+            el.firstElementChild.addEventListener("click", () => {
+               el.classList.toggle("showAnswer")
+               
+               Array.from(questions).forEach((e,i) => {
+                  if(i !== index){
+                     e.classList.remove("showAnswer")
+                  }
+               })
+            }, false)
+         })
+      }
+
    </script>   
    <script src="!public/nav/nav.js"></script>
 </body>

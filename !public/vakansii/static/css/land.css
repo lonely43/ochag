@@ -65,7 +65,7 @@
   z-index: -1;
   top: calc(100% - 2rem);
   background-color: white;
-  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.214);
+  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.788);
   border-radius: 2rem;
   display: flex;
   justify-content: center;
