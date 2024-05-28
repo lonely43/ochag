@@ -16,7 +16,6 @@
   gap: 2rem;
 }
 .price .services .blocks .card {
-  z-index: 1;
   padding: 1rem 3rem;
   width: 18rem;
   height: 6rem;
@@ -142,6 +141,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
   gap: 2rem;
   background-color: white;
   border-radius: 1rem;
@@ -156,6 +156,7 @@
   text-align: center;
   font-size: 1.4em;
   font-weight: 500;
+  height: 3rem;
 }
 .price .offers .block .cards .card .cost p {
   text-decoration: line-through;

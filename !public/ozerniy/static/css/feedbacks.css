@@ -1,64 +1,59 @@
 .feedback {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
-.feedback .cards {
-  padding-top: 6rem;
-  display: grid;
-  grid-template-columns: repeat(3, 25rem);
+.feedback .swiper {
+  padding: 8rem;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+}
+.feedback .swiper .swiper-wrapper {
+  padding-top: 4rem;
+}
+.feedback .swiper .swiper-wrapper .activeSlide {
+  transform: translateY(-6rem);
+}
+.feedback .swiper .swiper-wrapper .swiper-slide {
+  width: auto;
+  transition: 0.4s transform;
+  display: flex;
   justify-content: center;
-  justify-items: center;
-  gap: 6rem;
 }
-@media screen and (max-width: 1400px) {
-  .feedback .cards {
-    grid-template-columns: repeat(2, 25rem);
-  }
-  .feedback .cards .card:nth-child(2) {
-    transform: translateY(0) !important;
-  }
-}
-@media screen and (max-width: 950px) {
-  .feedback .cards {
-    grid-template-columns: repeat(1, 25rem);
-  }
-}
-@media screen and (max-width: 400px) {
-  .feedback .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .feedback .cards .card {
-    overflow: hidden;
-  }
-}
-.feedback .cards .card {
+.feedback .swiper .swiper-wrapper .swiper-slide .card {
   position: relative;
   padding: 2rem;
+  max-width: 25rem;
+  width: 100%;
   background-color: white;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
   border-radius: 1rem;
 }
-.feedback .cards .card:nth-child(2) {
+.feedback .swiper .swiper-wrapper .swiper-slide .card:nth-child(2) {
   transform: translateY(-4rem);
 }
-.feedback .cards .card .title {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.feedback .cards .card .title h1 {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title h1 {
   font-size: 1.8em;
   font-weight: 500;
 }
-.feedback .cards .card .title img {
-  max-width: 90px;
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title .rate {
+  display: flex;
+  gap: 0.2rem;
 }
-.feedback .cards .card p {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title .rate img {
+  max-width: 1rem;
+}
+.feedback .swiper .swiper-wrapper .swiper-slide .card p {
   padding-top: 2rem;
   text-align: start;
 }
-.feedback .cards .card .ochag {
+.feedback .swiper .swiper-wrapper .swiper-slide .card .ochag {
   position: absolute;
   bottom: -2rem;
   left: -1.6rem;

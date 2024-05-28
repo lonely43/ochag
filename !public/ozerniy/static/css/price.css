@@ -24,6 +24,16 @@
   align-items: center;
   gap: 2rem;
   background-color: white;
+  border-radius: 1rem;
+  position: relative;
+}
+.price .services .blocks .card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
   box-shadow: 0 0 30rem -2rem rgba(0, 0, 0, 0.788);
   border-radius: 1rem;
 }
@@ -45,12 +55,14 @@
 .price .text h2, .price .text p {
   padding: 0 1rem;
   text-align: center;
-  font-size: 1.2em;
 }
 .price .text h2 {
-  font-weight: 500;
+  font-weight: 600;
+  color: #5290cc;
+  font-size: 1.6em;
 }
 .price .text p {
+  font-size: 1.2em;
   max-width: 68rem;
   font-weight: 400;
 }
@@ -123,11 +135,13 @@
   gap: 2rem;
 }
 .price .offers .block .cards .card {
+  max-width: 25rem;
   flex-grow: 0.2;
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
   gap: 2rem;
   background-color: white;
   border-radius: 1rem;
@@ -135,11 +149,14 @@
 @media screen and (max-width: 1020px) {
   .price .offers .block .cards .card {
     flex-grow: 1;
+    max-width: none;
   }
 }
 .price .offers .block .cards .card h2 {
-  font-size: 1.8em;
+  text-align: center;
+  font-size: 1.4em;
   font-weight: 500;
+  height: 3rem;
 }
 .price .offers .block .cards .card .cost p {
   text-decoration: line-through;

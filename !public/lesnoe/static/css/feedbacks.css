@@ -5,7 +5,7 @@
 }
 .feedback .swiper {
   padding: 8rem;
-  max-width: 1700px;
+  max-width: 1400px;
   width: 100%;
   height: auto;
 }
@@ -42,8 +42,12 @@
   font-size: 1.8em;
   font-weight: 500;
 }
-.feedback .swiper .swiper-wrapper .swiper-slide .card .title img {
-  max-width: 90px;
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title .rate {
+  display: flex;
+  gap: 0.2rem;
+}
+.feedback .swiper .swiper-wrapper .swiper-slide .card .title .rate img {
+  max-width: 1rem;
 }
 .feedback .swiper .swiper-wrapper .swiper-slide .card p {
   padding-top: 2rem;

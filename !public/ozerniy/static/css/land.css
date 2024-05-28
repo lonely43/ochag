@@ -5,30 +5,9 @@
   min-height: 40rem;
   display: flex;
   justify-content: center;
-  position: relative;
   background-image: url("../../public/land/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.landBlock .arrows {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.landBlock .arrows .arrow {
-  z-index: 3;
-  box-sizing: content-box;
-  padding: 1rem;
-  max-width: 2rem;
-}
-.landBlock .arrows .arrow:nth-child(1) {
-  transform: rotate(180deg);
 }
 @media screen and (max-width: 1350px) {
   .landBlock {
@@ -40,11 +19,21 @@
   .landBlock .icon {
     order: 1;
   }
-  .landBlock .text {
+  .landBlock .text h1 {
     text-align: center;
   }
   .landBlock .text h1, .landBlock .text p {
     max-width: 30rem !important;
+  }
+}
+@media screen and (max-width: 1740px) {
+  .landBlock {
+    background-size: 120% 120%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .landBlock {
+    background-size: cover;
   }
 }
 .landBlock .text {
@@ -68,9 +57,25 @@
   max-width: 27rem;
   font-size: 1.2em;
   font-weight: 400;
+  position: relative;
+}
+.landBlock .text p:nth-child(2) {
+  max-width: 26rem;
 }
 .landBlock .text p strong {
   font-weight: 500;
+}
+.landBlock .text p::before {
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  width: 30px;
+  height: 25px;
+  content: "";
+  background-image: url("../../../nav/logoMini.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .landBlock .icon {
   max-width: 35rem;

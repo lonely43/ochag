@@ -6,7 +6,7 @@
    .swiper{
       padding: 8rem;
       
-      max-width: 1700px;
+      max-width: 1400px;
       width: 100%;
       height: auto;
 
@@ -46,8 +46,13 @@
                      font-size: 1.8em;
                      font-weight: 500;
                   }
-                  img{
-                     max-width:90px;
+
+                  .rate{
+                     display: flex;
+                     gap: 0.2rem;
+                     img{
+                        max-width: 1rem;
+                     }
                   }
                }
                p{
