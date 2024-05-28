@@ -77,13 +77,17 @@
          .card{
             padding: 1rem 3rem;
 
-            max-width: 22rem;
+            max-width: 20rem;
             height: 6rem;
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 1rem;
+
+            @media screen and (max-width: 900px) {
+               width: 100%;
+            }
 
             background-color: white;
             box-shadow: 0 0 30rem -2rem rgba(0, 0, 0, 0.788);
