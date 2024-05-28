@@ -1,3 +1,54 @@
+@charset "UTF-8";
+.docsBlock .popupContainer {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.651);
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандартный синтаксис */
+}
+.docsBlock .popupContainer img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80rem;
+  width: 100%;
+}
+.docsBlock .popupContainer .closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.docsBlock .popupContainer .nextBtn, .docsBlock .popupContainer .prevBtn, .docsBlock .popupContainer .closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2941176471);
+  padding: 0.4rem;
+  border-radius: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.docsBlock .popupContainer .prevBtn {
+  left: 2rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.docsBlock .popupContainer .nextBtn {
+  right: 2rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
 .docsBlock .documents {
   padding-top: 2rem;
   display: flex;
@@ -12,10 +63,32 @@
     margin: 0 auto;
   }
 }
+.docsBlock .documents .seeDoc {
+  position: relative;
+}
+.docsBlock .documents .seeDoc:hover::after {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  border-radius: 50%;
+  background-color: #5290cc;
+  width: 48px;
+  height: 48px;
+}
 .docsBlock .documents .mainDoc {
-  max-width: 15rem;
+  max-width: 16rem;
+  cursor: pointer;
 }
 .docsBlock .documents .docs {
+  cursor: pointer;
   display: grid;
   grid-template-columns: repeat(3, 15rem);
   gap: 0.6rem;

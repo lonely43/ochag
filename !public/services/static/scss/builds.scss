@@ -2,17 +2,17 @@
    .cards{
       margin-top: 4rem;
       display: grid;
-      grid-template-columns: repeat(4, 20rem);
+      grid-template-columns: repeat(4, 20.1rem);
       justify-content: center;
       justify-items: center;
       gap: 2rem;
 
 
       @media screen and (max-width: 1390px) {
-         grid-template-columns: repeat(2, 20rem);
+         grid-template-columns: repeat(2, 20.1rem);
       }
       @media screen and (max-width: 800px) {
-         grid-template-columns: repeat(1, 20rem);
+         grid-template-columns: repeat(1, 20.1rem);
          .card{
             .info{
                min-height: 22rem !important;
@@ -81,6 +81,7 @@
             }
             p{
                text-align: center;
+               max-width: 18rem;
             }
             button{
                margin: 0 auto;
