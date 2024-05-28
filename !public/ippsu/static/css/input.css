@@ -1,5 +1,36 @@
 .inputBlock {
-  margin-top: 10rem;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.inputBlock .title {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.inputBlock .title h1 {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.inputBlock .title .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputBlock .title .numbers p {
+  width: 100%;
+  max-width: 25rem;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.inputBlock .title .numbers lil {
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 .inputBlock .notice {
   padding: 1rem;
@@ -25,6 +56,7 @@
   position: relative;
   padding: 4rem;
   margin: 0 auto;
+  width: 100%;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -57,35 +89,18 @@
   width: 100%;
   max-width: 20rem;
 }
-.inputBlock form .input span input, .inputBlock form .input span select {
-  width: 20rem;
+.inputBlock form .input span input {
+  max-width: 25rem;
+  width: 100%;
   padding: 0.6rem 0.6rem;
   border-radius: 0.6rem;
   border: 0.1rem solid #4187cc;
   outline: none;
 }
-.inputBlock form .input span .select {
-  width: fit-content;
-  position: relative;
-}
-.inputBlock form .input span .select select {
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
-  appearance: none;
-  font-weight: 400;
-  position: relative;
-}
-.inputBlock form .input span .select .arrow {
-  position: absolute;
-  right: 1.4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 1rem;
-}
 .inputBlock form .input span textarea {
   padding: 0.6rem 1rem;
-  min-width: 20rem;
-  max-width: 10rem;
+  max-width: 25rem;
+  width: 100%;
   height: 6rem;
   border: 0.1rem solid #5290cc;
   outline: none;

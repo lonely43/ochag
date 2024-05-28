@@ -1,0 +1,46 @@
+.secondBlock {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.secondBlock img {
+  max-width: 35rem;
+  height: auto;
+}
+.secondBlock .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.secondBlock .text h1 {
+  letter-spacing: 2px;
+  text-align: start;
+  font-size: 2em;
+  font-weight: 500;
+}
+.secondBlock .text p {
+  letter-spacing: 0.5px;
+  max-width: 40rem;
+  padding-top: 1rem;
+  text-align: start;
+  font-size: 1em;
+}
+@media screen and (max-width: 1200px) {
+  .secondBlock {
+    flex-direction: column;
+  }
+  .secondBlock .text h1 {
+    text-align: center;
+  }
+  .secondBlock .text p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .secondBlock img {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=secondBlock.css.map */
