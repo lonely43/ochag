@@ -1,4 +1,4 @@
-.cards {
+.listCards {
   margin: 0 auto;
   padding-top: 6rem;
   max-width: 1600px;
@@ -6,52 +6,52 @@
   grid-template-columns: repeat(4, 20rem);
   gap: 2rem;
 }
-.cards .card:nth-child(n+5) {
+.listCards .card:nth-child(n+5) {
   padding-top: 6rem;
 }
-.cards .card .photo {
+.listCards .card .photo {
   position: relative;
   border-radius: 3rem;
 }
-.cards .card .text {
+.listCards .card .text {
   width: 18rem;
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
-  box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.197);
+  box-shadow: 0 0 2rem 1rem rgba(188, 188, 188, 0.367);
   border-radius: 1rem;
 }
-.cards .card .text p {
+.listCards .card .text p {
   padding: 1rem 1rem;
   text-transform: uppercase;
   text-align: center;
   font-size: 1em;
   font-weight: 500;
 }
-.cards .card .text strong {
+.listCards .card .text strong {
   color: #65adf0;
 }
 @media screen and (max-width: 1390px) {
-  .cards {
+  .listCards {
     grid-template-columns: repeat(2, 20rem);
   }
-  .cards .card:nth-child(n+3) {
+  .listCards .card:nth-child(n+3) {
     padding-top: 6rem;
   }
 }
 @media screen and (max-width: 670px) {
-  .cards {
+  .listCards {
     grid-template-columns: repeat(1, 1fr);
   }
-  .cards .card .text {
+  .listCards .card .text {
     top: auto !important;
     bottom: -1rem;
   }
-  .cards .card:nth-child(n+2) {
+  .listCards .card:nth-child(n+2) {
     padding-top: 6rem;
   }
 }
 
-/*# sourceMappingURL=cards.css.map */
+/*# sourceMappingURL=listCards.css.map */

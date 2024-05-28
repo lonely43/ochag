@@ -8,7 +8,12 @@
 
 /* blocks */
 @import url('./static/css/landText.css');
-@import url('./static/css/cards.css');
+@import url('./static/css/listCards.css');
+@import url('./static/css/inputBlock.css');
+@import url('./static/css/points.css');
+@import url('./static/css/docs.css');
+@import url('./static/css/builds.css');
+@import url('./static/css/feedbacks.css');
 @import url('./static/css/FAQ.css');
 
 

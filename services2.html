@@ -1,436 +1,910 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="!public/services2/main.css">
-   <title>Ochag</title>
-</head>
-<body>
-   <nav>
-      <span>
-         <div class="icon">
-            <img src="!public/nav/logo.svg" width="100%" alt="logo">
-         </div>
-         <div class="title">
-            <div class="head">
-               <ul>
-                  <li>
-                     <img src="!public/nav/docs.png" width="100%" alt="logo">
-                     <h1>Медицинская лицензия <br> № Л041-01162-50/00341080</h1>
-                  </li>
-                  <li>
-                     <img src="!public/nav/gerb.png" width="100%" alt="logo">
-                     <h1>Депортамент труда и социальной <br> защиты населения города Москвы</h1>
-                  </li>
-                  <li>
-                     <img src="!public/nav/gerb_minzdrava.png" width="100%" alt="logo">
-                     <h1>Министерство Здравоохранения <br> Российской Федерации</h1>
-                  </li>
-               </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="!public/services2/main.css" />
+		<title>Ochag</title>
+	</head>
+	<body>
+		<nav>
+			<span>
+				<div class="icon">
+					<img src="!public/nav/logo.svg" width="100%" alt="logo" />
+				</div>
+				<div class="title">
+					<div class="head">
+						<ul>
+							<li>
+								<img src="!public/nav/docs.png" width="100%" alt="logo" />
+								<h1>
+									Медицинская лицензия <br />
+									№ Л041-01162-50/00341080
+								</h1>
+							</li>
+							<li>
+								<img src="!public/nav/gerb.png" width="100%" alt="logo" />
+								<h1>
+									Депортамент труда и социальной <br />
+									защиты населения города Москвы
+								</h1>
+							</li>
+							<li>
+								<img src="!public/nav/gerb_minzdrava.png" width="100%" alt="logo" />
+								<h1>
+									Министерство Здравоохранения <br />
+									Российской Федерации
+								</h1>
+							</li>
+						</ul>
 
-               <div class="btns">
-                  <ul>
-                     <li><h1>Главная</h1></li>
-                     <li class="dropdown">
-                        <h1>О нас</h1>
-                        <div class="dropdownMenu">
-                           <ul>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt=""><p>O пансионате</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt=""><p>Лицензии и сертификаты</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt=""><p>Отзывы</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt=""><p>Стоимость услуг</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt=""><p>Услуги для постояльцев</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg"  alt=""><p>Наша команда</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt=""><p>Порядок оформления</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt=""><p>Госпрограмма ИППСУ</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg"  alt=""><p>Вакансии</p></li>
-                              <li><img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt=""><p>Перечень необходимых вещей</p></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="dropdown"> 
-                        <h1>Пансионаты</h1>
-                        <div class="dropdownMenu">
-                           <ul>
-                              <li><p>Пансионат "Щелково"</p></li>
-                              <li><p>Пансионат "Лесное"</p></li>
-                              <li><p>Пансионат "Прибрежный"</p></li>
-                              <li><p>Пансионат "Озерный"</p></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="dropdown">
-                        <h1>Услуги</h1>
-                        <div class="dropdownMenu">
-                           <ul>
-                              <li><img src="!public/nav/dropdown/services/free-icon-old-man-12264597.svg" alt=""/><p>Уход за пожилыми людьми</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-patient-4348530.svg" alt=""><p>Уход за лежачими больными</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-coronavirus-225-8556301.svg" alt=""><p>Восстановление после ковида (COVID-19)</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-alzheimer-6370801.svg"><p>Уход за больными Альцгеймером</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-alzheimer-6723561.svg"><p>Уход за больными деменцией</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-disease-4939020.svg"><p>Уход за больными Паркинсон</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg"><p>Уход в послеоперационный период</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-brain-2453687.svg" alt=""><p>Восстановление после инсульта</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-heart-attack-7350718.svg" alt=""><p>Восстановление после инфаркта</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-pelvis-3323150.svg" alt=""><p>Восстановление после перелома шейки бедра</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-band-aid-3824551.svg" alt=""><p>Восстановление после травмы</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-surgery-6093558.svg" alt=""><p>Восстановление после операции</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-alcoholic-14838314.svg" alt=""><p>Восстановление после алкогольной и наркотической зависимостей</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-disabled-1806186.svg" alt=""><p>Уход за инвалидами</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-grenade-7445257.svg" alt=""><p>Реабилитация после боевых действий</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-old-man-3160279.svg" alt=""><p>Организация ухода и присмотра за одинокими пожилыми людьми</p></li>
-                              <li><img src="!public/nav/dropdown/services/free-icon-medical-prescription-5494019.svg" alt=""><p>Перечень оказываемых услуг для постояльцев</p></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li><h1>Контакты</h1></li>
-                     <li><h1>Отзывы</h1></li>
-                     <li><h1>Фотогалерея</h1></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="contact">
-            <button> СВЯЗАТЬСЯ С НАМИ </button>
-            <div class="number">
-               <h1> 8 (800) 555-94-83 </h1>
-               <h1> 8 (499) 555-94-83 </h1>
-            </div>
-         </div>
+						<div class="btns">
+							<ul>
+								<li><h1>Главная</h1></li>
+								<li class="dropdown">
+									<h1>О нас</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
+												<p>O пансионате</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
+												<p>Лицензии и сертификаты</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
+												<p>Отзывы</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
+												<p>Стоимость услуг</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
+												<p>Услуги для постояльцев</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
+												<p>Наша команда</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
+												<p>Порядок оформления</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
+												<p>Госпрограмма ИППСУ</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" alt="" />
+												<p>Вакансии</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
+												<p>Перечень необходимых вещей</p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown">
+									<h1>Пансионаты</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li><p>Пансионат "Щелково"</p></li>
+											<li><p>Пансионат "Лесное"</p></li>
+											<li><p>Пансионат "Прибрежный"</p></li>
+											<li><p>Пансионат "Озерный"</p></li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown">
+									<h1>Услуги</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-old-man-12264597.svg" alt="" />
+												<p>Уход за пожилыми людьми</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-patient-4348530.svg" alt="" />
+												<p>Уход за лежачими больными</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-coronavirus-225-8556301.svg" alt="" />
+												<p>Восстановление после ковида (COVID-19)</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alzheimer-6370801.svg" />
+												<p>Уход за больными Альцгеймером</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alzheimer-6723561.svg" />
+												<p>Уход за больными деменцией</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-disease-4939020.svg" />
+												<p>Уход за больными Паркинсон</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" />
+												<p>Уход в послеоперационный период</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-brain-2453687.svg" alt="" />
+												<p>Восстановление после инсульта</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-heart-attack-7350718.svg" alt="" />
+												<p>Восстановление после инфаркта</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-pelvis-3323150.svg" alt="" />
+												<p>Восстановление после перелома шейки бедра</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-band-aid-3824551.svg" alt="" />
+												<p>Восстановление после травмы</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-surgery-6093558.svg" alt="" />
+												<p>Восстановление после операции</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alcoholic-14838314.svg" alt="" />
+												<p>Восстановление после алкогольной и наркотической зависимостей</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-disabled-1806186.svg" alt="" />
+												<p>Уход за инвалидами</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-grenade-7445257.svg" alt="" />
+												<p>Реабилитация после боевых действий</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-old-man-3160279.svg" alt="" />
+												<p>Организация ухода и присмотра за одинокими пожилыми людьми</p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-medical-prescription-5494019.svg" alt="" />
+												<p>Перечень оказываемых услуг для постояльцев</p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li><h1>Контакты</h1></li>
+								<li><h1>Отзывы</h1></li>
+								<li><h1>Фотогалерея</h1></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="contact">
+					<button>СВЯЗАТЬСЯ С НАМИ</button>
+					<div class="number">
+                  <h1> <a href="tel:88005559483">8 (800) 555-94-83</a> </h1>
+                  <h1> <a href="tel:84996382294">8 (499) 638-22-94</a> </h1>
+					</div>
+				</div>
 
-         <div class="iconPhone">
-            <div class="picture">
-               <img src="!public/nav/phoneIcon.png" alt="" width="100%">
-            </div>
+				<div class="iconPhone">
+					<div class="picture">
+						<img src="!public/nav/phoneIcon.png" alt="" width="100%" />
+					</div>
 
-            <div class="numbers">
-               <h1> 8 (800) 555-94-83 </h1>
-               <h1> 8 (499) 555-94-83 </h1>
-            </div>
-         </div>
+					<div class="numbers">
+                  <h1> <a href="tel:88005559483">8 (800) 555-94-83</a> </h1>
+                  <h1> <a href="tel:84996382294">8 (499) 638-22-94</a> </h1>
+					</div>
+				</div>
 
-         <div class="burgerMenu">
-            <div class="brgBtn">
-               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-               </svg>
-            </div>
+				<div class="burgerMenu">
+					<div class="brgBtn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+						</svg>
+					</div>
 
-            <div class="list">
-               <ul>
-                  <li>Главная</li>
-                  <li>О нас</li>
-                  <li>Пансионаты</li>
-                  <li>Услуги</li>
-                  <li>Контакты</li>
-                  <li>Отзывы</li>
-                  <li>Фотогалерея</li>
-               </ul>
-            </div>
-         </div>
-      </span>
-   </nav>
-   <!-- navigator -->
+					<div class="list">
+						<ul>
+							<li>Главная</li>
+							<li>О нас</li>
+							<li>Пансионаты</li>
+							<li>Услуги</li>
+							<li>Контакты</li>
+							<li>Отзывы</li>
+							<li>Фотогалерея</li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<!-- navigator -->
 
-   
-   <main>
-      <div class="landText">
-         <h1 class="headerText">Наши услуги</h1>
+		<main>
+			<div class="landText">
+				<h1 class="headerText">Наши услуги</h1>
 
-         <div class="text">
-            <p>Пансионаты “Родной очаг” предоставляют обширный список услуг для своих постояльцев и гарантируют профессиональную медицинскую помощь</p>
-         </div>
-      </div>
+				<div class="text">
+					<p>Пансионаты “Родной очаг” предоставляют обширный список услуг для своих постояльцев и гарантируют профессиональную медицинскую помощь</p>
+				</div>
+			</div>
 
-      <div class="cards">
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/1.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за пожилыми людьми </p></div>
-            </div>
-         </div>
+			<div class="listCards">
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/1.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за пожилыми людьми</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/2.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за лежачими больными </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/2.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за лежачими больными</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/3.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после ковида (COVID-19) </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/3.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после ковида (COVID-19)</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/4.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за больными Альцгеймером</p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/4.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за больными Альцгеймером</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/5.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за больными деменцией </p></div>
-            </div>
-         </div>
-         
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/6.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за больными Паркинсон </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/5.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за больными деменцией</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/7.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> в послеоперационный период </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/6.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за больными Паркинсон</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/8.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после инсульта</p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/7.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> в послеоперационный период</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/9.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после инфаркта </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/8.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после инсульта</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/10.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после перелома шейки бедра </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/9.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после инфаркта</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/11.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после травмы </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/10.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после перелома шейки бедра</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/12.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после операции </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/11.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после травмы</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/13.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Восстановление </strong> после алкогольной и наркотической зависимостей </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/12.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после операции</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/14.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> Уход </strong> за инвалидами </p></div>
-            </div>
-         </div>
-         
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/15.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> реабилитации </strong> после боевых действий </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/13.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Восстановление </strong> после алкогольной и наркотической зависимостей</p>
+						</div>
+					</div>
+				</div>
 
-         <div class="card">
-            <div class="photo"> 
-               <img src="!public/services2/public/cards/16.png" width="100%" alt=""> 
-               <div class="text"> <p><strong> организация ухода </strong> и присмотра за одинокими пожилыми людьми </p></div>
-            </div>
-         </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/14.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> Уход </strong> за инвалидами</p>
+						</div>
+					</div>
+				</div>
 
-      </div>
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/15.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> реабилитации </strong> после боевых действий</p>
+						</div>
+					</div>
+				</div>
 
-      <div class="FAQBlock">
-         <div class="info">
-            <div class="faq">
-               <h1> ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h1>
-               <div class="asks">
+				<div class="card">
+					<div class="photo">
+						<img src="!public/services2/public/cards/16.png" width="100%" alt="" />
+						<div class="text">
+							<p><strong> организация ухода </strong> и присмотра за одинокими пожилыми людьми</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                  <div class="question"> 
-                     <h2>+ Как осуществляется трансфер до пансионата? </h2>
+         <div class="inputBlock">
+				<form action="">
+					<h2>Рассчитать стоимость проживания в нашем пансионате</h2>
 
-                        <p class="answer"> Мы предоставляем удобный сервис трансфера для наших <br> 
-                           постояльцев. По запросу, мы организуем комфортную доставку <br> 
-                           прямо от вашего дома или из указанного места.  
-                        </p>
-                  </div>
+					<div class="input">
+						<h3>Какое физическое состояние у вашего родственника?</h3>
+						<span>
+							<input type="radio" name="statusBody" />
+							<label> Лежачий большой (не может себя обслуживать) </label>
+						</span>
+						<span>
+							<input type="radio" name="statusBody" />
+							<label> Инвалид-колясочник </label>
+						</span>
+						<span>
+							<input type="radio" name="statusBody" />
+							<label> Может частично себя обслуживать, но нужен полноценный </label>
+						</span>
+						<span>
+							<input type="radio" name="statusBody" />
+							<label> Может частично себя обслуживать, но нужен присмотр </label>
+						</span>
+					</div>
 
-                  <div class="question"> 
-                     <h2>+ Какик тарифы на проживание? </h2>
+					<div class="input">
+						<h3>Какое психологическое состояние у вашего родственника?</h3>
+						<span>
+							<input type="radio" name="statusPsycho" />
+							<label> Адекватное (все осознает и понимает) </label>
+						</span>
+						<span>
+							<input type="radio" name="statusPsycho" />
+							<label> Начились проблемы с памятью </label>
+						</span>
+						<span>
+							<input type="radio" name="statusPsycho" />
+							<label> Диагностировано психологическое заболевание, например, деменция, Альцгеймер и др.</label>
+						</span>
+					</div>
 
-                        <p class="answer"> Наши тарифы зависят от выбранного типа номера и пакета услуг. Мы <br> 
-                           предоставляем различные варианты проживания с учетом <br> 
-                           индивидуальных потребностей наших гостей. Для получения <br> 
-                           подробной  информации, пожалуйста, свяжитесь с нашим отделом <br>
-                           бронирования.  
-                        </p>
-                  </div>
+					<div class="input">
+						<h3>Нужна ли реабилитация?</h3>
+						<span>
+							<input type="radio" name="rehabilitation" />
+							<label> Да, полноценная </label>
+						</span>
+						<span>
+							<input type="radio" name="rehabilitation" />
+							<label> Да, частичная </label>
+						</span>
+						<span>
+							<input type="radio" name="rehabilitation" />
+							<label> Нет </label>
+						</span>
+					</div>
 
-                  <div class="question"> 
-                     <h2>+ Какие вещи взять для размещения? </h2>
+					<div class="input">
+						<h3>Какой город рассматриваете для размещения?</h3>
+						<span>
+							<input type="radio" name="location" />
+							<label> Москва и Московская область </label>
+						</span>
+						<span>
+							<input type="radio" name="location" />
+							<label> Санкт-Петербург и Ленинградская область </label>
+						</span>
+					</div>
 
-                        <p class="answer"> Для комфортного проживания рекомендуем взять личные вещи, <br>
-                           такие как одежда, личная гигиеническая продукция и медицинские <br>
-                           принадлежности. Однако, базовые предметы и постельное белье <br>
-                           предоставляются нами.  
-                        </p>
-                  </div>
+					<div class="input">
+						<span>
+							<h3>Ваше имя</h3>
+							<input type="text" name="name" placeholder="Ваше имя" />
+						</span>
+						<span>
+							<h3>Ваш номер телефона</h3>
+							<input type="number" name="number" placeholder="+7 (___) ___-__-__" />
+						</span>
+					</div>
 
-                  <div class="question"> 
-                     <h2>+ Какая реабилитация проходит в пансионате?</h2>
+					<input class="blueBtn" type="submit" value="ОТПРАВИТЬ АНКЕТУ" />
+				</form>
 
-                        <p class="answer"> Мы предлагаем индивидуализированные программы реабилитации, <br>
-                           включая физические упражнения, занятия лечебной гимнастикой и <br>
-                           другие методы, направленные на поддержание здоровья и <br>
-                           активного образа жизни.
-                        </p>
-                  </div>
+				<img src="!public/services/public/babka.png" width="100%" alt="babka" />
+			</div>
 
-                  <div class="question"> 
-                     <h2>+ Как проходит организация режима для проживающего?</h2>
+			<div class="points">
+				<h1 class="headerText">ПАРУ СЛОВ О ПАНСИОНАТАХ "РОДНОЙ ОЧАГ"</h1>
 
-                        <p class="answer"> Мы уделяем особое внимание созданию комфортного режима дня. Наши <br>
-                           гости могут участвовать в разнообразных занятиях, мероприятиях и <br>
-                           получать медицинскую помощь по необходимости.
-                        </p>
-                  </div>
+				<div class="cards">
+					<div class="card">
+						<div class="text">
+							<img src="!public/services/public/cards/1.png" width="100%" alt="" />
+							<h3>РОДНОЙ ОЧАГ ЭТО</h3>
+						</div>
+						<p>Сеть пансионатов, расположенных в разных регионах России (Подмосковье, Ленинградская область и др)</p>
+					</div>
 
-                  <div class="question"> 
-                     <h2> + Можно ли разместить родственника по индивидуальному тарифу?</h2>
+					<div class="card">
+						<div class="text">
+							<img src="!public/services/public/cards/2.png" width="100%" alt="" />
+							<h3>НАША МИССИЯ</h3>
+						</div>
+						<p>Обеспечить каждому нашему постояльцу качественную жизнь, результативную реабилитацию и комфортные условия, чтобы он чувствовал себя хорошо и “как дома”</p>
+					</div>
 
-                        <p class="answer"> Да, у нас предусмотрена возможность индивидуального тарифа для размещения <br>
-                           родственников. Обращайтесь к нашему отделу бронирования для обсуждения <br>
-                           подробностей и условий..
-                        </p>
-                  </div>
+					<div class="card">
+						<div class="text">
+							<img src="!public/services/public/cards/3.png" width="100%" alt="" />
+							<h3>МЕД. ЛИЦЕНЗИИ</h3>
+						</div>
+						<p>Каждый наш пансионат получил лицензию на осуществление медицинской деятельности в соответствии с законодательством Российской Федерации и полностью соответствуют всем необходимым требованиям и критериям качества</p>
+					</div>
+				</div>
+			</div>
 
-                  <div class="question"> 
-                     <h2>+ Какой минимальный период для размещения?</h2>
+			<div class="docsBlock">
+				<h1 style="padding-top: 6rem" class="headerText">МЫ ИМЕЕМ ВСЕ НЕОБХОДИМЫЕ ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</h1>
+				<div class="documents">
+					<div class="popupContainer">
+						<img src="!public/mainPage/public/docs/mainDoc.png" alt="photo" />
 
-                        <p class="answer"> Минимальный период проживания зависит от выбранного <br>
-                           вами пакета услуг. Обычно мы предлагаем гибкие <br>
-                           варианты, начиная от недельного проживания.
-                        </p>
-                  </div>
+						<div class="closeBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+								<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+							</svg>
+						</div>
+						<div class="prevBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-caret-left" viewBox="0 0 16 16">
+								<path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
+							</svg>
+						</div>
+						<div class="nextBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" class="bi bi-caret-right" viewBox="0 0 16 16">
+								<path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+							</svg>
+						</div>
+					</div>
 
-                  <div class="question"> 
-                     <h2>+ Можно ли приехать и посмотреть условия?</h2>
+					<div class="mainDoc seeDoc" onclick="showPopup(0)">
+						<img src="!public/mainPage/public/docs/mainDoc.png" width="100%" alt="" />
+					</div>
 
-                        <p class="answer"> Конечно! Мы всегда рады приветствовать гостей. Вы можете связаться с <br>
-                           нами для предварительной записи, и мы с удовольствием организуем вам <br>
-                           экскурсию и ответим на все ваши вопросы.
+					<div class="docs">
+						<div class="doc seeDoc" onclick="showPopup(1)">
+							<img src="!public/mainPage/public/docs/Layer 893.png" width="100%" alt="" />
+						</div>
 
-                        </p>
-                  </div>
+						<div class="doc seeDoc" onclick="showPopup(2)">
+							<img src="!public/mainPage/public/docs/Layer 895.png" width="100%" alt="" />
+						</div>
 
-               </div>
-            </div>
-            <div class="socials">
-               <h1> КОНТАКТЫ </h1>
-               <div class="text">
-                  <p> <strong> Адрес РВЦ «Щелково»:</strong> Московская область, Г. <br>
-                     &nbsp&nbsp&nbsp&nbsp   Щелково, ул. 1-я линия д.45 <br>
-                     <strong> Медицинская лицензия:</strong> <br>
-                     &nbsp&nbsp&nbsp&nbsp   № Л041-01162-50/00341080 </p>
+						<div class="doc seeDoc" onclick="showPopup(3)">
+							<img src="!public/mainPage/public/docs/Layer 897.png" width="100%" alt="" />
+						</div>
 
-                  <p> <strong> Aдрес РВЦ «Озерный»:</strong> Ленинградская область,  <br>
-                     &nbsp&nbsp&nbsp&nbsp   Приозерский район пос. Мичуринское, пер. <br> 
-                     &nbsp&nbsp&nbsp&nbsp   Озерный, д.1а <br>
-                     <strong> Медицинская лицензия:</strong> <br>
-                     &nbsp&nbsp&nbsp&nbsp   № Л0-47-01-002331</p>
-      
-                  <p> <strong> Адрес РВЦ «Прибрежный»::</strong> г. Санкт-Петербург,  <br>
-                     &nbsp&nbsp&nbsp&nbsp   Канонерский остров, д. 23, лит А.  <br>
-                     <strong> Медицинская лицензия:</strong> <br>
-                     &nbsp&nbsp&nbsp&nbsp   № Л0-47-01-002331</p>
+						<div class="doc seeDoc" onclick="showPopup(4)">
+							<img src="!public/mainPage/public/docs/Layer 894.png" width="100%" alt="" />
+						</div>
 
-                  <p> <strong> Адрес РВЦ «Лесное»:</strong> Ленинградская <br>
-                     &nbsp&nbsp&nbsp&nbsp   область, Всеволожский район, г. Всеволожск, <br>
-                     &nbsp&nbsp&nbsp&nbsp пр. Грибоедова, д. 110 Б, лит. А-А1 <br>
-                     <strong> Медицинская лицензия:</strong> <br>
-                     &nbsp&nbsp&nbsp&nbsp   № Л0-47-01-002332</p>
+						<div class="doc seeDoc" onclick="showPopup(5)">
+							<img src="!public/mainPage/public/docs/Layer 896.png" width="100%" alt="" />
+						</div>
 
-                  <p> <strong> Контактный телефон: </strong> <br>
-                     &nbsp&nbsp&nbsp&nbsp <a href="tel:88005559483">8 (800) 555-94-83</a> <br>
-                     &nbsp&nbsp&nbsp&nbsp <a href="tel:84996382294">8 (499) 638-22-94</a> </p>
+						<div class="doc seeDoc" onclick="showPopup(6)">
+							<img src="!public/mainPage/public/docs/Layer 898.png" width="100%" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
 
-                  <div class="media">
-                     <span><img src="!public/FAQ/whatsapp.png" width="100%" alt=""></span>
-                     <span><img src="!public/FAQ/vk.png" width="100%" alt=""></span>
-                     <span><img src="!public/FAQ/youtube.png" width="100%" alt=""></span>
-                  </div>
+			<div class="buildsBlock">
+				<h1 style="padding-top: 6rem" class="headerText">Каталог пансионатов для пожилых людей</h1>
+				<div class="cards">
+					<div class="card">
+						<div class="info">
+							<h3>Пансионат РВЦ <strong>«Щёлково»</strong></h3>
 
-                  <button class="blueBtn">СВЯЗАТЬСЯ С ПАНСИОНАТОМ</button>
-               </div>
-            </div>
-         </div>
+							<p>Частный пансионат для пожилых людей РВЦ «Щелково» это место где пожилые люди могут жить, восстанавливаться и гармонично проводить время.</p>
 
-         <div class="mapBlock">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac043b94c1cade8a7e82d8f4e33b1d613986521fb543e92a0fac4c43c2415d486&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-         </div>
-      </div>
-   </main>
+							<button class="blueBtn">УЗНАТЬ ПОДБРОБНЕЕ</button>
+						</div>
+					</div>
 
-   <!-- footer -->
-   <footer>
-      <div class="logo">
-         <img src="!public/nav/logo.svg" width="100%" alt="">
-      </div>
+					<div class="card">
+						<div class="info">
+							<h3>Пансионат РВЦ <strong>«ЛЕСНОЕ»</strong></h3>
 
-      <div class="btns">
-         <ul>
-            <li><h1>Главная</h1></li>
-            <li><h1>О нас</h1></li>
-            <li><h1>Пансионаты</h1></li>
-            <li><h1>Услуги</h1></li>
-            <li><h1>Контакты</h1></li>
-            <li><h1>Отзывы</h1></li>
-            <li><h1>Фотогалерея</h1></li>
-         </ul>
+							<p>Комплексная реабилитация взрослых пациентов всех возрастов. Краткосрочные и долговременные программы реабилитации после травм и операций, заболеваний.</p>
 
-         <div class="title">
-            <p>
-               Согласие на обработку персональных данных
-            </p>
-            <p>
-               Политика конфиденциальности 
-            </p>
-         </div>
-      </div>
-   </footer>
+							<button class="blueBtn">УЗНАТЬ ПОДБРОБНЕЕ</button>
+						</div>
+					</div>
 
-   <script>
-      let questions = document.getElementsByClassName('question')
-      Array.from(questions).forEach((el, index) => {
-         el.firstElementChild.addEventListener("click", () => {
-            el.classList.toggle("showAnswer")
-            
-            Array.from(questions).forEach((e,i) => {
-               if(i !== index){
-                  e.classList.remove("showAnswer")
-               }
-            })
-         }, false)
-      })
-   </script>   
-   <script src="!public/nav/nav.js"></script>
-</body>
+					<div class="card">
+						<div class="info">
+							<h3>Пансионат РВЦ <strong>«ОЗЕРНЫЙ</strong>»</h3>
+
+							<p>Наш ООО «РВЦ «Озерный» для пожилых людей расположен в тихом живописном месте у озера, в Приозерском районе в юго-западной части Карельского перешейка ёв посёлке Мичуринское.</p>
+
+							<button class="blueBtn">УЗНАТЬ ПОДБРОБНЕЕ</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="info">
+							<h3>Пансионат РВЦ <strong>«ПРИБРЕЖНЫЙ»</strong></h3>
+
+							<p>Наш ООО «РВЦ «Прибрежный» для пожилых людей расположен в тихом живописном месте Канонерского острова округа Морские ворота г. Санкт-Петербурга с видом на морской канал и порт</p>
+
+							<button class="blueBtn">УЗНАТЬ ПОДБРОБНЕЕ</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="feedback">
+				<h1 style="text-transform: uppercase; padding-top: 6rem" class="headerText">ОТЗЫВЫ О ПАНСИОНАТАХ ОТ НАШИХ ПОСТОЛЬЦЕВ</h1>
+
+				<div class="cards">
+					<div class="card">
+						<div class="title">
+							<h1>Анастасия</h1>
+							<span class="stars"><img src="!public/services/public/feedbacks/stars.png" width="100%" alt="stars" /></span>
+						</div>
+
+						<p>
+							Всем доброго вечера! хочется поблагодарить коллектив пансионата за заботу и уход. Мы долго подбирали пансионат и наконец нашлось, то что нужно, нам нужен был не только уход, но и реабилитация. Мы деда не узнали, ухоженный и
+							бодрый) Огромное спасибо персоналу, всех вам благ!!
+							<br />
+							<br />
+							27.04.2022
+						</p>
+
+						<div class="ochag">
+							<img src="!public/services/public/feedbacks/ochag.png" width="100%" alt="" />
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="title">
+							<h1>Мария</h1>
+							<span class="stars"><img src="!public/services/public/feedbacks/stars.png" width="100%" alt="stars" /></span>
+						</div>
+
+						<p>
+							Хочу выразить благодарность сотрудникам пансионата! Очень тщательно подбирали пансионат, решили остановиться на Щелково и остались очень довольны. Сотрудники очень отзывчивые и профессионалы своего дела!.Мы деда не узнали,
+							бодренький, весёленький, довольный. Всех вам благ и огромное спасибо коллективу!!
+							<br />
+							<br />
+							27.04.2022
+						</p>
+
+						<div class="ochag">
+							<img src="!public/services/public/feedbacks/ochag.png" width="100%" width="100%" alt="" />
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="title">
+							<h1>Ольга</h1>
+							<span class="stars"><img src="!public/services/public/feedbacks/stars.png" width="100%" alt="stars" /></span>
+						</div>
+
+						<p>
+							В настоящий момент моя мама находится в данном пансионате. Именно "пансионате", потому что то, что я сама вижу, настраивает на позитивный лад при плохой жизненной ситуации. С ходячими проводят физкультуру, досуг, хорошее питание
+							( это уже со слов моей мамы) и , конечно, уход.
+							<br />
+							<br />
+							26.04.2022
+						</p>
+
+						<div class="ochag">
+							<img src="!public/services/public/feedbacks/ochag.png" width="100%" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="FAQBlock">
+				<div class="info">
+					<div class="faq">
+						<h1>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h1>
+						<div class="asks">
+							<div class="question">
+								<h2>+ Как осуществляется трансфер до пансионата?</h2>
+
+								<p class="answer">
+									Мы предоставляем удобный сервис трансфера для наших <br />
+									постояльцев. По запросу, мы организуем комфортную доставку <br />
+									прямо от вашего дома или из указанного места.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Какик тарифы на проживание?</h2>
+
+								<p class="answer">
+									Наши тарифы зависят от выбранного типа номера и пакета услуг. Мы <br />
+									предоставляем различные варианты проживания с учетом <br />
+									индивидуальных потребностей наших гостей. Для получения <br />
+									подробной информации, пожалуйста, свяжитесь с нашим отделом <br />
+									бронирования.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Какие вещи взять для размещения?</h2>
+
+								<p class="answer">
+									Для комфортного проживания рекомендуем взять личные вещи, <br />
+									такие как одежда, личная гигиеническая продукция и медицинские <br />
+									принадлежности. Однако, базовые предметы и постельное белье <br />
+									предоставляются нами.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Какая реабилитация проходит в пансионате?</h2>
+
+								<p class="answer">
+									Мы предлагаем индивидуализированные программы реабилитации, <br />
+									включая физические упражнения, занятия лечебной гимнастикой и <br />
+									другие методы, направленные на поддержание здоровья и <br />
+									активного образа жизни.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Как проходит организация режима для проживающего?</h2>
+
+								<p class="answer">
+									Мы уделяем особое внимание созданию комфортного режима дня. Наши <br />
+									гости могут участвовать в разнообразных занятиях, мероприятиях и <br />
+									получать медицинскую помощь по необходимости.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Можно ли разместить родственника по индивидуальному тарифу?</h2>
+
+								<p class="answer">
+									Да, у нас предусмотрена возможность индивидуального тарифа для размещения <br />
+									родственников. Обращайтесь к нашему отделу бронирования для обсуждения <br />
+									подробностей и условий..
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Какой минимальный период для размещения?</h2>
+
+								<p class="answer">
+									Минимальный период проживания зависит от выбранного <br />
+									вами пакета услуг. Обычно мы предлагаем гибкие <br />
+									варианты, начиная от недельного проживания.
+								</p>
+							</div>
+
+							<div class="question">
+								<h2>+ Можно ли приехать и посмотреть условия?</h2>
+
+								<p class="answer">
+									Конечно! Мы всегда рады приветствовать гостей. Вы можете связаться с <br />
+									нами для предварительной записи, и мы с удовольствием организуем вам <br />
+									экскурсию и ответим на все ваши вопросы.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="socials">
+						<h1>КОНТАКТЫ</h1>
+						<div class="text">
+							<div class="container">
+								<strong> Адрес РВЦ «Щелково»: </strong>
+								<p>Московская область, Г. Щелково, ул. 1-я линия д.45</p>
+								<strong> Медицинская лицензия: </strong>
+								<p>№ Л041-01162-50/00341080</p>
+							</div>
+
+							<div class="container">
+								<strong> Aдрес РВЦ «Озерный»: </strong>
+								<p>Ленинградская область, Приозерский район пос. Мичуринское, пер. Озерный, д.1а</p>
+								<strong> Медицинская лицензия: </strong>
+								<p>№ Л0-47-01-002331</p>
+							</div>
+
+							<div class="container">
+								<strong> Адрес РВЦ «Прибрежный»:</strong>
+								<p>г. Санкт-Петербург, Канонерский остров, д. 23, лит А.</p>
+								<strong> Медицинская лицензия: </strong>
+								<p>№ Л0-47-01-002331</p>
+							</div>
+
+							<div class="container">
+								<strong> Адрес РВЦ «Лесное»:</strong>
+								<p>Ленинградская область, Всеволожский район, г. Всеволожск, Грибоедова, д. 110 Б, лит. А-А1</p>
+								<strong> Медицинская лицензия: </strong>
+								<p>№ Л0-47-01-002332</p>
+							</div>
+
+							<div class="container">
+								<strong> Контактный телефон: </strong>
+								<span>
+									<a href="tel:88005559483">8 (800) 555-94-83</a>
+									<a href="tel:84996382294">8 (499) 638-22-94</a>
+								</span>
+							</div>
+
+							<div class="media">
+								<span><img src="!public/FAQ/whatsapp.png" width="100%" alt="" /></span>
+								<span><img src="!public/FAQ/vk.png" width="100%" alt="" /></span>
+								<span><img src="!public/FAQ/youtube.png" width="100%" alt="" /></span>
+							</div>
+
+							<button class="blueBtn">СВЯЗАТЬСЯ С ПАНСИОНАТОМ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="mapBlock">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac043b94c1cade8a7e82d8f4e33b1d613986521fb543e92a0fac4c43c2415d486&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer>
+			<div class="logo">
+				<img src="!public/nav/logo.svg" width="100%" alt="" />
+			</div>
+
+			<div class="btns">
+				<ul>
+					<li><h1>Главная</h1></li>
+					<li><h1>О нас</h1></li>
+					<li><h1>Пансионаты</h1></li>
+					<li><h1>Услуги</h1></li>
+					<li><h1>Контакты</h1></li>
+					<li><h1>Отзывы</h1></li>
+					<li><h1>Фотогалерея</h1></li>
+				</ul>
+
+				<div class="title">
+					<p>Согласие на обработку персональных данных</p>
+					<p>Политика конфиденциальности</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			//docs
+			{
+				let srcList = [
+					"!public/mainPage/public/docs/mainDoc.png",
+					"!public/mainPage/public/docs/Layer 893.png",
+					"!public/mainPage/public/docs/Layer 895.png",
+					"!public/mainPage/public/docs/Layer 897.png",
+					"!public/mainPage/public/docs/Layer 894.png",
+					"!public/mainPage/public/docs/Layer 896.png",
+					"!public/mainPage/public/docs/Layer 898.png"
+				];
+				let count = 0;
+
+				function showPopup(number) {
+					document.querySelector(".popupContainer").style.display = "block";
+					document.querySelector(".popupContainer img").src = srcList[number];
+					count = number;
+				}
+				function nextImg() {
+					if (count >= 6) {
+						document.querySelector(".popupContainer img").src = srcList[0];
+						return (count = 0);
+					}
+					document.querySelector(".popupContainer img").src = srcList[count + 1];
+					return count++;
+				}
+				function prevImg() {
+					if (count <= 0) {
+						document.querySelector(".popupContainer img").src = srcList[6];
+						return (count = 6);
+					}
+					document.querySelector(".popupContainer img").src = srcList[count - 1];
+					return count--;
+				}
+
+				document.querySelector(".closeBtn").addEventListener(
+					"click",
+					() => {
+						document.querySelector(".popupContainer").style.display = "none";
+					},
+					false
+				);
+				document.querySelector(".nextBtn").addEventListener(
+					"click",
+					() => {
+						nextImg();
+					},
+					false
+				);
+				document.querySelector(".prevBtn").addEventListener(
+					"click",
+					() => {
+						prevImg();
+					},
+					false
+				);
+			}
+
+			//FAQ
+			{
+				let questions = document.getElementsByClassName("question");
+				Array.from(questions).forEach((el, index) => {
+					el.firstElementChild.addEventListener(
+						"click",
+						() => {
+							el.classList.toggle("showAnswer");
+
+							Array.from(questions).forEach((e, i) => {
+								if (i !== index) {
+									e.classList.remove("showAnswer");
+								}
+							});
+						},
+						false
+					);
+				});
+			}
+		</script>
+		<script src="!public/nav/nav.js"></script>
+	</body>
 </html>
