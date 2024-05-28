@@ -1,17 +1,21 @@
 nav{
    z-index: 6;
    position: fixed;
-   width: 100vw;
-   display: flex;
-   justify-content: center;
+   margin: 0 auto;
+   left: 50%;
+   width: 100dvw;
+   transform: translateX(-50%);
 
    span{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
       padding: 2rem;
 
       background-color: #fcfcfc;
       border-radius: 0 0 1rem 1rem;
 
-      box-shadow: 0 0 2rem 1rem rgba(188, 188, 188, 0.367);
+      box-shadow: 0 0 10rem -4rem rgba(0, 0, 0, 0.788);
 
       display: flex;
       justify-content: space-between;
@@ -54,7 +58,6 @@ nav{
                   h1{
                      font-size: 0.8em;
                      font-weight: 400;
-                     word-break: break-all;
                   }
                }
             }
