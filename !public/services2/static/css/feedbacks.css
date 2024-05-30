@@ -29,10 +29,15 @@
 }
 .feedback .cards .card {
   position: relative;
+  width: 100%;
+  height: fit-content;
   padding: 2rem;
   background-color: white;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .feedback .cards .card:nth-child(2) {
   transform: translateY(-4rem);
@@ -49,8 +54,11 @@
 .feedback .cards .card .title img {
   max-width: 90px;
 }
+.feedback .cards .card .iframe {
+  width: 100%;
+  height: fit-content;
+}
 .feedback .cards .card p {
-  padding-top: 2rem;
   text-align: start;
 }
 .feedback .cards .card .ochag {

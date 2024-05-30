@@ -20,7 +20,7 @@
       @media screen and (max-width: 950px) {
          grid-template-columns: repeat(1,25rem);
       }
-      
+
       @media screen and (max-width: 400px) {
          grid-template-columns: repeat(1,1fr);
          .card{
@@ -28,15 +28,20 @@
          }
       }
       
-      
       .card{
          position: relative;
+         width: 100%;
+         height: fit-content;
 
          padding: 2rem;
 
          background-color: white;
          box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.219);
          border-radius: 1rem;
+
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
 
          &:nth-child(2){
             transform: translateY(-4rem);
@@ -54,8 +59,13 @@
                max-width:90px;
             }
          }
+
+         .iframe{
+            width: 100%;
+            height: fit-content;
+         }
+         
          p{
-            padding-top: 2rem;
             text-align: start;
          }
 

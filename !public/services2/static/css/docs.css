@@ -18,8 +18,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 80rem;
-  width: 100%;
+  height: 80%;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .docsBlock .popupContainer img {
+    height: auto;
+    width: 100%;
+  }
 }
 .docsBlock .popupContainer .closeBtn {
   position: absolute;
@@ -36,8 +42,8 @@
   background-color: rgba(0, 0, 0, 0.2941176471);
   padding: 0.4rem;
   border-radius: 1rem;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 .docsBlock .popupContainer .prevBtn {
   left: 2rem;
