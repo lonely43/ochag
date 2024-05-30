@@ -5,12 +5,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0rem;
+  gap: 6rem;
   position: relative;
   background-image: url("../../public/land/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 1460px) {
+  .landBlock {
+    padding-top: 15rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .landBlock .iconLand {
+    order: 1;
+  }
+  .landBlock .text {
+    text-align: center;
+  }
+  .landBlock .text h1 {
+    max-width: 30rem !important;
+  }
 }
 .landBlock .arrows {
   z-index: 1;
@@ -23,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1460px) {
   .landBlock .arrows {
     top: 55%;
     left: 10%;
@@ -44,22 +60,6 @@
 }
 .landBlock .arrows .arrow:nth-child(1) {
   transform: rotate(180deg);
-}
-@media screen and (max-width: 1350px) {
-  .landBlock {
-    padding-top: 15rem;
-    flex-direction: column;
-    gap: 0;
-  }
-  .landBlock .iconLand {
-    order: 1;
-  }
-  .landBlock .text {
-    text-align: center;
-  }
-  .landBlock .text h1 {
-    max-width: 30rem !important;
-  }
 }
 .landBlock .text {
   z-index: 1;
@@ -82,7 +82,7 @@
   grid-template-columns: repeat(1, 22rem);
   gap: 2rem;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1460px) {
   .landBlock .text .btns {
     justify-content: center;
   }
@@ -127,10 +127,10 @@
   z-index: 0;
   position: absolute;
   top: 30%;
-  left: 42%;
-  transform: translateX(-42%) translateY(-30%);
+  left: 41%;
+  transform: translateX(-41%) translateY(-30%);
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1460px) {
   .landBlock .price {
     top: 20%;
     left: 80%;

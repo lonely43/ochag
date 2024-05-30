@@ -7,8 +7,6 @@
    display: flex;
    justify-content: center;
 
-   position: relative;
-
    @media screen and (max-width: 1350px) {
       padding-top: 15rem;
       flex-direction: column;
@@ -19,8 +17,9 @@
          order: 1;
       }
       .text{
-         text-align: center;
-
+         h1{
+            text-align: center;
+         }
          h1, p{
             max-width: 30rem !important;
          }
@@ -28,9 +27,16 @@
    }
 
    background-image: url('../../public/land/background.png');
-
    background-repeat: no-repeat;
    background-size: cover;
+
+   @media screen and (max-width: 1740px) {
+      background-size: 120% 120%;
+   }
+   
+   @media screen and (max-width: 1600px) {
+      background-size: cover;
+   }
    
    .text{
       display: flex;
@@ -55,8 +61,26 @@
          font-size: 1.2em;
          font-weight: 400;
 
+         &:nth-child(2){
+            max-width: 26rem;
+         }
+
          strong{
             font-weight: 500;
+         }
+
+         position: relative;
+         &::before{
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            width: 30px;
+            height: 25px;
+            content: "";
+            background-image: url('../../../nav/logoMini.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
          }
       }
    }

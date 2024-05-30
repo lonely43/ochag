@@ -1,52 +1,166 @@
 footer{
-   padding: 4rem 0rem;
+   padding-top: 4rem;
+
+   width: 100%;
 
    display: flex;
-   justify-content: center;
+   flex-direction: column;
    align-items: center;
-   gap: 4rem;
+   gap: 2rem;
 
-   .logo{
-      max-width: 200px;
-      height: auto;
-   }
-
-   .btns{
+   .content{
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 1rem;
       display: flex;
-      flex-direction: column;
-      
-      ul{
-         list-style: none;
-         display: flex;
-         gap: 1rem;
-         li{
-            cursor: pointer;
+      gap: 2rem;
+
+      @media screen and (max-width: 1000px) {
+         flex-direction: column;
+      }
+
+      .block{
+         width: 100%;
+
+         .info{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .btn{
+               button{
+                  padding: 0.2rem 1rem;
+                  max-width: 16rem;
+
+                  p{
+                     transform: translateY(-0.2rem);
+                     height: 100%;
+                     line-height: 2rem;
+                     font-size: 1.4em;
+                     font-weight: 600;
+                     color: #567DBF;
+                  }
+
+                  svg{
+                     transform: translateY(32%);
+                     width: 40px;
+                     height: auto;
+                  }
+
+                  background-color: white;
+                  border: 0.1rem solid #567DBF;
+                  border-radius: 0.5rem;
+                  cursor: pointer;
+               }
+            }
+            .icons{
+               display: flex;
+               flex-direction: column;
+               gap: 2rem;
+
+               .logo{
+                  max-width: 18rem;
+               }
+               .media{
+                  display: flex;
+                  gap: 0.8rem;
+         
+                  img{
+                     max-width: 32px;
+                  }
+               }
+            }
+
+            .text{
+               display: flex;
+               flex-direction: column;
+               gap: 1rem;
+
+               p{
+                  color: #777777;
+                  cursor: pointer;
+               }
+            }
+         }
+
+         .cards{
+            display: flex;
+            flex-direction: column;
+
+            .card{
+               padding: 1rem 0;
+               border-top: 0.08rem solid #e1e1e1;
+
+               &:last-child{
+                  border-bottom: 0.08rem solid #e1e1e1;
+               }
+
+               h3{
+                  font-size: 1em;
+                  font-weight: 500;
+                  letter-spacing: 0.5px;
+                  cursor: pointer;
+               }
+            }
+         }
+         
+         .contacts{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
             h1{
+               font-size: 1.4em;
+               font-weight: 500;
+               letter-spacing: 0.5px;
+               color: #414141;
+            }
+            .container{
+               ul{
+                  list-style: none;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+                  li{
+                     display: flex;
+                     align-items: center;
+                     gap: 0.8rem;
+                     svg{
+                        width: 36px;
+                        height: 36px;
+                     }
+                     p{
+                        font-size: 1.2em;
+                        color: #777777;
+                        letter-spacing: 0.5px;
+                     }
+                     a{
+                        color: #777777;
+                        letter-spacing: 0.5px;
+                     }
+                  }
+               }
+            }
+            .underTitle{
+               color: #777777;
                font-size: 1em;
-               font-weight: 600;
+               letter-spacing: 0.5px;
             }
          }
       }
-
-      .title{
-         display: flex;
-         gap: 1rem;
-         p{
-            cursor: pointer;
-         }
-      }
- 
-      @media screen and (max-width: 640px) {
-         ul{
-            display: none;
-         }
-         .title{
-            flex-direction: column;
-            align-items: center;
-         }
-      }
    }
-   @media screen and (max-width: 1000px) {
-      flex-direction: column;
+   .underContent{
+      margin-top: 2rem;
+      padding: 2rem 1rem;
+      border-top: 0.08rem solid #e1e1e1;
+
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+
+      p{
+         color: #777777;
+         font-size: 1em;
+         max-width: 40rem;
+      }
    }
 }
