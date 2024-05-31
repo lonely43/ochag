@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.photos {
+  padding: 0 1rem;
+  padding-top: 16rem;
+  padding-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+@media screen and (max-width: 1000px) {
+  .photos {
+    padding-top: 8rem;
+  }
+}
+.photos .headerText {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.photos .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.photos .cards img {
+  max-width: 24rem;
+  max-height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.photos .popupContainer {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.815);
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандартный синтаксис */
+}
+.photos .popupContainer img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  padding: 0 1rem;
+  object-fit: cover;
+}
+.photos .popupContainer .closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.photos .popupContainer .nextBtn, .photos .popupContainer .prevBtn, .photos .popupContainer .closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2941176471);
+  padding: 0.4rem;
+  border-radius: 1rem;
+  width: 40px;
+  height: 40px;
+}
+.photos .popupContainer .prevBtn {
+  left: 2rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.photos .popupContainer .nextBtn {
+  right: 2rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .photos .popupContainer img {
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .photos .popupContainer .prevBtn {
+    left: 0;
+  }
+  .photos .popupContainer .nextBtn {
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=photos.css.map */

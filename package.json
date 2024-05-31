@@ -13,6 +13,7 @@
     "scssLesnoe": "cd !public/lesnoe/static && sass --watch scss:css",
     "scssMainPage": "cd !public/mainPage/static && sass --watch scss:css",
     "scssOzerniy": "cd !public/ozerniy/static && sass --watch scss:css",
+    "scssPhotos": "cd !public/photos/static && sass --watch scss:css",
     "scssPribreznyi": "cd !public/pribreznyi/static && sass --watch scss:css",
     "scssServices": "cd !public/services/static && sass --watch scss:css",
     "scssServices2": "cd !public/services2/static && sass --watch scss:css",

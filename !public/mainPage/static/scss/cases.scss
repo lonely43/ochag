@@ -1,5 +1,5 @@
 .cases{
-   margin-top: 8rem;
+   margin-top: 2rem;
    position: relative;
    display: flex;
    justify-content: center;
@@ -28,7 +28,7 @@
 
       max-width: 90rem;
 
-      box-shadow: 0 0 4rem -0.4rem rgba(0, 0, 0, 0.688);
+      box-shadow: 0 0 4rem -0.4rem rgba(0, 0, 0, 0.493);
 
       @media screen and (max-width: 350px) {
          margin: 0 !important;
@@ -48,12 +48,23 @@
       border-radius: 2rem;
 
       .title{
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+
+         h1,p{
+            color: white
+         }
          h1{
-            color: white;
             text-transform: uppercase;
             text-align: center;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: 600
+         }
+         p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 300
          }
       }
       .cards{
@@ -66,13 +77,17 @@
          .card{
             padding: 1rem 3rem;
 
-            max-width: 22rem;
+            max-width: 20rem;
             height: 6rem;
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 1rem;
+
+            @media screen and (max-width: 900px) {
+               width: 100%;
+            }
 
             background-color: white;
             box-shadow: 0 0 30rem -2rem rgba(0, 0, 0, 0.788);
