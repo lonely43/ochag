@@ -1,5 +1,5 @@
 .landBlock{
-   padding: 0 2rem;
+   //padding: 0 2rem;
    padding-top: 18rem;
    padding-bottom: 15em;
    min-height: 40rem;
@@ -37,6 +37,30 @@
    @media screen and (max-width: 1600px) {
       background-size: cover;
    }
+
+   position: relative;
+   .license{
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 6rem;
+      width: max-content;
+      transform: translateX(-50%);
+      align-items: center;
+      img{
+         max-width: 4rem;
+         height: auto;
+      }
+      h1{
+         letter-spacing: 0.5px;
+         font-size: 1em;
+         font-weight: 500;
+      }
+
+      @media screen and (max-width:1000px) {
+         display: flex;
+      }
+   }
    
    .text{
       display: flex;
@@ -49,6 +73,8 @@
          color: #3b3b3b;
          letter-spacing: 1px;
          text-transform: uppercase;
+         white-space:pre-wrap;
+         word-break:break-word;
 
          strong{
             color: #658cc9;
@@ -56,6 +82,7 @@
       }
 
       p{
+         margin: 0 2rem;
          font-weight: 500;
          max-width: 27rem;
          font-size: 1.2em;
@@ -64,7 +91,7 @@
          &:nth-child(2){
             max-width: 26rem;
          }
-         
+
          strong{
             font-weight: 500;
          }

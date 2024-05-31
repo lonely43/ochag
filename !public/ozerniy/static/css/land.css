@@ -8,6 +8,7 @@
   background-image: url("../../public/land/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media screen and (max-width: 1350px) {
   .landBlock {
@@ -34,6 +35,29 @@
 @media screen and (max-width: 1600px) {
   .landBlock {
     background-size: cover;
+  }
+}
+.landBlock .license {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 6rem;
+  width: max-content;
+  transform: translateX(-50%);
+  align-items: center;
+}
+.landBlock .license img {
+  max-width: 4rem;
+  height: auto;
+}
+.landBlock .license h1 {
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .landBlock .license {
+    display: flex;
   }
 }
 .landBlock .text {

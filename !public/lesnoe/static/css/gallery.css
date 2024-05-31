@@ -4,8 +4,8 @@
   gap: 2rem;
 }
 .gallery .cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
 }
 .gallery .cards .card {
   position: relative;
@@ -47,6 +47,9 @@
 }
 .gallery .cards .card:nth-child(12) .info {
   background-image: url("../../public/gallery/122.png");
+}
+.gallery .cards .card:nth-child(13) .info {
+  background-image: url("../../public/gallery/111.png");
 }
 .gallery .cards .card:nth-child(even) .info {
   order: 2;
@@ -108,6 +111,7 @@
 }
 .gallery .cards .card .photo {
   position: relative;
+  height: 100%;
   padding-right: 1rem;
 }
 .gallery .cards .card .photo .backline {
@@ -126,13 +130,14 @@
 .gallery .cards .card .photo img {
   border-radius: 0 3rem 3rem 0;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 1300px) {
   .gallery .cards .card {
     grid-template-columns: repeat(1, 1fr);
   }
   .gallery .cards .card .info {
-    padding: 4rem 0;
     order: 1 !important;
     justify-content: center !important;
     background-position: bottom !important;
@@ -145,13 +150,6 @@
   .gallery .cards .card .photo img {
     border-radius: 0 !important;
   }
-}
-@media screen and (max-width: 1300px) and (max-width: 600px) {
-  .gallery .cards .card .photo img {
-    max-height: 40vh;
-  }
-}
-@media screen and (max-width: 1300px) {
   .gallery .cards .card .photo .backline {
     display: none;
   }

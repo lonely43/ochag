@@ -1,5 +1,4 @@
 .landBlock {
-  padding: 0 2rem;
   padding-top: 18rem;
   padding-bottom: 15em;
   min-height: 40rem;
@@ -8,6 +7,7 @@
   background-image: url("../../public/land/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media screen and (max-width: 1350px) {
   .landBlock {
@@ -36,6 +36,29 @@
     background-size: cover;
   }
 }
+.landBlock .license {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 6rem;
+  width: max-content;
+  transform: translateX(-50%);
+  align-items: center;
+}
+.landBlock .license img {
+  max-width: 4rem;
+  height: auto;
+}
+.landBlock .license h1 {
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .landBlock .license {
+    display: flex;
+  }
+}
 .landBlock .text {
   display: flex;
   flex-direction: column;
@@ -48,11 +71,14 @@
   color: #3b3b3b;
   letter-spacing: 1px;
   text-transform: uppercase;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 .landBlock .text h1 strong {
   color: #658cc9;
 }
 .landBlock .text p {
+  margin: 0 2rem;
   font-weight: 500;
   max-width: 27rem;
   font-size: 1.2em;

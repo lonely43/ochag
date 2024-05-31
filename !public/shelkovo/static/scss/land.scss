@@ -37,6 +37,30 @@
    @media screen and (max-width: 1600px) {
       background-size: cover;
    }
+
+   position: relative;
+   .license{
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 6rem;
+      width: max-content;
+      transform: translateX(-50%);
+      align-items: center;
+      img{
+         max-width: 4rem;
+         height: auto;
+      }
+      h1{
+         letter-spacing: 0.5px;
+         font-size: 1em;
+         font-weight: 500;
+      }
+
+      @media screen and (max-width:1000px) {
+         display: flex;
+      }
+   }
    
    .text{
       display: flex;
