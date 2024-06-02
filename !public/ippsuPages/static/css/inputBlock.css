@@ -1,0 +1,164 @@
+:root {
+  --max-width-input: 40rem;
+  --closeBtnLong: 2rem;
+  --closeBtnWeight: 0.14rem ;
+}
+
+.inputBlock {
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  gap: 2rem;
+}
+.inputBlock img {
+  max-width: 50rem;
+  object-fit: cover;
+}
+.inputBlock .text {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 50rem;
+}
+.inputBlock .text h1 {
+  font-weight: 500;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+}
+.inputBlock .text p {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+.inputBlock .text button {
+  font-size: 1em;
+}
+@media screen and (max-width: 1300px) {
+  .inputBlock {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputBlock .text {
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.inputBlock .formSection {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.inputBlock .formSection .formCard {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+}
+.inputBlock .formSection .formCard form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.inputBlock .formSection .formCard form h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.inputBlock .formSection .formCard form input[type=text],
+.inputBlock .formSection .formCard form select,
+.inputBlock .formSection .formCard form textarea {
+  padding: 0.6rem 1rem;
+  max-width: var(--max-width-input);
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #4187cc;
+  outline: none;
+}
+.inputBlock .formSection .formCard form .select {
+  position: relative;
+  max-width: var(--max-width-input);
+  width: 100%;
+}
+.inputBlock .formSection .formCard form .select select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-weight: 400;
+}
+.inputBlock .formSection .formCard form .select .arrow {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1rem;
+}
+.inputBlock .formSection .formCard form textarea {
+  max-height: 20rem;
+}
+.inputBlock .formSection .formCard form span {
+  max-width: var(--max-width-input);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.inputBlock .formSection .formCard form span p {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  text-align: start;
+}
+.inputBlock .formSection .formCard form span input {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.inputBlock .formSection .formCard form .blueBtn {
+  letter-spacing: 1px;
+}
+.inputBlock .formSection .formCard .closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(1.5rem, -1.5rem);
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.inputBlock .formSection .formCard .closeBtn::after, .inputBlock .formSection .formCard .closeBtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: rgb(0, 0, 0);
+  transition: 200ms;
+}
+.inputBlock .formSection .formCard .closeBtn::after {
+  width: var(--closeBtnWeight);
+  height: var(--closeBtnLong);
+}
+.inputBlock .formSection .formCard .closeBtn::before {
+  width: var(--closeBtnLong);
+  height: var(--closeBtnWeight);
+}
+.inputBlock .showForm {
+  display: flex;
+}
+
+/*# sourceMappingURL=inputBlock.css.map */
