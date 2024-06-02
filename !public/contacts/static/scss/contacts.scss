@@ -1,7 +1,6 @@
 .contactsBlock{
    padding-top: 15rem;
-   height: 50rem;
-
+   transform: translateY(4rem);
    @media screen and (max-width: 1000px) {
       padding-top: 8rem !important;
    }
@@ -9,12 +8,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   overflow: visible;
-
-   @media screen and (max-width: 1780px) {
-      height: auto;
-      transform: translateY(2rem);
-   }
    
    h1{
       text-align: center;
@@ -23,23 +16,18 @@
    }
    .cards{
       margin-top: 4rem;
-      display: grid;
-      grid-template-columns: repeat(4, 25.6rem);
-      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.4rem;
 
-      @media screen and (max-width: 1780px) {
-         grid-template-columns: repeat(3, 25.6rem);
-      }
-      @media screen and (max-width: 1300px) {
-         grid-template-columns: repeat(2, 25.6rem);
-      }
       @media screen and (max-width: 870px) {
-         display: flex;
          flex-direction: column;
       }
 
-
       .card{
+         width: 100%;
+         max-width: 25rem;
          padding: 2rem 1.4rem;
 
          display: flex;

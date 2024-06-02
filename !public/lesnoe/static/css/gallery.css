@@ -5,7 +5,7 @@
 }
 .gallery .cards {
   display: grid;
-  grid-template-rows: repeat(13, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 .gallery .cards .card {
   position: relative;

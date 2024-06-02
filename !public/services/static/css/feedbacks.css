@@ -1,5 +1,7 @@
 .feedback .cards {
+  height: calc(100% + 20rem);
   padding-top: 8rem;
+  margin-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 25rem);
   justify-content: center;
@@ -22,9 +24,6 @@
 @media screen and (max-width: 400px) {
   .feedback .cards {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .feedback .cards .card {
-    overflow: hidden;
   }
 }
 .feedback .cards .card {
