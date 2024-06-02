@@ -58,6 +58,10 @@ a{
    border: none;
    box-shadow: 0 0.2rem 0rem 0rem #427aae;
    background: linear-gradient(4deg, #7da9ed 44%, #8ab2ef 55%);
+   transition: opacity 200ms;
+}
+.blueBtn:hover{
+   opacity: 0.9;
 }
 .blueBtn::after{
    z-index: -1;

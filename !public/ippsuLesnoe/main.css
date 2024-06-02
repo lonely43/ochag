@@ -7,10 +7,10 @@
 @import url('../footer/css/footer.css');
 
 /* blocks */
-@import url('./static/css/contacts.css');
-@import url('./static/css/FAQ.css');
+@import url('./static/css/data.css');
 @import url('./static/css/inputBlock.css');
-@import url('./static/css/feedbacks.css');
+@import url('./static/css/FAQ.css');
+
 
 *{
    line-height: 1.25;
@@ -25,7 +25,6 @@
 main{
    max-width: 100vw;
    height: auto;
-   overflow-x: hidden;
 }
 body{
    background-color: white;
@@ -34,11 +33,6 @@ a{
    text-decoration: none;
    cursor: pointer;
    color: black;
-}
-.headerText{
-   text-align: center;
-   font-size: 1.8em;
-   color: #5290cc;
 }
 .blueBtn{
    z-index: 1;
@@ -73,4 +67,9 @@ a{
 
    border-radius: 1rem;
    box-shadow: 0 0 2rem -0.2rem #65adf0;
+}
+.headerText{
+   text-align: center;
+   font-size: 1.8em;
+   color: #5290cc;
 }

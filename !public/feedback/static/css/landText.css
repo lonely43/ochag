@@ -8,7 +8,7 @@
   padding: 0 1rem;
   padding-top: 20rem;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1000px) {
   .landText h1 {
     padding-top: 10rem;
   }
