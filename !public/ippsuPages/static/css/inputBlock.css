@@ -129,6 +129,7 @@
   letter-spacing: 1px;
 }
 .inputBlock .formSection .formCard .closeBtn {
+  z-index: 3;
   position: absolute;
   right: 0;
   top: 0;
@@ -139,6 +140,11 @@
   background-color: white;
   border-radius: 100%;
   cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  .inputBlock .formSection .formCard .closeBtn {
+    transform: none;
+  }
 }
 .inputBlock .formSection .formCard .closeBtn::after, .inputBlock .formSection .formCard .closeBtn::before {
   content: "";

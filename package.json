@@ -10,7 +10,7 @@
     "scssFeedback": "cd !public/feedback/static && sass --watch scss:css",
     "scssGosSupport": "cd !public/gosSupport/static && sass --watch scss:css",
     "scssIppsu": "cd !public/ippsu/static && sass --watch scss:css",
-    "scssIppsuLesnoe": "cd !public/ippsuLesnoe/static && sass --watch scss:css",
+    "scssIppsuPages": "cd !public/ippsuPages/static && sass --watch scss:css",
     "scssLesnoe": "cd !public/lesnoe/static && sass --watch scss:css",
     "scssMainPage": "cd !public/mainPage/static && sass --watch scss:css",
     "scssOzerniy": "cd !public/ozerniy/static && sass --watch scss:css",

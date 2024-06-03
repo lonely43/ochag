@@ -146,10 +146,15 @@
 				}
 			}
 			.closeBtn {
+				z-index: 3;
 				position: absolute;
 				right: 0;
 				top: 0;
 				transform: translate(1.5rem, -1.5rem);
+
+				@media screen and (max-width: 760px) {
+					transform: none;
+				}
 
 				width: 3rem;
 				height: 3rem;
