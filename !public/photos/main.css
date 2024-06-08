@@ -9,6 +9,7 @@
 /* blocks */
 @import url('../form/FORM.css');
 @import url('./static/css/photos.css');
+@import url('./static/css/inputBlock.css');
 @import url('./static/css/FAQ.css');
 
 
@@ -34,7 +35,7 @@ body{
 a{
    text-decoration: none;
    cursor: pointer;
-   color: black;
+   color: inherit;
 }
 .headerText{
    padding: 0 1rem;

@@ -85,6 +85,7 @@ footer .content .block .cards .list ul {
   overflow: hidden;
   list-style: none;
   display: grid;
+  width: fit-content;
   gap: 0.8rem;
 }
 footer .content .block .cards .list ul li {

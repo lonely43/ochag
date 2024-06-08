@@ -34,7 +34,7 @@ body{
 a{
    text-decoration: none;
    cursor: pointer;
-   color: black;
+   color: inherit;
 }
 .headerText{
    text-align: center;

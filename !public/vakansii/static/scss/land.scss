@@ -102,13 +102,10 @@
       margin-top: 4rem;
       display: flex;
       gap: 2rem;
-      button{
+      
+      a{
          padding: 1rem;
 
-         &:nth-child(1){
-            background: rgb(33,198,255);
-            background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-         }
          &:nth-child(2){
             font-weight: 500;
             color: black;

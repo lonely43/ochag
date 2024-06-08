@@ -102,7 +102,14 @@
   background-repeat: no-repeat;
 }
 .landBlock .icon {
-  max-width: 35rem;
+  display: flex;
+  max-width: 40rem;
+}
+.landBlock .icon img {
+  object-fit: cover;
+  border-radius: 2rem;
+  height: auto;
+  width: 100%;
 }
 
 /*# sourceMappingURL=land.css.map */

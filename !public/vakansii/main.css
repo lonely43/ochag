@@ -33,7 +33,7 @@ body{
 a{
    text-decoration: none;
    cursor: pointer;
-   color: black;
+   color: inherit;
 }
 .blueBtn{
    z-index: 1;

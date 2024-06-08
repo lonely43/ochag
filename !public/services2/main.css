@@ -40,7 +40,7 @@ body{
 a{
    text-decoration: none;
    cursor: pointer;
-   color: black;
+   color: inherit;
 }
 .headerText{
    padding: 0 1rem;

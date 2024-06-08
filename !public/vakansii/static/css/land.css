@@ -83,14 +83,10 @@
   display: flex;
   gap: 2rem;
 }
-.landBlock .btns button {
+.landBlock .btns a {
   padding: 1rem;
 }
-.landBlock .btns button:nth-child(1) {
-  background: rgb(33, 198, 255);
-  background: linear-gradient(6deg, #65acf0 53%, #8ac0f3 66%);
-}
-.landBlock .btns button:nth-child(2) {
+.landBlock .btns a:nth-child(2) {
   font-weight: 500;
   color: black;
   border: 0.1rem solid #65acf0;
