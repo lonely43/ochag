@@ -78,13 +78,12 @@ footer .content .block .cards {
 footer .content .block .cards .list {
   display: grid;
   grid-template-rows: 1rem 0fr;
-  transition: 200ms;
-  gap: 0;
+  transition: grid-template-rows 200ms;
 }
 footer .content .block .cards .list ul {
   overflow: hidden;
   list-style: none;
-  display: grid;
+  display: flex;
   gap: 0.8rem;
 }
 footer .content .block .cards .list ul li {

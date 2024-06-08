@@ -96,6 +96,7 @@
       flex-direction: column;
       gap: 2rem;
       h1{
+         height: 14rem;
          padding: 0 10px;
          max-width: 30rem;
          font-size: 2em;
@@ -128,24 +129,27 @@
          }
          
          .btn{
+            display: flex;
             position: relative;
             
-            button{
+            button, a{
+               margin: 0 auto;
                padding: 2rem 0rem;
 
-               max-width: 18em;
+               max-width: 18rem;
                width: 100%;
+               text-align: center;
 
                font-size: 1em;
             }
 
             &:nth-child(1){
-               button{
+               button, a{
                   box-shadow: 0 0.4rem 0rem 0rem #376591;
                }
             }
             &:nth-child(2){
-               button{
+               button, a{
                   color: black;
                   border: 0.1rem solid #558fe5;
                   background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
@@ -155,7 +159,7 @@
             .photo{
                z-index: 2;
                position: absolute;
-               left: -4rem;
+               left: -2rem;
                top: 50%;
                transform: translateY(-50%);
 

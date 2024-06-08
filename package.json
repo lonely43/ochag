@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 
+    "scssFORM": "cd !public/form && sass --watch .:.",
     "scssContacts": "cd !public/contacts/static && sass --watch scss:css",
     "scssFeedback": "cd !public/feedback/static && sass --watch scss:css",
     "scssGosSupport": "cd !public/gosSupport/static && sass --watch scss:css",

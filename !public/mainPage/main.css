@@ -7,6 +7,7 @@
 @import url('../footer/css/footer.css');
 
 /* blocks */
+@import url('../form/FORM.css');
 @import url('./static/css/land.css');
 @import url('./static/css/points.css');
 @import url('./static/css/aboutUs.css');
@@ -33,6 +34,7 @@
 
    padding: 0;
    margin: 0;
+   scroll-behavior: smooth;
 
    font-family: "Roboto", sans-serif;
    font-style: normal;
@@ -49,7 +51,7 @@ body{
 a{
    text-decoration: none;
    cursor: pointer;
-   color: black;
+   color: inherit;
 }
 .headerText{
    padding: 0 1rem;

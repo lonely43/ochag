@@ -87,6 +87,40 @@ footer{
             display: flex;
             flex-direction: column;
 
+            .list{
+               display: grid;
+               grid-template-rows: 1rem 0fr;
+               transition: 200ms;
+               gap: 0;
+
+               ul{
+                  overflow:hidden;
+                  list-style: none;
+                  display: grid;
+
+                  gap: 0.8rem;
+
+                  li{
+                     display: flex;
+                     gap: 0.8rem;
+                     cursor: pointer;
+                     white-space: nowrap;
+                     color: rgb(80, 80, 80);
+                     font-size: 1em;
+                     font-weight: 400;
+
+                     img{
+                        width: 20px;
+                        height: 20px;
+                     }
+                  }
+               }
+            }
+            .showList{
+               grid-template-rows: 1rem 1fr;
+               gap: 1rem;
+            }
+
             .card{
                padding: 1rem 0;
                border-top: 0.08rem solid #e1e1e1;

@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 4rem;
 }
-.add button {
+.add a {
   margin: 0 auto;
   padding: 1.8rem 2rem;
   max-width: 28rem;
@@ -17,7 +17,7 @@
   background: linear-gradient(6deg, #e4eef7 53%, #ffffff 66%);
 }
 @media screen and (max-width: 600px) {
-  .add button {
+  .add a {
     padding: 1.8rem 0;
   }
 }
