@@ -1,15 +1,3 @@
-//Nav
-{
-	let nav = document.querySelector("nav span")
-
-	window.onscroll = () => {
-		if (window.scrollY >= 100) {
-			nav.classList.add("miniVersion")
-		} else {
-			nav.classList.remove("miniVersion")
-		}
-	}
-}
 //Forms!
 {
 	function sendForm(title) {
@@ -95,6 +83,251 @@
 			false
 		)
 	})
+}
+
+
+//Nav
+{
+   document.querySelector("nav").innerHTML=
+   `
+   <span>
+				<div class="icon">
+					<img src="!public/nav/logo.svg" width="100%" alt="logo" />
+				</div>
+				<div class="miniIcon">
+					<img src="!public/nav/logoMini.png" width="100%" alt="logo" />
+				</div>
+				<div class="title">
+					<div class="head">
+						<ul>
+							<li>
+								<img src="!public/nav/docs.png" width="100%" alt="logo" />
+								<h1>
+									Медицинская лицензия <br />
+									№ Л041-01162-50/00341080
+								</h1>
+							</li>
+							<li>
+								<img src="!public/nav/gerb.png" width="100%" alt="logo" />
+								<h1>
+									Депортамент труда и социальной <br />
+									защиты населения города Москвы
+								</h1>
+							</li>
+							<li>
+								<img src="!public/nav/gerb_minzdrava.png" width="100%" alt="logo" />
+								<h1>
+									Министерство Здравоохранения <br />
+									Российской Федерации
+								</h1>
+							</li>
+						</ul>
+
+						<div class="btns">
+							<ul>
+								<li class="dropdown">
+									<h1>Пансионаты</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li>
+												<p><a href="http://kiko-dron.ru/shelkovo.html">Пансионат "Щелково"</a></p>
+											</li>
+											<li>
+												<p><a href="http://kiko-dron.ru/lesnoe.html">Пансионат "Лесное"</a></p>
+											</li>
+											<li>
+												<p><a href="http://kiko-dron.ru/pribreznyi.html">Пансионат "Прибрежный"</a></p>
+											</li>
+											<li>
+												<p><a href="http://kiko-dron.ru/ozerniy.html">Пансионат "Озерный"</a></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown">
+									<h1>О компании</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
+												<p><a href="#aboutUs">О нас</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
+												<p><a href="#docsBlock">Лицензии и сертификаты</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
+												<p><a href="#feedback">Отзывы</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
+												<p><a href="#list">Стоимость услуг</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
+												<p><a href="#gallery">Услуги для постояльцев</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
+												<p><a href="#directors">Наша команда</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
+												<p><a href="#steps">Порядок оформления</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
+												<p><a href="http://kiko-dron.ru/ippsu.html">Госпрограмма ИППСУ</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" alt="" />
+												<p><a href="http://kiko-dron.ru/vakansii.html">Вакансии</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
+												<p><a href="#add">Перечень необходимых вещей</a></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="dropdown">
+									<h1>Услуги</h1>
+									<div class="dropdownMenu">
+										<ul>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-old-man-12264597.svg" alt="" />
+												<p><a href="./services.html?comp=1">Уход за пожилыми людьми</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-patient-4348530.svg" alt="" />
+												<p><a href="./services.html?comp=2">Уход за лежачими больными</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-coronavirus-225-8556301.svg" alt="" />
+												<p><a href="./services.html?comp=3">Восстановление после ковида (COVID-19)</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alzheimer-6370801.svg" />
+												<p><a href="./services.html?comp=4">Уход за больными Альцгеймером</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alzheimer-6723561.svg" />
+												<p><a href="./services.html?comp=5">Уход за больными деменцией</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-disease-4939020.svg" />
+												<p><a href="./services.html?comp=6">Уход за больными Паркинсон</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" />
+												<p><a href="./services.html?comp=7">Уход в послеоперационный период</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-brain-2453687.svg" alt="" />
+												<p><a href="./services.html?comp=8">Восстановление после инсульта</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-heart-attack-7350718.svg" alt="" />
+												<p><a href="./services.html?comp=9">Восстановление после инфаркта</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-pelvis-3323150.svg" alt="" />
+												<p><a href="./services.html?comp=10">Восстановление после перелома шейки бедра</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-band-aid-3824551.svg" alt="" />
+												<p><a href="./services.html?comp=11">Восстановление после травмы</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-surgery-6093558.svg" alt="" />
+												<p><a href="./services.html?comp=12">Восстановление после операции</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-alcoholic-14838314.svg" alt="" />
+												<p><a href="./services.html?comp=13">Восстановление после алкогольной и наркотической зависимостей</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-disabled-1806186.svg" alt="" />
+												<p><a href="./services.html?comp=14">Уход за инвалидами</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-grenade-7445257.svg" alt="" />
+												<p><a href="./services.html?comp=15">Реабилитация после боевых действий</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-old-man-3160279.svg" alt="" />
+												<p><a href="./services.html?comp=16">Организация ухода и присмотра за одинокими пожилыми людьми</a></p>
+											</li>
+											<li>
+												<img src="!public/nav/dropdown/services/free-icon-medical-prescription-5494019.svg" alt="" />
+												<p><a href="./services2.html">Перечень оказываемых услуг для постояльцев</a></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<h1><a href="http://kiko-dron.ru/feedback.html">Отзывы</a></h1>
+								</li>
+								<li>
+									<h1><a href="http://kiko-dron.ru/photos.html">Фотогалерея</a></h1>
+								</li>
+								<li>
+									<h1><a href="http://kiko-dron.ru/contacts.html">Контакты</a></h1>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="contact">
+					<button onclick="createForm()">СВЯЗАТЬСЯ С НАМИ</button>
+					<div class="number">
+						<h1><a href="tel:88005559483">8 (800) 555-94-83</a></h1>
+						<h1><a href="tel:84996382294">8 (499) 638-22-94</a></h1>
+					</div>
+				</div>
+
+				<div class="iconPhone">
+					<div class="picture">
+						<img src="!public/nav/phoneIcon.png" alt="" width="100%" />
+					</div>
+
+					<div class="numbers">
+						<h1><a href="tel:88005559483">8 (800) 555-94-83</a></h1>
+						<h1><a href="tel:84996382294">8 (499) 638-22-94</a></h1>
+					</div>
+				</div>
+
+				<div class="burgerMenu">
+					<div class="brgBtn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+						</svg>
+					</div>
+
+					<div class="list">
+						<ul>
+							<li>Пансионаты</li>
+							<li>О компании</li>
+							<li>Услуги</li>
+							<li>Отзывы</li>
+							<li>Фотогалерея</li>
+							<li>Контакты</li>
+						</ul>
+					</div>
+				</div>
+			</span>
+   `
+
+   let nav = document.querySelector("nav span")
+
+	window.onscroll = () => {
+		if (window.scrollY >= 100) {
+			nav.classList.add("miniVersion")
+		} else {
+			nav.classList.remove("miniVersion")
+		}
+	}
 }
 
 //Footer

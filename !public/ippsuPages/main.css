@@ -7,6 +7,7 @@
 @import url('../footer/css/footer.css');
 
 /* blocks */
+@import url('../form/FORM.css');
 @import url('./static/css/data.css');
 @import url('./static/css/inputBlock.css');
 @import url('./static/css/FAQ.css');
