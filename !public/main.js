@@ -1,58 +1,82 @@
 //Forms!
 {
+	// send data to somewhere
 	function sendForm(form) {
-		let isValid = false
-		let listOfNames = {}
 		const data = new FormData(form) // take the data
 
-		for(i of data){
-			console.log(i[0],i[1]) //test
-
-			let name = i[0]
-			let value = i[1] 
-
-			switch(name){
-				case 'name':
-					if(isValidName(name))
-						listOfValid[`${i[0]}`] = true
-					else
-						listOfValid[`${i[0]}`] = false
-					break;
-				case 'number':
-					if(isValidName(name))
-						listOfValid[`${i[0]}`] = true
-					else
-						listOfValid[`${i[0]}`] = false
-					break;
-				case 'email':
-					if(isValidName(name))
-						listOfValid[`${i[0]}`] = true
-					else
-						listOfValid[`${i[0]}`] = false
-					break;
-				default:
-					break;
-			}
-
-
-			return isValid = true
-		}
-		if(isValid==true){
-			// sm
+		if (validation(data, form)) {
 			showPositiveModal()
-		}
-		else{
-			alert('Введите валидные данные')
-		}
-
-		function isValidName(name){
-			
 		}
 	}
 
-	// pos modal
+	// pipes
+	function validation(data, form) {
+		form.querySelectorAll(".wrongForm").forEach((e) => {
+			e.classList.remove("wrongForm")
+		})
+		let legit = true
+		let listOfValid = {}
+
+		for (i of data) {
+			let name = i[0]
+			let value = i[1]
+
+			switch (name) {
+				case "name":
+					listOfValid[`${i[0]}`] = isValidName(value)
+					break
+				case "number":
+					listOfValid[`${i[0]}`] = isValidNumber(value)
+					break
+
+				case "email":
+					listOfValid[`${i[0]}`] = isValidEmail(value)
+					break
+
+				default:
+					listOfValid[`${i[0]}`] = true
+					break
+			}
+		}
+		for (i in listOfValid) {
+			if (!listOfValid[i]) {
+				form.querySelector(`input[name="${i}"]`).classList.add("wrongForm")
+				alert(`${form.querySelector(`input[name="${i}"]`).value} - не валидные данные!`)
+				legit = false
+			}
+		}
+		return legit
+	}
+	// functions:
+	function isValidName(value) {
+		if (/\d/.test(value)) {
+			return false
+		}
+
+		return true
+	}
+	function isValidNumber(value) {
+		if (isNaN(value)) {
+			return false
+		}
+		if (String(value)[0] == 7 || String(value)[0] == 8) {
+		} else {
+			return false
+		}
+		if (String(Number(value)).length !== 11) {
+			return false
+		}
+
+		return true
+	}
+	function isValidEmail(value) {
+		let re = /\S+@\S+\.\S+/
+		return re.test(value)
+	}
+
+	// positive modal
 	{
-		function showPositiveModal(title = "Спасибо! Мы скоро свяжемся с Вами, ожидайте звонка!"){
+		function showPositiveModal(title = "Спасибо! Мы скоро свяжемся с Вами, ожидайте звонка!") {
 			document.querySelector(".positiveModal").classList.add("showModal")
 			document.querySelector(".positiveModal h1").innerText = title
 		}
@@ -60,12 +84,12 @@
 			document.querySelector(".positiveModal").classList.remove("showModal")
 		})
 	}
-	//Create & close form
+
+	// Create & close form
 	{
 		function createForm(btnText = "Отправить", headerText = "Заполните форму") {
 			document.querySelector(".FORM").classList.add("showModal")
-			document.querySelector(".FORM").innerHTML = 
-			`
+			document.querySelector(".FORM").innerHTML = `
             <div class="formCard">
                <form>
                   <h1>${headerText}</h1>
@@ -73,7 +97,7 @@
                   <input required placeholder="+7 (__)___-__-__" type="number" name="number" id="" />
                   <span>
                      <input required type="checkbox" name="" id="" />
-                     <p for="">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                     <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
                   </span>
                   <input class="blueBtn" type="submit" value="${btnText}" />
                </form>
@@ -95,17 +119,14 @@
 			document.querySelector(".FORM").classList.remove("showModal")
 		}
 	}
-	//Another forms
+
+	// Another forms
 	{
 		document.querySelectorAll("form").forEach((el) => {
-			el.addEventListener(
-				"submit",
-				(e) => {
-					e.preventDefault()
-					sendForm(el)
-				},
-				false
-			)
+			el.addEventListener("submit",(e) => {
+				e.preventDefault()
+				sendForm(el)
+			},false)
 		})
 	}
 }
@@ -130,11 +151,9 @@
 	})
 }
 
-
 //Nav
 {
-   document.querySelector("nav").innerHTML=
-   `
+	document.querySelector("nav").innerHTML = `
    <span>
 				<div class="icon">
 					<img src="!public/nav/logo.svg" width="100%" alt="logo" />
@@ -364,7 +383,7 @@
 			</span>
    `
 
-   let nav = document.querySelector("nav span")
+	let nav = document.querySelector("nav span")
 
 	window.onscroll = () => {
 		if (window.scrollY >= 100) {
@@ -642,13 +661,13 @@
 			</div>
       `
 
-   	document.querySelectorAll("footer .content .block .cards .list h3").forEach((el) => {
-         el.addEventListener(
-            "click",
-            () => {
-               el.parentNode.classList.toggle("showList")
-            },
-            false
-         )
-      })
+	document.querySelectorAll("footer .content .block .cards .list h3").forEach((el) => {
+		el.addEventListener(
+			"click",
+			() => {
+				el.parentNode.classList.toggle("showList")
+			},
+			false
+		)
+	})
 }
