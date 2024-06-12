@@ -96,8 +96,9 @@ footer{
                ul{
                   overflow:hidden;
                   list-style: none;
-                  display: grid;
-                  width: fit-content;
+
+                  display: flex;
+                  flex-direction: column;
 
                   gap: 0.8rem;
 
@@ -111,8 +112,14 @@ footer{
                      font-weight: 400;
 
                      img{
-                        width: 20px;
+                        width: 100%;
+                        max-width: 20px;
                         height: 20px;
+                        object-fit: contain;
+                     }
+
+                     p{
+                        white-space: wrap;
                      }
                   }
                }

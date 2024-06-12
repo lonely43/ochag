@@ -1,13 +1,58 @@
 //Forms!
 {
-	function sendForm(title) {
-		//something else
-		showPositiveModal(title)
+	function sendForm(form) {
+		let isValid = false
+		let listOfNames = {}
+		const data = new FormData(form) // take the data
+
+		for(i of data){
+			console.log(i[0],i[1]) //test
+
+			let name = i[0]
+			let value = i[1] 
+
+			switch(name){
+				case 'name':
+					if(isValidName(name))
+						listOfValid[`${i[0]}`] = true
+					else
+						listOfValid[`${i[0]}`] = false
+					break;
+				case 'number':
+					if(isValidName(name))
+						listOfValid[`${i[0]}`] = true
+					else
+						listOfValid[`${i[0]}`] = false
+					break;
+				case 'email':
+					if(isValidName(name))
+						listOfValid[`${i[0]}`] = true
+					else
+						listOfValid[`${i[0]}`] = false
+					break;
+				default:
+					break;
+			}
+
+
+			return isValid = true
+		}
+		if(isValid==true){
+			// sm
+			showPositiveModal()
+		}
+		else{
+			alert('Введите валидные данные')
+		}
+
+		function isValidName(name){
+			
+		}
 	}
 
 	// pos modal
 	{
-		function showPositiveModal(title = "Спасибо! Мы скоро свяжемся с Вами, ожидайте звонка!") {
+		function showPositiveModal(title = "Спасибо! Мы скоро свяжемся с Вами, ожидайте звонка!"){
 			document.querySelector(".positiveModal").classList.add("showModal")
 			document.querySelector(".positiveModal h1").innerText = title
 		}
@@ -17,14 +62,15 @@
 	}
 	//Create & close form
 	{
-		function createForm(btnText = "Отправить", headerText = "Заполните форму", title) {
+		function createForm(btnText = "Отправить", headerText = "Заполните форму") {
 			document.querySelector(".FORM").classList.add("showModal")
-			document.querySelector(".FORM").innerHTML = `
+			document.querySelector(".FORM").innerHTML = 
+			`
             <div class="formCard">
                <form>
                   <h1>${headerText}</h1>
-                  <input required placeholder="Ваше имя" type="text" name="firstName" id="" />
-                  <input required placeholder="+7 (__)___-__-__" type="text" name="phone" id="" />
+                  <input required placeholder="Ваше имя" type="text" name="name" id="" />
+                  <input required placeholder="+7 (__)___-__-__" type="number" name="number" id="" />
                   <span>
                      <input required type="checkbox" name="" id="" />
                      <p for="">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
@@ -38,8 +84,7 @@
 				"submit",
 				(e) => {
 					e.preventDefault()
-					sendForm(title)
-					closeModalForm()
+					sendForm(document.querySelector(".FORM .formCard form"))
 				},
 				false
 			)
@@ -57,7 +102,7 @@
 				"submit",
 				(e) => {
 					e.preventDefault()
-					sendForm()
+					sendForm(el)
 				},
 				false
 			)
@@ -150,31 +195,31 @@
 										<ul>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
-												<p><a href="#aboutUs">О нас</a></p>
+												<p><a href="./mainPage.html#aboutUs">О нас</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-												<p><a href="#docsBlock">Лицензии и сертификаты</a></p>
+												<p><a href="./mainPage.html#docsBlock">Лицензии и сертификаты</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
-												<p><a href="#feedback">Отзывы</a></p>
+												<p><a href="./mainPage.html#feedback">Отзывы</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
-												<p><a href="#list">Стоимость услуг</a></p>
+												<p><a href="./mainPage.html#list">Стоимость услуг</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
-												<p><a href="#gallery">Услуги для постояльцев</a></p>
+												<p><a href="./mainPage.html#gallery">Услуги для постояльцев</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
-												<p><a href="#directors">Наша команда</a></p>
+												<p><a href="./mainPage.html#directors">Наша команда</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
-												<p><a href="#steps">Порядок оформления</a></p>
+												<p><a href="./mainPage.html#steps">Порядок оформления</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
@@ -186,7 +231,7 @@
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
-												<p><a href="#add">Перечень необходимых вещей</a></p>
+												<p><a href="./mainPage.html#add">Перечень необходимых вещей</a></p>
 											</li>
 										</ul>
 									</div>
@@ -388,31 +433,31 @@
 							<ul>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
-									<p><a href="#aboutUs">О нас</a></p>
+									<p><a href="./mainPage.html#aboutUs">О нас</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-									<p><a href="#docsBlock">Лицензии и сертификаты</a></p>
+									<p><a href="./mainPage.html#docsBlock">Лицензии и сертификаты</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
-									<p><a href="#feedback">Отзывы</a></p>
+									<p><a href="./mainPage.html#feedback">Отзывы</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
-									<p><a href="#list">Стоимость услуг</a></p>
+									<p><a href="./mainPage.html#list">Стоимость услуг</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
-									<p><a href="#gallery">Услуги для постояльцев</a></p>
+									<p><a href="./mainPage.html#gallery">Услуги для постояльцев</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
-									<p><a href="#directors">Наша команда</a></p>
+									<p><a href="./mainPage.html#directors">Наша команда</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
-									<p><a href="#steps">Порядок оформления</a></p>
+									<p><a href="./mainPage.html#steps">Порядок оформления</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
@@ -424,7 +469,7 @@
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
-									<p><a href="#add">Перечень необходимых вещей</a></p>
+									<p><a href="./mainPage.html#add">Перечень необходимых вещей</a></p>
 								</li>
 							</ul>
 						</div>

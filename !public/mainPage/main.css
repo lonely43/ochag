@@ -43,7 +43,7 @@ main{
    display: flex;
    flex-direction: column;
    max-width: 100vw;
-   height: auto;
+   height: fit-content;
 }
 body{
    background-color: white;

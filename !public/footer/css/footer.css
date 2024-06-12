@@ -84,8 +84,8 @@ footer .content .block .cards .list {
 footer .content .block .cards .list ul {
   overflow: hidden;
   list-style: none;
-  display: grid;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
   gap: 0.8rem;
 }
 footer .content .block .cards .list ul li {
@@ -98,8 +98,13 @@ footer .content .block .cards .list ul li {
   font-weight: 400;
 }
 footer .content .block .cards .list ul li img {
-  width: 20px;
+  width: 100%;
+  max-width: 20px;
   height: 20px;
+  object-fit: contain;
+}
+footer .content .block .cards .list ul li p {
+  white-space: wrap;
 }
 footer .content .block .cards .showList {
   grid-template-rows: 1rem 1fr;
