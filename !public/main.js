@@ -96,8 +96,8 @@
                   <input required placeholder="Ваше имя" type="text" name="name" id="" />
                   <input required placeholder="+7 (__)___-__-__" type="number" name="number" id="" />
                   <span>
-                     <input required type="checkbox" name="" id="" />
-                     <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                     <input required type="checkbox" name="allow" id="" />
+                     <label for="allow" >Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
                   </span>
                   <input class="blueBtn" type="submit" value="${btnText}" />
                </form>

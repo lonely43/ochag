@@ -36,9 +36,7 @@ $closeBtnWeight: 0.14rem;
             letter-spacing: 1px;
          }
 
-         input[type="text"], input[type="number"],
-         select,
-         textarea {
+         input[type="text"], input[type="number"]{
             padding: 0.6rem 1rem;
 
             max-width: $max-width-input;
@@ -48,30 +46,6 @@ $closeBtnWeight: 0.14rem;
             border: 0.1rem solid #4187cc;
             outline: none;
          }
-         .select {
-            position: relative;
-            max-width: $max-width-input;
-            width: 100%;
-
-            select {
-               -moz-appearance: none; // Firefox
-               -webkit-appearance: none; // Safari and Chrome
-               appearance: none;
-
-               font-weight: 400;
-            }
-            .arrow {
-               position: absolute;
-               right: 1rem;
-               top: 50%;
-               transform: translateY(-50%);
-               max-width: 1rem;
-            }
-         }
-         textarea {
-            max-height: 20rem;
-         }
-
          span{
             max-width: $max-width-input;
 
@@ -79,16 +53,18 @@ $closeBtnWeight: 0.14rem;
             align-items: center;
             gap: 1rem;
 
-            p {
+            label{
                font-size: .8em;
                letter-spacing: 0.5px;
                text-align: start;
             }
-            input {
+            
+            input[type="checkbox"]{
                -webkit-user-select: none;
                user-select: none;
                cursor: pointer;
-
+               outline: none;
+               border: 0.1rem solid #4187cc;
                display: block;
                width: 1.6rem;
                height: 1.6rem;
@@ -96,6 +72,9 @@ $closeBtnWeight: 0.14rem;
          }
 
          .blueBtn {
+            width: 100%;
+            max-width: 20rem;
+            padding: 0.8rem 0rem;
             letter-spacing: 1px;
          }
       }
@@ -176,7 +155,8 @@ $closeBtnWeight: 0.14rem;
          letter-spacing: 0.5px;
       }
       button{
-         width: 80%;
+         width: 100%;
+         max-width: 20rem;
          padding: 0.6rem 1rem;
       }
    }

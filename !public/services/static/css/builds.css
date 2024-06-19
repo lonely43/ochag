@@ -41,16 +41,16 @@
   background: linear-gradient(180deg, rgba(33, 198, 255, 0) 36%, rgb(255, 255, 255) 81%);
 }
 .buildsBlock .cards .card:nth-child(1) {
-  background-image: url("../../public/builds/1.png");
+  background-image: url("../../../mainPage/public/builds/1.png");
 }
 .buildsBlock .cards .card:nth-child(2) {
-  background-image: url("../../public/builds/2.png");
+  background-image: url("../../../mainPage/public/builds/2.png");
 }
 .buildsBlock .cards .card:nth-child(3) {
-  background-image: url("../../public/builds/3.png");
+  background-image: url("../../../mainPage/public/builds/3.png");
 }
 .buildsBlock .cards .card:nth-child(4) {
-  background-image: url("../../public/builds/4.png");
+  background-image: url("../../../mainPage/public/builds/4.png");
 }
 .buildsBlock .cards .card .info {
   padding: 2rem;

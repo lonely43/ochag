@@ -14,7 +14,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("../../public/price/background2.png");
+  background-image: url("../../../mainPage/public/cases/background2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-image: url("../../public/price/background2.png");
+  background-image: url("../../../mainPage/public/cases/background2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

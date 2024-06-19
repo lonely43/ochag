@@ -28,9 +28,7 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
-.FORM .formCard form input[type=text], .FORM .formCard form input[type=number],
-.FORM .formCard form select,
-.FORM .formCard form textarea {
+.FORM .formCard form input[type=text], .FORM .formCard form input[type=number] {
   padding: 0.6rem 1rem;
   max-width: 35rem;
   width: 100%;
@@ -38,47 +36,31 @@
   border: 0.1rem solid #4187cc;
   outline: none;
 }
-.FORM .formCard form .select {
-  position: relative;
-  max-width: 35rem;
-  width: 100%;
-}
-.FORM .formCard form .select select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  font-weight: 400;
-}
-.FORM .formCard form .select .arrow {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  max-width: 1rem;
-}
-.FORM .formCard form textarea {
-  max-height: 20rem;
-}
 .FORM .formCard form span {
   max-width: 35rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.FORM .formCard form span p {
+.FORM .formCard form span label {
   font-size: 0.8em;
   letter-spacing: 0.5px;
   text-align: start;
 }
-.FORM .formCard form span input {
+.FORM .formCard form span input[type=checkbox] {
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
+  outline: none;
+  border: 0.1rem solid #4187cc;
   display: block;
   width: 1.6rem;
   height: 1.6rem;
 }
 .FORM .formCard form .blueBtn {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.8rem 0rem;
   letter-spacing: 1px;
 }
 .FORM .formCard .closeBtn {
@@ -148,7 +130,8 @@
   letter-spacing: 0.5px;
 }
 .positiveModal .modalSection button {
-  width: 80%;
+  width: 100%;
+  max-width: 20rem;
   padding: 0.6rem 1rem;
 }
 

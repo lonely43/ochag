@@ -20,6 +20,7 @@
 }
 .inputBlock form {
   padding: 0 2rem;
+  width: 100%;
   max-width: 30rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -58,6 +59,7 @@
   font-weight: 500;
 }
 .inputBlock form .input span input {
+  width: 100%;
   padding: 0.6rem 1rem;
   border-radius: 0.6rem;
   border: 0.1rem solid #5290cc;
@@ -67,8 +69,10 @@
   padding-top: 1rem;
 }
 .inputBlock form input[type=submit] {
+  width: 100%;
+  max-width: 22rem;
   margin: 1rem auto 0 0;
-  padding: 0.8rem 6rem;
+  padding: 0.8rem 0rem;
 }
 @media screen and (max-width: 600px) {
   .inputBlock form input[type=submit] {

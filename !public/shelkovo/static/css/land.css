@@ -5,7 +5,8 @@
   min-height: 40rem;
   display: flex;
   justify-content: center;
-  background-image: url("../../public/land/background.png");
+  background-image: url("../../../mainPage/public/land/background.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

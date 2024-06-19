@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('../../main.css');
 /* navigator's styles */
 @import url('../nav/css/nav.css');
 
@@ -15,68 +14,3 @@
 @import url('./static/css/secondBlock.css');
 @import url('./static/css/input.css');
 @import url('./static/css/FAQ.css');
-
-
-*{
-   line-height: 1.25;
-   box-sizing: border-box;
-
-   padding: 0;
-   margin: 0;
-
-   font-family: "Roboto", sans-serif;
-   font-style: normal;
-}
-main{
-   max-width: 100vw;
-   height: auto;
-}
-body{
-   background-color: white;
-}
-a{
-   text-decoration: none;
-   cursor: pointer;
-   color: inherit;
-}
-.headerText{
-   padding: 0 1rem;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 1.8em;
-   color: #5290cc;
-}
-.blueBtn{
-   z-index: 1;
-   cursor: pointer;
-   position: relative;
-
-   padding: 0.8rem 4rem;
-
-   font-size: 1em;
-   font-weight: 500;
-   color: white;
-
-   border-radius: 1rem;
-   border: none;
-   box-shadow: 0 0.2rem 0rem 0rem #427aae;
-   background: linear-gradient(4deg, #7da9ed 44%, #8ab2ef 55%);
-   transition: opacity 200ms;
-}
-.blueBtn:hover{
-   opacity: 0.9;
-}
-.blueBtn::after{
-   z-index: -1;
-   content: " ";
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 0;
-
-   width: 100%;
-   height: 100%;
-
-   border-radius: 1rem;
-   box-shadow: 0 0 2rem -0.2rem #65adf0;
-}
