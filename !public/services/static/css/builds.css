@@ -75,7 +75,7 @@
   text-align: center;
   max-width: 18rem;
 }
-.buildsBlock .cards .card .info button {
+.buildsBlock .cards .card .info a {
   margin: 0 auto;
   padding: 0.6rem 1rem;
   font-size: 0.8em;

@@ -4,7 +4,9 @@
 	function sendForm(form) {
 		const data = new FormData(form) // take the data
 
-		if (validation(data, form)) {
+		if (validation(data, form)){
+			form.reset()
+			closeModalForm()
 			showPositiveModal()
 		}
 	}
@@ -154,7 +156,7 @@
 //Nav
 {
 	document.querySelector("nav").innerHTML = `
-   <span>
+   		<span>
 				<div class="icon">
 					<img src="!public/nav/logo.svg" width="100%" alt="logo" />
 				</div>
