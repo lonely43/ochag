@@ -9,15 +9,13 @@ nav{
 
    span{
       margin: 0 auto;
-      //width: 100%;
-      //max-width: 1400px;
       padding: 2rem;
 
       background-color: #fcfcfc;
       border-radius: 0 0 1rem 1rem;
 
       box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.788);
-      
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -237,6 +235,8 @@ nav{
       }
 
       .burgerMenu{
+         z-index: 1;
+
          display: none;
 
          .brgBtn{
@@ -248,29 +248,89 @@ nav{
             }
          }
 
-         .list{
+         .btns{
             position: absolute;
             left: -100vw;
             top: 0;
-
+   
             width: 100vw;
             height: 100vh;
-
+   
+            overflow-y: scroll;
+   
             background-color: white;
-
+            
             display: flex;
-            align-items: center;
+            //align-items: center;
             justify-content: center;
-
+   
             transition: left 0.2s;
-            ul{
-               list-style: none;
+
+            .cards{
+               padding-top: 10rem;
                display: flex;
                flex-direction: column;
-               gap: 2rem;
-               li{
-                  cursor: pointer;
-                  text-align: center;
+               align-items: center;
+
+               .card{
+                  width: 100%;
+                  max-width: 20rem;
+                  padding: 1rem 0;
+                  border-top: 0.08rem solid #e1e1e1;
+   
+                  &:first-child{
+                     border: none;
+                  }
+   
+                  h3{
+                     text-align: center;
+                     font-size: 1em;
+                     font-weight: 500;
+                     letter-spacing: 0.5px;
+                     cursor: pointer;
+                  }
+               }
+   
+               .list{
+                  display: grid;
+                  grid-template-rows: 1rem 0fr;
+                  transition: 200ms;
+                  gap: 0;
+   
+                  ul{
+                     overflow:hidden;
+                     list-style: none;
+   
+                     display: flex;
+                     flex-direction: column;
+   
+                     gap: 0.8rem;
+   
+                     li{
+                        display: flex;
+                        gap: 0.8rem;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        color: rgb(80, 80, 80);
+                        font-size: 1em;
+                        font-weight: 400;
+   
+                        img{
+                           width: 100%;
+                           max-width: 20px;
+                           height: 20px;
+                           object-fit: contain;
+                        }
+   
+                        p{
+                           white-space: wrap;
+                        }
+                     }
+                  }
+               }
+               .showList{
+                  grid-template-rows: 1rem 1fr;
+                  gap: 1rem;
                }
             }
          }
