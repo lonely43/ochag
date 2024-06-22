@@ -196,16 +196,16 @@
 									<div class="dropdownMenu">
 										<ul>
 											<li>
-												<p><a href="http://kiko-dron.ru/shelkovo.html">Пансионат "Щелково"</a></p>
+												<p><a href="./shelkovo.html">Пансионат "Щелково"</a></p>
 											</li>
 											<li>
-												<p><a href="http://kiko-dron.ru/lesnoe.html">Пансионат "Лесное"</a></p>
+												<p><a href="./lesnoe.html">Пансионат "Лесное"</a></p>
 											</li>
 											<li>
-												<p><a href="http://kiko-dron.ru/pribreznyi.html">Пансионат "Прибрежный"</a></p>
+												<p><a href="./pribreznyi.html">Пансионат "Прибрежный"</a></p>
 											</li>
 											<li>
-												<p><a href="http://kiko-dron.ru/ozerniy.html">Пансионат "Озерный"</a></p>
+												<p><a href="./ozerniy.html">Пансионат "Озерный"</a></p>
 											</li>
 										</ul>
 									</div>
@@ -244,11 +244,11 @@
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-												<p><a href="http://kiko-dron.ru/ippsu.html">Госпрограмма ИППСУ</a></p>
+												<p><a href="./ippsu.html">Госпрограмма ИППСУ</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" alt="" />
-												<p><a href="http://kiko-dron.ru/vakansii.html">Вакансии</a></p>
+												<p><a href="./vakansii.html">Вакансии</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
@@ -333,13 +333,13 @@
 									</div>
 								</li>
 								<li>
-									<h1><a href="http://kiko-dron.ru/feedback.html">Отзывы</a></h1>
+									<h1><a href="./feedback.html">Отзывы</a></h1>
 								</li>
 								<li>
-									<h1><a href="http://kiko-dron.ru/photos.html">Фотогалерея</a></h1>
+									<h1><a href="./photos.html">Фотогалерея</a></h1>
 								</li>
 								<li>
-									<h1><a href="http://kiko-dron.ru/contacts.html">Контакты</a></h1>
+									<h1><a href="./contacts.html">Контакты</a></h1>
 								</li>
 							</ul>
 						</div>
@@ -377,16 +377,16 @@
 								<h3>Пансионаты</h3>
 								<ul>
 									<li>
-										<p><a href="http://kiko-dron.ru/shelkovo.html">Пансионат "Щелково"</a></p>
+										<p><a href="./shelkovo.html">Пансионат "Щелково"</a></p>
 									</li>
 									<li>
-										<p><a href="http://kiko-dron.ru/lesnoe.html">Пансионат "Лесное"</a></p>
+										<p><a href="./lesnoe.html">Пансионат "Лесное"</a></p>
 									</li>
 									<li>
-										<p><a href="http://kiko-dron.ru/pribreznyi.html">Пансионат "Прибрежный"</a></p>
+										<p><a href="./pribreznyi.html">Пансионат "Прибрежный"</a></p>
 									</li>
 									<li>
-										<p><a href="http://kiko-dron.ru/ozerniy.html">Пансионат "Озерный"</a></p>
+										<p><a href="./ozerniy.html">Пансионат "Озерный"</a></p>
 									</li>
 								</ul>
 							</div>
@@ -424,11 +424,11 @@
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-										<p><a href="http://kiko-dron.ru/ippsu.html">Госпрограмма ИППСУ</a></p>
+										<p><a href="./ippsu.html">Госпрограмма ИППСУ</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" alt="" />
-										<p><a href="http://kiko-dron.ru/vakansii.html">Вакансии</a></p>
+										<p><a href="./vakansii.html">Вакансии</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
@@ -512,15 +512,15 @@
 							</div>
 
 							<div class="card">
-								<h3><a href="http://kiko-dron.ru/feedback.html">Отзывы</a></h3>
+								<h3><a href="./feedback.html">Отзывы</a></h3>
 							</div>
 
 							<div class="card">
-								<h3><a href="http://kiko-dron.ru/photos.html">Фотогалерея</a></h3>
+								<h3><a href="./photos.html">Фотогалерея</a></h3>
 							</div>
 
 							<div class="card">
-								<h3><a href="http://kiko-dron.ru/contacts.html">Контакты</a></h3>
+								<h3><a href="./contacts.html">Контакты</a></h3>
 							</div>
 						</div>
 					</div>
@@ -568,16 +568,16 @@
 							<h3>Пансионаты</h3>
 							<ul>
 								<li>
-									<p><a href="http://kiko-dron.ru/shelkovo.html">Пансионат "Щелково"</a></p>
+									<p><a href="./shelkovo.html">Пансионат "Щелково"</a></p>
 								</li>
 								<li>
-									<p><a href="http://kiko-dron.ru/lesnoe.html">Пансионат "Лесное"</a></p>
+									<p><a href="./lesnoe.html">Пансионат "Лесное"</a></p>
 								</li>
 								<li>
-									<p><a href="http://kiko-dron.ru/pribreznyi.html">Пансионат "Прибрежный"</a></p>
+									<p><a href="./pribreznyi.html">Пансионат "Прибрежный"</a></p>
 								</li>
 								<li>
-									<p><a href="http://kiko-dron.ru/ozerniy.html">Пансионат "Озерный"</a></p>
+									<p><a href="./ozerniy.html">Пансионат "Озерный"</a></p>
 								</li>
 							</ul>
 						</div>
@@ -615,11 +615,11 @@
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-									<p><a href="http://kiko-dron.ru/ippsu.html">Госпрограмма ИППСУ</a></p>
+									<p><a href="./ippsu.html">Госпрограмма ИППСУ</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/services/free-icon-procedure-4286345.svg" alt="" />
-									<p><a href="http://kiko-dron.ru/vakansii.html">Вакансии</a></p>
+									<p><a href="./vakansii.html">Вакансии</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
@@ -703,15 +703,15 @@
 						</div>
 
 						<div class="card">
-							<h3><a href="http://kiko-dron.ru/feedback.html">Отзывы</a></h3>
+							<h3><a href="./feedback.html">Отзывы</a></h3>
 						</div>
 
 						<div class="card">
-							<h3><a href="http://kiko-dron.ru/photos.html">Фотогалерея</a></h3>
+							<h3><a href="./photos.html">Фотогалерея</a></h3>
 						</div>
 
 						<div class="card">
-							<h3><a href="http://kiko-dron.ru/contacts.html">Контакты</a></h3>
+							<h3><a href="./contacts.html">Контакты</a></h3>
 						</div>
 					</div>
 				</div>
