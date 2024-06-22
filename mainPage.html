@@ -161,32 +161,32 @@
 						</div>
 					</div>
 
-					<div class="mainDoc seeDoc" onclick="showPopup(0)">
+					<div class="mainDoc doc seeDoc">
 						<img src="!public/mainPage/public/docs/mainDoc.png" width="100%" alt="" />
 					</div>
 
 					<div class="docs">
-						<div class="doc seeDoc" onclick="showPopup(1)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 893.png" width="100%" alt="" />
 						</div>
 
-						<div class="doc seeDoc" onclick="showPopup(2)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 895.png" width="100%" alt="" />
 						</div>
 
-						<div class="doc seeDoc" onclick="showPopup(3)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 897.png" width="100%" alt="" />
 						</div>
 
-						<div class="doc seeDoc" onclick="showPopup(4)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 894.png" width="100%" alt="" />
 						</div>
 
-						<div class="doc seeDoc" onclick="showPopup(5)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 896.png" width="100%" alt="" />
 						</div>
 
-						<div class="doc seeDoc" onclick="showPopup(6)">
+						<div class="doc seeDoc">
 							<img src="!public/mainPage/public/docs/Layer 898.png" width="100%" alt="" />
 						</div>
 					</div>
@@ -1232,58 +1232,8 @@
 				arrows[0].addEventListener("click", previousIcon, false)
 				arrows[1].addEventListener("click", nextIcon, false)
 			}
-
-			//docs
-			{
-				let srcList = ["!public/mainPage/public/docs/mainDoc.png", "!public/mainPage/public/docs/Layer 893.png", "!public/mainPage/public/docs/Layer 895.png", "!public/mainPage/public/docs/Layer 897.png", "!public/mainPage/public/docs/Layer 894.png", "!public/mainPage/public/docs/Layer 896.png", "!public/mainPage/public/docs/Layer 898.png"]
-				let count = 0
-
-				function showPopup(number) {
-					document.querySelector(".popupContainer").style.display = "block"
-					document.querySelector(".popupContainer img").src = srcList[number]
-					count = number
-				}
-				function nextImg() {
-					if (count >= 6) {
-						document.querySelector(".popupContainer img").src = srcList[0]
-						return (count = 0)
-					}
-					document.querySelector(".popupContainer img").src = srcList[count + 1]
-					return count++
-				}
-				function prevImg() {
-					console.log(count)
-					if (count <= 0) {
-						document.querySelector(".popupContainer img").src = srcList[6]
-						return (count = 6)
-					}
-					document.querySelector(".popupContainer img").src = srcList[count - 1]
-					return count--
-				}
-
-				document.querySelector(".closeBtn").addEventListener(
-					"click",
-					() => {
-						document.querySelector(".popupContainer").style.display = "none"
-					},
-					false
-				)
-				document.querySelector(".nextBtn").addEventListener(
-					"click",
-					() => {
-						nextImg()
-					},
-					false
-				)
-				document.querySelector(".prevBtn").addEventListener(
-					"click",
-					() => {
-						prevImg()
-					},
-					false
-				)
-			}
 		</script>
+		<script src="./!public/js/documents.js"></script>
 		<script src="./!public/main.js"></script>
 		<script src="!public/nav/nav.js"></script>
 	</body>

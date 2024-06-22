@@ -11,7 +11,7 @@
 @import url('./static/css/listCards.css');
 @import url('../services/static/css/inputBlock.css');
 @import url('../services/static/css/points.css');
-@import url('../services/static/css/docs.css');
+@import url('../mainPage/static/css/docs.css');
 @import url('../services/static/css/builds.css');
 @import url('../services/static/css/feedbacks.css');
 @import url('../services/static/css/FAQ.css');
