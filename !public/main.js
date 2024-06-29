@@ -216,31 +216,31 @@
 										<ul>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
-												<p><a href="./mainPage.html#aboutUs">О нас</a></p>
+												<p><a href="./index.html#aboutUs">О нас</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-												<p><a href="./mainPage.html#docsBlock">Лицензии и сертификаты</a></p>
+												<p><a href="./index.html#docsBlock">Лицензии и сертификаты</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
-												<p><a href="./mainPage.html#feedback">Отзывы</a></p>
+												<p><a href="./index.html#feedback">Отзывы</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
-												<p><a href="./mainPage.html#list">Стоимость услуг</a></p>
+												<p><a href="./index.html#list">Стоимость услуг</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
-												<p><a href="./mainPage.html#gallery">Услуги для постояльцев</a></p>
+												<p><a href="./index.html#gallery">Услуги для постояльцев</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
-												<p><a href="./mainPage.html#directors">Наша команда</a></p>
+												<p><a href="./index.html#directors">Наша команда</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
-												<p><a href="./mainPage.html#steps">Порядок оформления</a></p>
+												<p><a href="./index.html#steps">Порядок оформления</a></p>
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
@@ -252,7 +252,7 @@
 											</li>
 											<li>
 												<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
-												<p><a href="./mainPage.html#add">Перечень необходимых вещей</a></p>
+												<p><a href="./index.html#add">Перечень необходимых вещей</a></p>
 											</li>
 										</ul>
 									</div>
@@ -396,31 +396,31 @@
 								<ul>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
-										<p><a href="./mainPage.html#aboutUs">О нас</a></p>
+										<p><a href="./index.html#aboutUs">О нас</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-										<p><a href="./mainPage.html#docsBlock">Лицензии и сертификаты</a></p>
+										<p><a href="./index.html#docsBlock">Лицензии и сертификаты</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
-										<p><a href="./mainPage.html#feedback">Отзывы</a></p>
+										<p><a href="./index.html#feedback">Отзывы</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
-										<p><a href="./mainPage.html#list">Стоимость услуг</a></p>
+										<p><a href="./index.html#list">Стоимость услуг</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
-										<p><a href="./mainPage.html#gallery">Услуги для постояльцев</a></p>
+										<p><a href="./index.html#gallery">Услуги для постояльцев</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
-										<p><a href="./mainPage.html#directors">Наша команда</a></p>
+										<p><a href="./index.html#directors">Наша команда</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
-										<p><a href="./mainPage.html#steps">Порядок оформления</a></p>
+										<p><a href="./index.html#steps">Порядок оформления</a></p>
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
@@ -432,7 +432,7 @@
 									</li>
 									<li>
 										<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
-										<p><a href="./mainPage.html#add">Перечень необходимых вещей</a></p>
+										<p><a href="./index.html#add">Перечень необходимых вещей</a></p>
 									</li>
 								</ul>
 							</div>
@@ -587,31 +587,31 @@
 							<ul>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-about-us-8644718.svg" alt="" />
-									<p><a href="./mainPage.html#aboutUs">О нас</a></p>
+									<p><a href="./index.html#aboutUs">О нас</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
-									<p><a href="./mainPage.html#docsBlock">Лицензии и сертификаты</a></p>
+									<p><a href="./index.html#docsBlock">Лицензии и сертификаты</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-customer-review-4725665.svg" alt="" />
-									<p><a href="./mainPage.html#feedback">Отзывы</a></p>
+									<p><a href="./index.html#feedback">Отзывы</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-ruble-2769409.svg" alt="" />
-									<p><a href="./mainPage.html#list">Стоимость услуг</a></p>
+									<p><a href="./index.html#list">Стоимость услуг</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-customer-686317.svg" alt="" />
-									<p><a href="./mainPage.html#gallery">Услуги для постояльцев</a></p>
+									<p><a href="./index.html#gallery">Услуги для постояльцев</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-team-7610864.svg" alt="" />
-									<p><a href="./mainPage.html#directors">Наша команда</a></p>
+									<p><a href="./index.html#directors">Наша команда</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-doc-5755536.svg" alt="" />
-									<p><a href="./mainPage.html#steps">Порядок оформления</a></p>
+									<p><a href="./index.html#steps">Порядок оформления</a></p>
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-certificate-4211086.svg" alt="" />
@@ -623,7 +623,7 @@
 								</li>
 								<li>
 									<img src="!public/nav/dropdown/aboutUs/free-icon-belongings-6523074.svg" alt="" />
-									<p><a href="./mainPage.html#add">Перечень необходимых вещей</a></p>
+									<p><a href="./index.html#add">Перечень необходимых вещей</a></p>
 								</li>
 							</ul>
 						</div>
